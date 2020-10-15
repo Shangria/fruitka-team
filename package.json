@@ -1,0 +1,23 @@
+{
+  "name": "project-fruitka-team",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o  dist/css src/scss/style.scss",
+    "pug": "pug --output-style compressed -o dist/ src/pages/*.pug",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/*.html'",
+    "watch:css": "onchange 'src/scss/style.scss' -- npm run scss",
+    "start": "run-p serve watch:css"
+  },
+  "author": "\"fruitka-team\"",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
