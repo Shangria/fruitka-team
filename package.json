@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style nested -w src/scss/style.scss -o dist/css/style.css",
-    "pug": "pug -P -o dist/ -w src/pages/index.pug",
-    "start": "npm run scss & npm run pug"
+    "start": "run-p scss pug",
+    "scss": "node-sass -w ./src/scss/style.scss ./dist/css/style.css",
+    "pug": "pug -P -o ./dist/ -w ./src/pages/index.pug"
   },
   "author": "\"fruitka-team\"",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
     "pug": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6"
   }
