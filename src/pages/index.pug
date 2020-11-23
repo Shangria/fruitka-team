@@ -3,6 +3,153 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='css/reset.css')
         title Document
     body
-        h1 Hello World!
+        .latest-news
+            .news__container.container
+                .news-title__wrapper
+                    h3
+                        span Our
+                        |  News               
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.
+                .news__row.row
+                    .news__col.col
+                        .single-latest-news
+                            a(href='single-news.html')
+                                .latest-news__background.news__first__background
+                            .news__text__box
+                                h3
+                                    a(href='single-news.html') You will vainly look for fruit on it in autumn.
+                                p.blog-meta
+                                    span.author
+                                        i.fas.fa-user
+                                        |  Admin
+                                    span.date
+                                        i.fas.fa-calendar
+                                        |  27 December, 2019
+                                p.news__p
+                                    | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.
+                                a.read-more_button(href='single-news.html')
+                                    | read more 
+                                    i.fas.fa-angle-right
+                    .news__col.col            
+                        .single-latest-news
+                            a(href='single-news.html')
+                                .latest-news__background.news__second__background
+                            .news__text__box
+                                h3
+                                    a(href='single-news.html') A man&apos;s worth has its season, like tomato.
+                                p.blog-meta
+                                    span.author
+                                        i.fas.fa-user
+                                        |  Admin
+                                    span.date
+                                        i.fas.fa-calendar
+                                        |  27 December, 2019
+                                p.news__p
+                                    | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.
+                                a.read-more_button(href='single-news.html')
+                                    | read more 
+                                    i.fas.fa-angle-right
+                    .news__col.col   
+                        .single-latest-news
+                            a(href='single-news.html')
+                                .latest-news__background.news__third__background
+                            .news__text__box
+                                h3
+                                    a(href='single-news.html') Good thoughts bear good fresh juicy fruit.
+                                p.blog-meta
+                                    span.author
+                                        i.fas.fa-user
+                                        |  Admin
+                                    span.date
+                                        i.fas.fa-calendar
+                                        |  27 December, 2019
+                                p.news__p
+                                    | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.
+                                a.read-more_button(href='single-news.html')
+                                    | read more 
+                                    i.fas.fa-angle-right
+                .news-button_wrapper
+                    a.news__button(href='news.html') More News
+        .logo-carousel__wrapper
+            .logo__container.container
+                .logo__row
+                    .logo-carousel__inner
+                        .single-logo_item
+                            img(src='img/company-logos/1.png', alt='')
+                        .single-logo_item
+                            img(src='img/company-logos/2.png', alt='')
+                        .single-logo_item
+                            img(src='img/company-logos/3.png', alt='')
+                        .single-logo_item
+                            img(src='img/company-logos/4.png', alt='')
+                        .single-logo_item
+                            img(src='img/company-logos/5.png', alt='')    
+    footer
+        .footer__area
+            .footer__container.container
+                .row
+                    .footer__inner
+                        .footer__col.about-widget__col
+                            h2.widget__title About us
+                            p
+                                | Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                    .footer__inner
+                        .footer__col.get-in-touch__col
+                            h2.widget__title Get in Touch
+                            ul
+                                li 34/8, East Hukupara, Gifirtok, Sadan.
+                                li support@fruitkha.com
+                                li +00 111 222 3333
+                    .footer__inner
+                        .footer__col.pages__col
+                            h2.widget__title Pages
+                            ul
+                                li
+                                    a(href='index.html') Home
+                                li
+                                    a(href='about.html') About
+                                li
+                                    a(href='services.html') Shop
+                                li
+                                    a(href='news.html') News
+                                li
+                                    a(href='contact.html') Contact
+                    .footer__inner            
+                        .footer__col.subscribe__col
+                            h2.widget__title Subscribe
+                            p Subscribe to our mailing list to get the latest updates.
+                            form(action='index.html')
+                                input(type='email', placeholder='Email')
+                                button(type='submit')
+                                    i.fas.fa-paper-plane
+        .copyright
+            .container
+                .copyright__wrapper
+                    .copyright__inner
+                        p
+                            | Copyrights &copy; 2019 - 
+                            a(href='https://imransdesign.com/') Imran Hossain
+                            | ,  All Rights Reserved.
+                    .copyright-social__wrapper
+                        ul
+                            li
+                                a(href='#', target='_blank')
+                                    i.fab.fa-facebook-f
+                            li
+                                a(href='#', target='_blank')
+                                    i.fab.fa-twitter
+                            li
+                                a(href='#', target='_blank')
+                                    i.fab.fa-instagram
+                            li
+                                a(href='#', target='_blank')
+                                    i.fab.fa-linkedin
+                            li
+                                a(href='#', target='_blank')
+                                    i.fab.fa-dribbble
+
+            
