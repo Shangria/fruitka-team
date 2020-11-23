@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "run-p scss pug",
-    "scss": "node-sass -w ./src/scss/style.scss ./dist/css/style.css",
-    "pug": "pug -P -o ./dist/ -w ./src/pages/index.pug"
+    "start": "run-s dist scss-compile scss-watch pug",
+    "scss-compile": "node-sass ./src/scss/style.scss ./dist/css/style.css",
+    "scss-watch": "node-sass -w ./src/scss/style.scss ./dist/css/style.css",
+    "pug": "pug -P -o ./dist/ -w ./src/pages/index.pug",
+    "dist": "recursive-copy -w ./src/ ./dist/"
   },
   "author": "\"fruitka-team\"",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
     "pug": "^3.0.0",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "recursive-copy-cli": "^1.0.14"
   }
 }
