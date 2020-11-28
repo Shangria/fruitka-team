@@ -1,0 +1,297 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    src: url("../webfonts/fa-brands-400.eot") format("eot"),
+        url("../webfonts/fa-brands-400.eot") format("eot"),
+        url("../webfonts/fa-brands-400.woff") format("woff"),
+        url("../webfonts/fa-brands-400.woff2") format("woff"),
+        url("../webfonts/fa-brands-400.ttf") format("truetype"),
+        url("../webfonts/fa-brands-400.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    src: url("../webfonts/fa-regular-400.eot") format("eot"),
+        url("../webfonts/fa-regular-400.eot") format("eot"),
+        url("../webfonts/fa-regular-400.woff") format("woff"),
+        url("../webfonts/fa-regular-400.woff2") format("woff"),
+        url("../webfonts/fa-regular-400.ttf") format("truetype"),
+        url("../webfonts/fa-regular-400.svg") format("svg");
+    font-weight: 400;
+    font-style: solid;
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    src: url("../webfonts/fa-solid-900.eot") format("eot"),
+        url("../webfonts/fa-solid-900.eot") format("eot"),
+        url("../webfonts/fa-solid-900.woff") format("woff"),
+        url("../webfonts/fa-solid-900.woff2") format("woff"),
+        url("../webfonts/fa-solid-900.ttf") format("truetype"),
+        url("../webfonts/fa-solid-900.svg") format("svg");
+    font-weight: 900;
+    font-style: solid;
+}
+
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #051922;
+}
+
+.latest-news {
+    padding: 150px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.news-title__wrapper {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+
+    h3 {
+        font-size: 40px;
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 28px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 50px;
+            height: 2px;
+            background-color: #F28123;
+            margin: 0 auto;
+        }
+
+        span {
+            color: #F28123;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.8;
+    }
+}
+
+.row {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.col {
+    padding: 0 15px;
+}
+
+.single-latest-news {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 0 20px #dddddd;
+    box-shadow: 0 0 20px #dddddd;
+    transition: 0.3s;
+
+    h3 {
+        font-size: 20px;
+        line-height: 1.25em;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        a {
+            color: #051922;
+        }
+    }
+
+    &:hover {
+        -webkit-box-shadow: 0 0 0;
+        box-shadow: 0 0 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.latest-news__background {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    background-color: #ddd;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.news__first__background {
+    background-image: url(../img/latest-news/news-bg-1.jpg);
+}
+
+.news__second__background {
+    background-image: url(../img/latest-news/news-bg-2.jpg);
+}
+
+.news__third__background {
+    background-image: url(../img/latest-news/news-bg-3.jpg);
+}
+
+.news__text__box {
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.blog-meta {
+    margin-bottom: 15px;
+}
+
+p.blog-meta {
+    span {
+        margin-right: 15px;
+        opacity: 0.6;
+        color: #051922;
+        font-size: 0.85em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.fa {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa-user {
+    &:before {
+        content: "\f007";
+    }
+}
+
+.fa-calendar {
+    &:before {
+        content: "\f133";
+    }
+}
+
+.news__p {
+    margin-bottom: 30px;
+}
+
+a.read-more_button {
+    display: inline-block;
+    margin-top: 15px;
+    color: #051922;
+    transition: 0.3s;
+    font-weight: 700;
+
+    &:hover {
+        color: #F28123;
+    }
+}
+
+.fa-angle-right {
+    &:before {
+        content: "\f105";
+    }
+}
+
+.news-button_wrapper {
+    text-align: center;
+}
+
+.latest-news {
+    a.news__button {
+        margin-top: 80px;
+    }
+}
+
+a.news__button {
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-color: #F28123;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+
+    &:hover {
+        background-color: #051922;
+        color: #F28123;
+    }
+}
+
+.logo-carousel__wrapper {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.logo__row {
+    width: 79%;
+    margin: 0 auto;
+}
+
+.logo-carousel__inner {
+    display: flex;
+}
+
+.single-logo_item {
+    transition: 0.3s;
+    transition: 0.3s;
+
+    img {
+        margin: 0 38px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
