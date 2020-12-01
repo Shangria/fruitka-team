@@ -3,134 +3,34 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        link(rel='shortcut icon', href='img/favicon.png', type="image/x-icon")
+        title Fruitzetked
+        link(rel='shortcut icon', href='../img/favicon.png', type="image/x-icon")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap")
         link(rel='stylesheet', href='css/style.css')
     body
-        header.head
-            nav.head__navigation
-                .head__img-logo
-                    a.head__logo-link(href='#')
-                        img(src='img/logo.png')
-                ul.head__menu
-                    li.head__list-menu
-                        a.head__link(href='#') Home
-                    li.head__list-menu
-                        a.head__link(href='#') About
-                    li.head__list-menu
-                        a.head__link(href='#') Pages
-                    li.head__list-menu
-                        a.head__link(href='#') News
-                    li.head__list-menu
-                        a.head__link(href='#') Contact
-                    li.head__list-menu
-                        a.head__link(href='#') Shop
-                .head__icon
-                    a.icon-basket(href='#')
-                    a.icon-search(href='#')
+        
+        include ./header-components/header.pug
+
         main.wrapper
-            .wrapper__banner-opacity.wrapper__banner
-                .wrapper__banner-content
-                    h3.wrapper__title-max Fresh &amp; Organic
-                    h1.wrapper__title-min Delicious Seasonal Fruits
-                    .wrapper__box-button
-                        button.wrapper__btn-fruit-collection.btn-main Fruit Collection
-                        button.wrapper__btn-contact.btn-main  Contact Us
-            section.list-information
-                .list-information__list-container
-                    .icon-truck.list-information__icon-border
-                    .list-information__all-inform
-                        h4.list-information__title Free Shipping
-                        p.list-information__text When order over $75
-                .list-information__list-container
-                    .icon-volume-control-phone.list-information__icon-border
-                    .list-information__all-inform
-                        h4.list-information__title 24/7 Support
-                        p.list-information__text Get support all day
-                .list-information__list-container
-                    .icon-arrows-cw.list-information__icon-border
-                    .list-information__all-inform
-                        h4.list-information__title Refund
-                        p.list-information__text Get refund within 3 days!
-            section.section-product-promotion
-                .section-product-promotion__container-promotion-info
-                    .section-product-promotion__img-product-promotion
-                        img(src='img/product-promotion.jpg')
-                        .section-product-promotion__store-promotion-price
-                            .section-product-promotion__store-other-price
-                                span.section-product-promotion__price
-                                    strong 30%
-                                    br
-                                    | per kg
-                    .section-product-promotion__product-promotion-inform
-                        h1.section-product-promotion__section-title
-                            span.color-word Deal
-                            |  of the month
-                        span HIKAN STRWABERRY
-                        p
-                            | Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea.
-                            | Perspiciatis unde omnis iste natus error sit voluptatem accusant
-                        .section-product-promotion__box-time
-                            .section-product-promotion__time-action
-                                span.color-word 00
-                                p Days
-                            .section-product-promotion__time-action
-                                span.color-word 00
-                                p Hours
-                            .section-product-promotion__time-action
-                                .color-word 00
-                                p Mins
-                            .section-product-promotion__time-action
-                                span.color-word 00
-                                p Secs
-                        button.btn-main.btn-add-to-card.icon-basket Add to card
-            section.local-shop-owner
-                .local-shop-owner__container
-                    .local-shop-owner__avatar
-                        img(src='img/avatar/avatar1.png')
-                    .local-shop-owner__name
-                        span Saira Hakim
-                        p Local shop owner
-                    .local-shop-owner__inform
-                        p
-                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
-                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
-                            | inventore Sed ut perspiciatis unde omnis iste natus error
-                            | sit voluptatem accusantium "
-                        p.icon-quote-right
-                .local-shop-owner__container.local-shop-owner_hidden
-                    .local-shop-owner__avatar
-                        img(src='img/avatar/avatar2.png')
-                    .local-shop-owner__name
-                        span Jacob Sikim
-                        p Local shop owner
-                    .local-shop-owner__inform
-                        p
-                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
-                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
-                            | inventore Sed ut perspiciatis unde omnis iste natus error
-                            | sit voluptatem accusantium "
-                        p.icon-quote-right
-                .local-shop-owner__container.local-shop-owner_hidden
-                    .local-shop-owner__avatar
-                        img(src='img/avatar/avatar3.png')
-                    .local-shop-owner__name
-                        span David Niph
-                        p Local shop owner
-                    .local-shop-owner__inform
-                        p
-                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
-                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
-                            | inventore Sed ut perspiciatis unde omnis iste natus error
-                            | sit voluptatem accusantium "
-                        p.icon-quote-right  
+           
+            include ./homepage-components/banner.pug
+
+            include ./homepage-components/list-information.pug
+
+            include ./homepage-components/products.pug
+
+            include ./homepage-components/product-promotion.pug
+
+            include ./homepage-components/local-shop-owner.pug
+
+            include ./homepage-components/description.pug
+
+            include ./homepage-components/shop-banner.pug
 
             include ./homepage-components/latest-news.pug
 
             include ./homepage-components/carousel.pug
             
-            include ./footer-components/footer.pug
+        include ./footer-components/footer.pug
 
 
