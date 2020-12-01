@@ -3,10 +3,11 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="css/reset.css")
-        link(rel="stylesheet", href="css/fontello.css")
-        link(rel="stylesheet", href="css/style.css")
         title Document
+        link(rel='shortcut icon', href='img/favicon.png', type="image/x-icon")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap")
+        link(rel='stylesheet', href='css/style.css')
     body
         header.head
             nav.head__navigation
@@ -37,237 +38,99 @@ html(lang="en")
                     .wrapper__box-button
                         button.wrapper__btn-fruit-collection.btn-main Fruit Collection
                         button.wrapper__btn-contact.btn-main  Contact Us
-        section.list-information
-            .list-information__list-container
-                .icon-truck.list-information__icon-border
-                .list-information__all-inform
-                    h4.list-information__title Free Shipping
-                    p.list-information__text When order over $75
-            .list-information__list-container
-                .icon-volume-control-phone.list-information__icon-border
-                .list-information__all-inform
-                    h4.list-information__title 24/7 Support
-                    p.list-information__text Get support all day
-            .list-information__list-container
-                .icon-arrows-cw.list-information__icon-border
-                .list-information__all-inform
-                    h4.list-information__title Refund
-                    p.list-information__text Get refund within 3 days!
-        section.section-product-promotion
-            .section-product-promotion__container-promotion-info
-                .section-product-promotion__img-product-promotion
-                    img(src='img/product-promotion.jpg')
-                    .section-product-promotion__store-promotion-price
-                        .section-product-promotion__store-other-price
-                            span.section-product-promotion__price
-                                strong 30%
-                                br
-                                | per kg
-                .section-product-promotion__product-promotion-inform
-                    h1.section-product-promotion__section-title
-                        span.color-word Deal
-                        |  of the month
-                    span HIKAN STRWABERRY
-                    p
-                        | Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea.
-                        | Perspiciatis unde omnis iste natus error sit voluptatem accusant
-                    .section-product-promotion__box-time
-                        .section-product-promotion__time-action
-                            span.color-word 00
-                            p Days
-                        .section-product-promotion__time-action
-                            span.color-word 00
-                            p Hours
-                        .section-product-promotion__time-action
-                            .color-word 00
-                            p Mins
-                        .section-product-promotion__time-action
-                            span.color-word 00
-                            p Secs
-                    button.btn-main.btn-add-to-card.icon-basket Add to card
-        section.local-shop-owner
-            .local-shop-owner__container
-                .local-shop-owner__avatar
-                    img(src='img/avatar/avatar1.png')
-                .local-shop-owner__name
-                    span Saira Hakim
-                    p Local shop owner
-                .local-shop-owner__inform
-                    p
-                        | " Sed ut perspiciatis unde omnis iste natus error veritatis et
-                        | quasi architecto beatae vitae dict eaque ipsa quae ab illo
-                        | inventore Sed ut perspiciatis unde omnis iste natus error
-                        | sit voluptatem accusantium "
-                    p.icon-quote-right
-            .local-shop-owner__container.local-shop-owner_hidden
-                .local-shop-owner__avatar
-                    img(src='img/avatar/avatar2.png')
-                .local-shop-owner__name
-                    span Jacob Sikim
-                    p Local shop owner
-                .local-shop-owner__inform
-                    p
-                        | " Sed ut perspiciatis unde omnis iste natus error veritatis et
-                        | quasi architecto beatae vitae dict eaque ipsa quae ab illo
-                        | inventore Sed ut perspiciatis unde omnis iste natus error
-                        | sit voluptatem accusantium "
-                    p.icon-quote-right
-            .local-shop-owner__container.local-shop-owner_hidden
-                .local-shop-owner__avatar
-                    img(src='img/avatar/avatar3.png')
-                .local-shop-owner__name
-                    span David Niph
-                    p Local shop owner
-                .local-shop-owner__inform
-                    p
-                        | " Sed ut perspiciatis unde omnis iste natus error veritatis et
-                        | quasi architecto beatae vitae dict eaque ipsa quae ab illo
-                        | inventore Sed ut perspiciatis unde omnis iste natus error
-                        | sit voluptatem accusantium "
-                    p.icon-quote-right
-        .latest-news
-            .news__container.container
-                .news-title__wrapper
-                    h3
-                        span Our
-                        |  News               
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.
-                .news__row.row
-                    .news__col.col
-                        .single-latest-news
-                            a(href='single-news.html')
-                                .latest-news__background.news__first__background
-                            .news__text__box
-                                h3
-                                    a(href='single-news.html') You will vainly look for fruit on it in autumn.
-                                p.blog-meta
-                                    span.author
-                                        i.fas.fa-user
-                                        |  Admin
-                                    span.date
-                                        i.fas.fa-calendar
-                                        |  27 December, 2019
-                                p.news__p
-                                    | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.
-                                a.read-more_button(href='single-news.html')
-                                    | read more 
-                                    i.fas.fa-angle-right
-                    .news__col.col            
-                        .single-latest-news
-                            a(href='single-news.html')
-                                .latest-news__background.news__second__background
-                            .news__text__box
-                                h3
-                                    a(href='single-news.html') A man&apos;s worth has its season, like tomato.
-                                p.blog-meta
-                                    span.author
-                                        i.fas.fa-user
-                                        |  Admin
-                                    span.date
-                                        i.fas.fa-calendar
-                                        |  27 December, 2019
-                                p.news__p
-                                    | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.
-                                a.read-more_button(href='single-news.html')
-                                    | read more 
-                                    i.fas.fa-angle-right
-                    .news__col.col   
-                        .single-latest-news
-                            a(href='single-news.html')
-                                .latest-news__background.news__third__background
-                            .news__text__box
-                                h3
-                                    a(href='single-news.html') Good thoughts bear good fresh juicy fruit.
-                                p.blog-meta
-                                    span.author
-                                        i.fas.fa-user
-                                        |  Admin
-                                    span.date
-                                        i.fas.fa-calendar
-                                        |  27 December, 2019
-                                p.news__p
-                                    | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi. Praesent vitae mattis nunc, egestas viverra eros.
-                                a.read-more_button(href='single-news.html')
-                                    | read more 
-                                    i.fas.fa-angle-right
-                .news-button_wrapper
-                    a.news__button(href='news.html') More News
-        .logo-carousel__wrapper
-            .logo__container.container
-                .logo__row
-                    .logo-carousel__inner
-                        .single-logo_item
-                            img(src='img/company-logos/1.png', alt='')
-                        .single-logo_item
-                            img(src='img/company-logos/2.png', alt='')
-                        .single-logo_item
-                            img(src='img/company-logos/3.png', alt='')
-                        .single-logo_item
-                            img(src='img/company-logos/4.png', alt='')
-                        .single-logo_item
-                            img(src='img/company-logos/5.png', alt='')    
-        footer
-            .footer__area
-                .footer__container.container
-                    .row
-                        .footer__inner
-                            .footer__col.about-widget__col
-                                h2.widget__title About us
-                                p
-                                    | Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-                        .footer__inner
-                            .footer__col.get-in-touch__col
-                                h2.widget__title Get in Touch
-                                ul
-                                    li 34/8, East Hukupara, Gifirtok, Sadan.
-                                    li support@fruitkha.com
-                                    li +00 111 222 3333
-                        .footer__inner
-                            .footer__col.pages__col
-                                h2.widget__title Pages
-                                ul
-                                    li
-                                        a(href='index.html') Home
-                                    li
-                                        a(href='about.html') About
-                                    li
-                                        a(href='services.html') Shop
-                                    li
-                                        a(href='news.html') News
-                                    li
-                                        a(href='contact.html') Contact
-                        .footer__inner            
-                            .footer__col.subscribe__col
-                                h2.widget__title Subscribe
-                                p Subscribe to our mailing list to get the latest updates.
-                                form(action='index.html')
-                                    input(type='email', placeholder='Email')
-                                    button(type='submit')
-                                        i.fas.fa-paper-plane
-            .copyright
-                .container
-                    .copyright__wrapper
-                        .copyright__inner
-                            p
-                                | Copyrights &copy; 2019 - 
-                                a(href='https://imransdesign.com/') Imran Hossain
-                                | ,  All Rights Reserved.
-                        .copyright-social__wrapper
-                            ul
-                                li
-                                    a(href='#', target='_blank')
-                                        i.fab.fa-facebook-f
-                                li
-                                    a(href='#', target='_blank')
-                                        i.fab.fa-twitter
-                                li
-                                    a(href='#', target='_blank')
-                                        i.fab.fa-instagram
-                                li
-                                    a(href='#', target='_blank')
-                                        i.fab.fa-linkedin
-                                li
-                                    a(href='#', target='_blank')
-                                        i.fab.fa-dribbble
+            section.list-information
+                .list-information__list-container
+                    .icon-truck.list-information__icon-border
+                    .list-information__all-inform
+                        h4.list-information__title Free Shipping
+                        p.list-information__text When order over $75
+                .list-information__list-container
+                    .icon-volume-control-phone.list-information__icon-border
+                    .list-information__all-inform
+                        h4.list-information__title 24/7 Support
+                        p.list-information__text Get support all day
+                .list-information__list-container
+                    .icon-arrows-cw.list-information__icon-border
+                    .list-information__all-inform
+                        h4.list-information__title Refund
+                        p.list-information__text Get refund within 3 days!
+            section.section-product-promotion
+                .section-product-promotion__container-promotion-info
+                    .section-product-promotion__img-product-promotion
+                        img(src='img/product-promotion.jpg')
+                        .section-product-promotion__store-promotion-price
+                            .section-product-promotion__store-other-price
+                                span.section-product-promotion__price
+                                    strong 30%
+                                    br
+                                    | per kg
+                    .section-product-promotion__product-promotion-inform
+                        h1.section-product-promotion__section-title
+                            span.color-word Deal
+                            |  of the month
+                        span HIKAN STRWABERRY
+                        p
+                            | Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea.
+                            | Perspiciatis unde omnis iste natus error sit voluptatem accusant
+                        .section-product-promotion__box-time
+                            .section-product-promotion__time-action
+                                span.color-word 00
+                                p Days
+                            .section-product-promotion__time-action
+                                span.color-word 00
+                                p Hours
+                            .section-product-promotion__time-action
+                                .color-word 00
+                                p Mins
+                            .section-product-promotion__time-action
+                                span.color-word 00
+                                p Secs
+                        button.btn-main.btn-add-to-card.icon-basket Add to card
+            section.local-shop-owner
+                .local-shop-owner__container
+                    .local-shop-owner__avatar
+                        img(src='img/avatar/avatar1.png')
+                    .local-shop-owner__name
+                        span Saira Hakim
+                        p Local shop owner
+                    .local-shop-owner__inform
+                        p
+                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
+                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
+                            | inventore Sed ut perspiciatis unde omnis iste natus error
+                            | sit voluptatem accusantium "
+                        p.icon-quote-right
+                .local-shop-owner__container.local-shop-owner_hidden
+                    .local-shop-owner__avatar
+                        img(src='img/avatar/avatar2.png')
+                    .local-shop-owner__name
+                        span Jacob Sikim
+                        p Local shop owner
+                    .local-shop-owner__inform
+                        p
+                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
+                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
+                            | inventore Sed ut perspiciatis unde omnis iste natus error
+                            | sit voluptatem accusantium "
+                        p.icon-quote-right
+                .local-shop-owner__container.local-shop-owner_hidden
+                    .local-shop-owner__avatar
+                        img(src='img/avatar/avatar3.png')
+                    .local-shop-owner__name
+                        span David Niph
+                        p Local shop owner
+                    .local-shop-owner__inform
+                        p
+                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
+                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
+                            | inventore Sed ut perspiciatis unde omnis iste natus error
+                            | sit voluptatem accusantium "
+                        p.icon-quote-right  
+
+            include ./homepage-components/latest-news.pug
+
+            include ./homepage-components/carousel.pug
+            
+            include ./footer-components/footer.pug
 
 

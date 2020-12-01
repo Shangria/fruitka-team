@@ -4,47 +4,8 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Font Awesome 5 Free";
-    src: url("../webfonts/fa-brands-400.eot") format("eot"),
-        url("../webfonts/fa-brands-400.eot") format("eot"),
-        url("../webfonts/fa-brands-400.woff") format("woff"),
-        url("../webfonts/fa-brands-400.woff2") format("woff"),
-        url("../webfonts/fa-brands-400.ttf") format("truetype"),
-        url("../webfonts/fa-brands-400.svg") format("svg");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Font Awesome 5 Free";
-    src: url("../webfonts/fa-regular-400.eot") format("eot"),
-        url("../webfonts/fa-regular-400.eot") format("eot"),
-        url("../webfonts/fa-regular-400.woff") format("woff"),
-        url("../webfonts/fa-regular-400.woff2") format("woff"),
-        url("../webfonts/fa-regular-400.ttf") format("truetype"),
-        url("../webfonts/fa-regular-400.svg") format("svg");
-    font-weight: 400;
-    font-style: solid;
-}
-
-@font-face {
-    font-family: "Font Awesome 5 Free";
-    src: url("../webfonts/fa-solid-900.eot") format("eot"),
-        url("../webfonts/fa-solid-900.eot") format("eot"),
-        url("../webfonts/fa-solid-900.woff") format("woff"),
-        url("../webfonts/fa-solid-900.woff2") format("woff"),
-        url("../webfonts/fa-solid-900.ttf") format("truetype"),
-        url("../webfonts/fa-solid-900.svg") format("svg");
-    font-weight: 900;
-    font-style: solid;
-}
-
-
-.fa,
-.far,
-.fas {
-    font-family: "Font Awesome 5 Free";
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -56,33 +17,45 @@ a {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 14px;
     letter-spacing: 0.1px;
     line-height: 1.8;
-    color: #051922;
 }
 
 .latest-news {
     padding: 150px 0;
 }
 
-.container {
-    width: 100%;
+.latest-news__container {
+    max-width: 1170px;
+    padding: 15px;
     margin: 0 auto;
 }
 
-.news-title__wrapper {
+.row {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.latest-news__col {
+    width: 33.3%;
+    margin: 0 10px;
+}
+
+.latest-news-title__wrapper {
     text-align: center;
     margin-bottom: 80px;
     position: relative;
 
-    h3 {
+    .latest-news-title {
         font-size: 40px;
         position: relative;
         padding-bottom: 15px;
         margin-bottom: 28px;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
 
         &::after {
             content: '';
@@ -96,41 +69,26 @@ p {
             margin: 0 auto;
         }
 
-        span {
+        .latest-news-title__item {
             color: #F28123;
         }
     }
-
-    p {
-        font-size: 15px;
-        color: #555;
-        line-height: 1.8;
-    }
 }
 
-.row {
-    display: flex;
-    margin: 0 auto;
-    width: 90%;
-}
-
-.col {
-    padding: 0 15px;
-}
-
-.single-latest-news {
+.single-latest-news__wrapper {
     margin-bottom: 30px;
     -webkit-box-shadow: 0 0 20px #dddddd;
     box-shadow: 0 0 20px #dddddd;
     transition: 0.3s;
 
-    h3 {
+    .single-latest-news__title {
+        font-family: 'Poppins';
         font-size: 20px;
         line-height: 1.25em;
         font-weight: 600;
         margin-bottom: 20px;
 
-        a {
+        .single-latest-news__link {
             color: #051922;
         }
     }
@@ -154,18 +112,18 @@ p {
 }
 
 .news__first__background {
-    background-image: url(../img/latest-news/news-bg-1.jpg);
+    background-image: url(../../img/latest-news/news-bg-1.jpg);
 }
 
 .news__second__background {
-    background-image: url(../img/latest-news/news-bg-2.jpg);
+    background-image: url(../../img/latest-news/news-bg-2.jpg);
 }
 
 .news__third__background {
-    background-image: url(../img/latest-news/news-bg-3.jpg);
+    background-image: url(../../img/latest-news/news-bg-3.jpg);
 }
 
-.news__text__box {
+.latest-news-text__box {
     padding: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -175,8 +133,8 @@ p {
     margin-bottom: 15px;
 }
 
-p.blog-meta {
-    span {
+.single-latest-news__meta {
+    .meta-item {
         margin-right: 15px;
         opacity: 0.6;
         color: #051922;
@@ -186,47 +144,18 @@ p.blog-meta {
             margin-right: 0;
         }
 
-        i {
+        .fa {
             margin-right: 5px;
         }
     }
 }
 
-.fa {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-.far {
-    font-family: "Font Awesome 5 Free";
-}
-
-.fas {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-.fab {
-    font-family: "Font Awesome 5 Free";
-}
-
-.fa-user {
-    &:before {
-        content: "\f007";
-    }
-}
-
-.fa-calendar {
-    &:before {
-        content: "\f133";
-    }
-}
-
-.news__p {
+.latest-news__p {
     margin-bottom: 30px;
 }
 
-a.read-more_button {
+.latest-news_button {
+    font-family: "Open Sans", sans-serif;
     display: inline-block;
     margin-top: 15px;
     color: #051922;
@@ -238,30 +167,19 @@ a.read-more_button {
     }
 }
 
-.fa-angle-right {
-    &:before {
-        content: "\f105";
-    }
-}
-
-.news-button_wrapper {
+.news-button__wrapper {
     text-align: center;
 }
 
-.latest-news {
-    a.news__button {
-        margin-top: 80px;
-    }
-}
-
-a.news__button {
+.news__button {
     transition: 0.3s;
     font-family: 'Poppins', sans-serif;
     display: inline-block;
     background-color: #F28123;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 50px;
+    margin-top: 80px;
 
     &:hover {
         background-color: #051922;
@@ -269,29 +187,29 @@ a.news__button {
     }
 }
 
+.logo-carousel__container {
+    max-width: 1170px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
 .logo-carousel__wrapper {
     background-color: #f5f5f5;
     padding: 50px 0;
 }
 
-.logo__row {
-    width: 79%;
-    margin: 0 auto;
-}
-
 .logo-carousel__inner {
     display: flex;
+    justify-content: center;
 }
 
-.single-logo_item {
+.single-logo-carousel__item {
     transition: 0.3s;
     transition: 0.3s;
 
-    img {
-        margin: 0 38px;
-    }
-
-    &:hover {
-        opacity: 0.7;
+    .logo-carousel_img {
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
