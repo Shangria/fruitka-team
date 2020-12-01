@@ -1,10 +1,42 @@
-.footer__area {
+.footer__wrapper {
     background-color: #051922;
     color: #fff;
-    padding: 150px 0;
 }
 
-h2.widget__title {
+.footer__container {
+    padding: 150px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.footer__inner {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer__col {
+    .footer-widget__p {
+        color: #fff;
+        opacity: 0.7;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    li {
+        opacity: 0.7;
+        margin-bottom: 10px;
+        line-height: 1.8;
+        font-size: 14px;
+        list-style: none;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.footer-widget__title {
     font-size: 24px;
     font-weight: 500;
     position: relative;
@@ -23,63 +55,34 @@ h2.widget__title {
     }
 }
 
-.footer__inner {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer__col {
-    p {
+.footer__col.get-in-touch__col {
+    .get-in-touch__link {
+        transition: 0.3s;
+        text-decoration: none;
         color: #fff;
-        opacity: 0.7;
-        line-height: 1.8;
-        margin-bottom: 18px;
-    }
+        display: inline-block;
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        li {
-            opacity: 0.7;
-            margin-bottom: 10px;
-            line-height: 1.8;
-
-            a {
-                color: #fff;
-            }
+        &:hover {
+            color: #f59d53;
         }
-    }
-}
-
-p {
-    &:last-child {
-        margin: 0;
     }
 }
 
 .footer__col.pages__col {
     ul {
         li {
-            position: relative;
-            padding-left: 20px;
-
             a {
                 transition: 0.3s;
                 text-decoration: none;
-                color: #fff;
-                display: block;
+                display: inline-block;
             }
 
-            &:before {
-                position: absolute;
-                left: 0;
-                top: 0;
-                content: "\f105";
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                color: #F28123;
+            .fa-angle-right {
+                &:before {
+                    font-weight: 900;
+                    color: #F28123;
+                    margin-right: 10px;
+                }
             }
 
             &:hover {
@@ -92,8 +95,8 @@ p {
 }
 
 .footer__col.subscribe__col {
-    form {
-        input[type=email] {
+    .footer-widget__form {
+        .footer-widget__input[type=email] {
             border: none;
             background-color: #012738;
             width: 78%;
@@ -101,9 +104,10 @@ p {
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             color: #fff;
+            font-family: 'Open Sans', sans-serif;
         }
 
-        button {
+        .footer-widget__button {
             transition: 0.3s;
             width: 20%;
             border: none;
@@ -122,17 +126,11 @@ p {
     }
 }
 
-.fa-paper-plane {
-    &:before {
-        content: "\f1d8";
-    }
-}
-
 .copyright {
     background-color: #051922;
     border-top: 1px solid #232a35;
 
-    p {
+    .copyright__p {
         margin: 0;
         color: #fff;
         opacity: 0.7;
@@ -140,7 +138,7 @@ p {
         font-size: 15px;
     }
 
-    a {
+    .copyright__a {
         color: #F28123;
         font-weight: 700;
 
@@ -150,13 +148,12 @@ p {
     }
 }
 
-.copyright__wrapper {
-    width: 75%;
-    margin: 0 auto;
+.copyright__container {
     display: flex;
     justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
 }
-
 
 .copyright-social__wrapper {
     ul {
@@ -173,43 +170,11 @@ p {
                 opacity: 0.7;
                 padding: 16px 10px;
                 display: block;
+
+                &:hover {
+                    color: #f59d53;
+                }
             }
         }
-    }
-}
-
-.fab {
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 400;
-    font-style: normal;
-}
-
-.fab.fa-facebook-f {
-    &:before {
-        content: "\f39e";
-    }
-}
-
-.fa-twitter {
-    &:before {
-        content: "\f099";
-    }
-}
-
-.fa-instagram {
-    &:before {
-        content: "\f16d";
-    }
-}
-
-.fa-linkedin {
-    &:before {
-        content: "\f08c";
-    }
-}
-
-.fa-dribbble {
-    &:before {
-        content: "\f17d";
     }
 }
