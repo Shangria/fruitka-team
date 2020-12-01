@@ -1,12 +1,18 @@
 .footer__wrapper {
     background-color: #051922;
     color: #fff;
+}
+
+.footer__container {
     padding: 150px 0;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .footer__inner {
     width: 25%;
     padding: 0 15px;
+
 }
 
 .footer__col {
@@ -22,6 +28,7 @@
         margin-bottom: 10px;
         line-height: 1.8;
         font-size: 14px;
+        list-style: none;
 
         a {
             color: #fff;
@@ -147,11 +154,11 @@
     }
 }
 
-.copyright__wrapper {
-    width: 75%;
-    margin: 0 auto;
+.copyright__container {
     display: flex;
     justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .copyright-social__wrapper {
