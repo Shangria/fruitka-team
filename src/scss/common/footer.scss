@@ -1,1 +1,215 @@
+.footer__area {
+    background-color: #051922;
+    color: #fff;
+    padding: 150px 0;
+}
 
+h2.widget__title {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+    color: #fff;
+
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 2px;
+        background-color: #F28123;
+        content: "";
+    }
+}
+
+.footer__inner {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer__col {
+    p {
+        color: #fff;
+        opacity: 0.7;
+        line-height: 1.8;
+        margin-bottom: 18px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            opacity: 0.7;
+            margin-bottom: 10px;
+            line-height: 1.8;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+p {
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.footer__col.pages__col {
+    ul {
+        li {
+            position: relative;
+            padding-left: 20px;
+
+            a {
+                transition: 0.3s;
+                text-decoration: none;
+                color: #fff;
+                display: block;
+            }
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                color: #F28123;
+            }
+
+            &:hover {
+                a {
+                    color: #F28123;
+                }
+            }
+        }
+    }
+}
+
+.footer__col.subscribe__col {
+    form {
+        input[type=email] {
+            border: none;
+            background-color: #012738;
+            width: 78%;
+            padding: 15px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: #fff;
+        }
+
+        button {
+            transition: 0.3s;
+            width: 20%;
+            border: none;
+            background-color: #012738;
+            color: #F28123;
+            padding: 14px 0;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #F28123;
+                color: #051922;
+            }
+        }
+    }
+}
+
+.fa-paper-plane {
+    &:before {
+        content: "\f1d8";
+    }
+}
+
+.copyright {
+    background-color: #051922;
+    border-top: 1px solid #232a35;
+
+    p {
+        margin: 0;
+        color: #fff;
+        opacity: 0.7;
+        padding: 16px 0;
+        font-size: 15px;
+    }
+
+    a {
+        color: #F28123;
+        font-weight: 700;
+
+        &:hover {
+            color: #f59d53;
+        }
+    }
+}
+
+.copyright__wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyright-social__wrapper {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 16px;
+                color: #fff;
+                opacity: 0.7;
+                padding: 16px 10px;
+                display: block;
+            }
+        }
+    }
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fab.fa-facebook-f {
+    &:before {
+        content: "\f39e";
+    }
+}
+
+.fa-twitter {
+    &:before {
+        content: "\f099";
+    }
+}
+
+.fa-instagram {
+    &:before {
+        content: "\f16d";
+    }
+}
+
+.fa-linkedin {
+    &:before {
+        content: "\f08c";
+    }
+}
+
+.fa-dribbble {
+    &:before {
+        content: "\f17d";
+    }
+}

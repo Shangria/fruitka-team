@@ -1,5 +1,14 @@
-@import "./common/header";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap");
 
-@import "./common/global";
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
 
-@import "./common/footer";
+@import "./common/header.scss";
+
+@import "./common/global.scss";
+
+@import "./common/footer.scss";
+
+@import "./common/media.scss";
