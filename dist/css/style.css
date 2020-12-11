@@ -160,8 +160,7 @@ p {
 
 .row {
   display: flex;
-  margin: 0 auto;
-  width: 90%; }
+  margin: 0 auto; }
 
 .latest-news__col {
   width: 33.3%;
@@ -382,9 +381,6 @@ p {
   .footer__col.subscribe__col .footer-widget__form .footer-widget__button:hover {
     background-color: #F28123;
     color: #051922; }
-
-.fa-paper-plane:before {
-  content: "\f1d8"; }
 
 .copyright {
   background-color: #051922;
