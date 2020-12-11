@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
+    <title>Fruitzetked</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&amp;family=Poppins:wght@400;700&amp;display=swap"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <header class="head">
       <nav class="head__navigation">
-        <div class="head__img-logo"><a class="head__logo-link" href="#"><img src="img/logo.png"/></a></div>
+        <div class="head__img-logo"><a class="head__logo-link" href="#"><img src="../img/logo.png"/></a></div>
         <ul class="head__menu">
           <li class="head__list-menu"><a class="head__link" href="#">Home</a></li>
           <li class="head__list-menu"><a class="head__link" href="#">About</a></li>
@@ -25,7 +24,7 @@
       </nav>
     </header>
     <main class="wrapper">
-      <div class="wrapper__banner-opacity wrapper__banner">
+      <section class="wrapper__banner-opacity wrapper__banner">
         <div class="wrapper__banner-content">
           <h3 class="wrapper__title-max">Fresh &amp; Organic</h3>
           <h1 class="wrapper__title-min">Delicious Seasonal Fruits</h1>
@@ -34,7 +33,7 @@
             <button class="wrapper__btn-contact btn-main"> Contact Us</button>
           </div>
         </div>
-      </div>
+      </section>
       <section class="list-information">
         <div class="list-information__list-container">
           <div class="icon-truck list-information__icon-border"></div>
@@ -58,9 +57,38 @@
           </div>
         </div>
       </section>
+      <section class="products">
+        <div class="products__container">
+          <h3 class="products__title"> <span>Our </span>Products </h3>
+          <p class="products__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Aliquid, fuga quas itaque eveniet beatae optio.
+          </p>
+        </div>
+        <div class="products__container">
+          <div class="products__col"><img class="products__img" src="../img/products/product-img-1.jpg" alt="Strawberry"/>
+            <div class="products__box">
+              <h3 class="products__box-title">Strawberry</h3>
+              <div class="products__box-text"><span>Per Kg</span>85$</div><a class="products__box-button" href="#"> <i class="fa fa-shopping-cart products__icon">                     </i>Add to Cart</a>
+            </div>
+          </div>
+          <div class="products__col"><img class="products__img" src="../img/products/product-img-2.jpg" alt="Berry"/>
+            <div class="products__box">
+              <h3 class="products__box-title">Berry</h3>
+              <div class="products__box-text"><span>Per Kg</span>70$</div><a class="products__box-button" href="#"> <i class="fa fa-shopping-cart products__icon">                     </i>Add to Cart</a>
+            </div>
+          </div>
+          <div class="products__col"><img class="products__img" src="../img/products/product-img-3.jpg" alt="Lemon"/>
+            <div class="products__box">
+              <h3 class="products__box-title">Lemon</h3>
+              <div class="products__box-text"><span>Per Kg</span>35$</div><a class="products__box-button" href="#"> <i class="fa fa-shopping-cart products__icon">                       </i>Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-product-promotion">
         <div class="section-product-promotion__container-promotion-info">
-          <div class="section-product-promotion__img-product-promotion"><img src="img/product-promotion.jpg"/>
+          <div class="section-product-promotion__img-product-promotion"><img src="../img/product-promotion.jpg"/>
             <div class="section-product-promotion__store-promotion-price">
               <div class="section-product-promotion__store-other-price"><span class="section-product-promotion__price"><strong>30%</strong><br/>per kg</span></div>
             </div>
@@ -92,7 +120,7 @@
       </section>
       <section class="local-shop-owner">
         <div class="local-shop-owner__container">
-          <div class="local-shop-owner__avatar"><img src="img/avatar/avatar1.png"/></div>
+          <div class="local-shop-owner__avatar"><img src="../img/avatar/avatar1.png"/></div>
           <div class="local-shop-owner__name"><span>Saira Hakim</span>
             <p>Local shop owner</p>
           </div>
@@ -107,7 +135,7 @@
           </div>
         </div>
         <div class="local-shop-owner__container local-shop-owner_hidden">
-          <div class="local-shop-owner__avatar"><img src="img/avatar/avatar2.png"/></div>
+          <div class="local-shop-owner__avatar"><img src="../img/avatar/avatar2.png"/></div>
           <div class="local-shop-owner__name"><span>Jacob Sikim</span>
             <p>Local shop owner</p>
           </div>
@@ -122,7 +150,7 @@
           </div>
         </div>
         <div class="local-shop-owner__container local-shop-owner_hidden">
-          <div class="local-shop-owner__avatar"><img src="img/avatar/avatar3.png"/></div>
+          <div class="local-shop-owner__avatar"><img src="../img/avatar/avatar3.png"/></div>
           <div class="local-shop-owner__name"><span>David Niph</span>
             <p>Local shop owner</p>
           </div>
@@ -135,6 +163,32 @@
             </p>
             <p class="icon-quote-right"> </p>
           </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description__inner">
+          <div class="description__elem description__video"><a class="description__video-btn" href="#"><i class="fa fa-play"></i></a></div>
+          <div class="description__elem description__content"><span class="description__top-subtitle">Since Year 1999</span>
+            <h2 class="description__title">
+               We are <span>Fruitkha</span></h2>
+            <p class="description__text">
+               Etiam vulputate ut augue vel sodales. 
+              In sollicitudin neque et massa porttitor vestibulum ac vel nisi. 
+              Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. 
+              Nam eu molestie lorem.
+            </p>
+            <p class="description__text">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.
+            </p><a class="description__button" href="#">know more</a>
+          </div>
+        </div>
+      </section>
+      <section class="shop-banner">
+        <div class="shop-banner__inner">
+          <h3 class="shop-banner__title">December sale is on!<br/>with big <span>Discount...</span></h3>
+          <div class="shop-banner__box"><span>
+               Sale!<br/>Upto</span>50%<span>off</span></div><a class="shop-banner__button" href="#">Shop Now  </a>
         </div>
       </section>
       <section class="latest-news">
@@ -191,70 +245,70 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footer__wrapper">
-          <div class="footer__container">
-            <div class="footer__row row">
-              <div class="footer__inner">
-                <div class="footer__col about-us__col">
-                  <h2 class="footer-widget__title">About us</h2>
-                  <p class="footer-widget__p">Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                </div>
-              </div>
-              <div class="footer__inner">
-                <div class="footer__col get-in-touch__col">
-                  <h2 class="footer-widget__title">Get in Touch</h2>
-                  <ul>
-                    <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-                    <li>support@fruitkha.com</li>
-                    <li><a class="get-in-touch__link" href="#">+00 111 222 3333</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer__inner">
-                <div class="footer__col pages__col">
-                  <h2 class="footer-widget__title">Pages</h2>
-                  <ul>
-                    <li><a href="index.html"> <i class="fa fa-angle-right"> </i> Home</a></li>
-                    <li><a href="about.html"> <i class="fa fa-angle-right"> </i> About</a></li>
-                    <li><a href="services.html"> <i class="fa fa-angle-right"> </i> Shop</a></li>
-                    <li><a href="news.html"> <i class="fa fa-angle-right"> </i> News</a></li>
-                    <li><a href="contact.html"> <i class="fa fa-angle-right"> </i> Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer__inner">           
-                <div class="footer__col subscribe__col">
-                  <h2 class="footer-widget__title">Subscribe</h2>
-                  <p class="footer-widget__p">Subscribe to our mailing list to get the latest updates.</p>
-                  <form class="footer-widget__form" action="index.html">
-                    <input class="footer-widget__input" type="email" placeholder="Email"/>
-                    <button class="footer-widget__button" type="submit"><i class="fa fa-paper-plane"></i></button>
-                  </form>
-                </div>
+    </main>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__container">
+          <div class="footer__row row">
+            <div class="footer__inner">
+              <div class="footer__col about-us__col">
+                <h2 class="footer-widget__title">About us</h2>
+                <p class="footer-widget__p">Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
               </div>
             </div>
-          </div>
-          <div class="copyright">
-            <div class="copyright__wrapper">
-              <div class="copyright__container">
-                <div class="copyright__inner">
-                  <p class="copyright__p">Copyrights &copy; 2019 - <a class="copyright__a" href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
-                </div>
-                <div class="copyright-social__wrapper">
-                  <ul>
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                  </ul>
-                </div>
+            <div class="footer__inner">
+              <div class="footer__col get-in-touch__col">
+                <h2 class="footer-widget__title">Get in Touch</h2>
+                <ul>
+                  <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+                  <li>support@fruitkha.com</li>
+                  <li><a class="get-in-touch__link" href="#">+00 111 222 3333</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__inner">
+              <div class="footer__col pages__col">
+                <h2 class="footer-widget__title">Pages</h2>
+                <ul>
+                  <li><a href="index.html"> <i class="fa fa-angle-right"> </i> Home</a></li>
+                  <li><a href="about.html"> <i class="fa fa-angle-right"> </i> About</a></li>
+                  <li><a href="services.html"> <i class="fa fa-angle-right"> </i> Shop</a></li>
+                  <li><a href="news.html"> <i class="fa fa-angle-right"> </i> News</a></li>
+                  <li><a href="contact.html"> <i class="fa fa-angle-right"> </i> Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__inner">           
+              <div class="footer__col subscribe__col">
+                <h2 class="footer-widget__title">Subscribe</h2>
+                <p class="footer-widget__p">Subscribe to our mailing list to get the latest updates.</p>
+                <form class="footer-widget__form" action="index.html">
+                  <input class="footer-widget__input" type="email" placeholder="Email"/>
+                  <button class="footer-widget__button" type="submit"><i class="fa fa-paper-plane"></i></button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="copyright">
+          <div class="copyright__wrapper">
+            <div class="copyright__container">
+              <div class="copyright__inner">
+                <p class="copyright__p">Copyrights &copy; 2019 - <a class="copyright__a" href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+              </div>
+              <div class="copyright-social__wrapper">
+                <ul>
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
