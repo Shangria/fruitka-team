@@ -156,7 +156,8 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
-  transition: 0.3s; }
+  transition: 0.3s;
+  justify-content: center; }
 
 .btn-add-to-card {
   transition: background-color, color ease-out 5ms; }
