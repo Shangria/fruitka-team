@@ -15,6 +15,10 @@
 
 }
 
+.footer__row {
+    display: flex;
+}
+
 .footer__col {
     .footer-widget__p {
         color: #fff;
@@ -138,9 +142,10 @@
         font-size: 15px;
     }
 
-    .copyright__a {
+    .copyright__link {
         color: #F28123;
         font-weight: 700;
+        text-decoration: none;
 
         &:hover {
             color: #f59d53;
