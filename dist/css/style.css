@@ -189,7 +189,9 @@ img {
     flex-direction: column;
     align-items: center; }
     .wrapper .wrapper__banner-content .wrapper__box-button {
-      display: flex; }
+      display: flex;
+      width: 350px;
+      justify-content: space-around; }
     .wrapper .wrapper__banner-content .wrapper__title-max {
       color: #f28123;
       font-weight: 700;
