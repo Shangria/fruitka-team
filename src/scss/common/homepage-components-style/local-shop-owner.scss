@@ -1,0 +1,56 @@
+.local-shop-owner {
+  font-family: sans-serif;
+  width: 100%;
+  height: 600px;
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+
+  .local-shop-owner__container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .local-shop-owner__avatar {
+    width: 100px;
+    padding-bottom: 15px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .local-shop-owner__name {
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      font-size: 19px;
+    }
+
+    p {
+      color: #828c91;
+      padding-top: 15px;
+      font-size: 13px;
+    }
+  }
+
+  .local-shop-owner__inform {
+    padding-top: 15px;
+    color: #999999;
+    line-height: 1.8;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+
+    .icon-quote-right {
+      font-size: 60px;
+    }
+  }
+
+  .local-shop-owner_hidden {
+    display: none;
+  }
+}
