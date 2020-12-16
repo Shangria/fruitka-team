@@ -879,8 +879,3 @@ img {
       display: block; }
       .copyright-social__wrapper ul li a:hover {
         color: #f59d53; }
-
-@media screen and (max-width: 1000px) {
-  .products__container:last-child {
-    flex-wrap: wrap;
-    flex-direction: column; } }
