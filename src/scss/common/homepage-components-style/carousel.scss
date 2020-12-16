@@ -1,0 +1,27 @@
+.logo-carousel__container {
+    max-width: 1170px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  
+  .logo-carousel__wrapper {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .logo-carousel__inner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .single-logo-carousel__item {
+    transition: 0.3s;
+    transition: 0.3s;
+  
+    .logo-carousel_img {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  
