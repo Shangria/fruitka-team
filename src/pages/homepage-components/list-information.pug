@@ -1,16 +1,8 @@
 section.list-information
-    .list-information__list-container
-        i.fa.fa-truck.list-information__icon-border
-        .list-information__all-inform
-            h4.list-information__title Free Shipping
-            p.list-information__text When order over $75
-    .list-information__list-container
-        i.fa.fa-volume-control-phone.list-information__icon-border
-        .list-information__all-inform
-            h4.list-information__title 24/7 Support
-            p.list-information__text Get support all day
-    .list-information__list-container
-        i.fa.fa-refresh.list-information__icon-border
-        .list-information__all-inform
-            h4.list-information__title Refund
-            p.list-information__text Get refund within 3 days!
+    - arrListInformation = [{h4: 'Free Shipping', p: 'When order over $75'}, {h4: '24/7 Support', p: 'Get support all day'}, {h4: 'Refund', p: 'Get refund within 3 days!'}]
+    each element in arrListInformation
+        .list-information__list-container
+            i.fa.fa-truck.list-information__icon-border
+            .list-information__all-inform
+                h4.list-information__title= element.h4
+                p.list-information__text= element.p
