@@ -1,0 +1,60 @@
+.shop-banner {
+  background-image: url(../../img/1.jpg);
+  background-size: cover;
+}
+
+.shop-banner__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 110px 15px;
+}
+
+.shop-banner__title {
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+.shop-banner__title span {
+  color: #f28123;
+}
+
+.shop-banner__box {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 1.8;
+  color: #f28123;
+}
+
+.shop-banner__box span {
+  font-size: 24px;
+  line-height: 1em;
+  color: #051922;
+  font-weight: 400;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.shop-banner__box span:last-of-type {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.shop-banner__button {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background-color: #f28123;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.shop-banner__button:hover {
+  background-color: #051922;
+  color: #f28123;
+}
