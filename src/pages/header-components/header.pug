@@ -4,8 +4,8 @@ header.head
             a.head__logo-link(href='#')
                 img(src='../img/logo.png')
         ul.head__menu
-            -let arr = ['Home', 'About', 'Pages', 'News', 'Contact', 'Shop']
-            each element,i in arr
+            - arr = ['Home', 'About', 'Pages', 'News', 'Contact', 'Shop']
+            each element in arr
                 li.head__list-menu
                     a.head__link(href='#') #{element}
         .head__icon

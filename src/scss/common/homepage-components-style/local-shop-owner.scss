@@ -6,14 +6,14 @@
   display: flex;
   justify-content: center;
 
-  .local-shop-owner__container {
+  &__container {
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .local-shop-owner__avatar {
+  &__avatar {
     width: 100px;
     padding-bottom: 15px;
 
@@ -22,7 +22,7 @@
     }
   }
 
-  .local-shop-owner__name {
+  &__name {
     font-weight: bold;
     text-align: center;
 
@@ -37,7 +37,7 @@
     }
   }
 
-  .local-shop-owner__inform {
+  &__inform {
     padding-top: 15px;
     color: #999999;
     line-height: 1.8;
@@ -45,12 +45,12 @@
     text-align: center;
     font-size: 15px;
 
-    .icon-quote-right {
+    &&.icon-quote-right {
       font-size: 60px;
     }
   }
 
-  .local-shop-owner_hidden {
+  &_hidden {
     display: none;
   }
 }

@@ -3,14 +3,14 @@
   background: url("../../img/hero-bg.jpg") center center no-repeat fixed;
   background-size: cover;
 
-  .wrapper__banner {
+  &__banner {
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 100px;
   }
 
-  .wrapper__banner-opacity {
+  &__banner-opacity {
     width: 100%;
     height: 100%;
     content: "";
@@ -18,19 +18,19 @@
     background-color: rgba(7, 33, 46, 0.6);
   }
 
-  .wrapper__banner-content {
+  &__banner-content {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .wrapper__box-button {
+    &&_box-button {
       display: flex;
       width: 350px;
       justify-content: space-around;
     }
 
-    .wrapper__title-max {
+    &&_title-max {
       color: #f28123;
       font-weight: 700;
       text-transform: uppercase;
@@ -39,14 +39,14 @@
       font-family: "Open Sans", sans-serif;
     }
 
-    .wrapper__title-min {
+    &&__title-min {
       font-size: 64px;
       color: #fff;
       font-family: "Poppins", sans-serif;
     }
   }
 
-  .wrapper__btn-fruit-collection {
+  &__btn-fruit-collection {
     background-color: #f28123;
 
     &:hover {
@@ -55,7 +55,7 @@
     }
   }
 
-  .wrapper__btn-contact {
+  &__btn-contact {
     background: rgba(255, 255, 255, 0);
     border: #f28123 2px solid;
 

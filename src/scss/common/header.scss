@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 2;
 
-  .head__navigation {
+  &__navigation {
     display: flex;
     flex-wrap: nowrap;
     width: 70%;
@@ -14,11 +14,11 @@
     justify-content: space-between;
   }
 
-  .head__img-logo {
+  &__img-logo {
     width: 140px;
   }
 
-  .head__icon {
+  &__icon {
     width: 50px;
     font-size: 15px;
     display: flex;
@@ -45,7 +45,7 @@
     }
   }
 
-  .head__link {
+  &__link {
     transition: color linear 0.2s;
     text-decoration: none;
     color: white;
@@ -55,7 +55,7 @@
     }
   }
 
-  .head__menu {
+  &__menu {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -66,7 +66,7 @@
     font-family: "Open Sans", sans-serif;
   }
 
-  .head__list-menu:first-child .head__link {
+  &__list-menu:first-child .head__link {
     color: #F28123;
   }
 }
