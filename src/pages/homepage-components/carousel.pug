@@ -2,6 +2,11 @@ section.logo-carousel__wrapper
     div.logo-carousel__container
         div.logo-carousel__row
             div.logo-carousel__inner
+                - arrlogoCarouselInner = [{img: '../img/company-logos/1.png', img: '../img/company-logos/2.png',img: '../img/company-logos/3.png',img: '../img/company-logos/4.png',img: '../img/company-logos/5.png'}]
+                each element,i in arrlocalShopOwner
+                if i > 0
+                div(class='single-logo-carousel__item')
+                    
                 div.single-logo-carousel__item
                     img.logo-carousel_img(src='../img/company-logos/1.png', alt='')
                 div.single-logo-carousel__item
