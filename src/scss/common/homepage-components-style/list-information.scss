@@ -24,15 +24,15 @@
     line-height: 50px;
   }
 
-  &__all-inform {
+  .list-information__all-inform{
     padding-left: 15px;
 
-    &&__title {
+    .list-information__title {
       font-weight: bold;
       font-size: 17px;
     }
 
-    &&__text {
+    .list-information__text {
       font-size: 13px;
       margin-top: 5px;
       color: #5c5959;
