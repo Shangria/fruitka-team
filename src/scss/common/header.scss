@@ -1,4 +1,4 @@
-.head {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,26 +24,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
 
-    .icon-basket {
-      color: white;
-      padding-right: 20px;
-      transition: color linear 0.2s;
+  &__icon-basket {
+    color: white;
+    padding-right: 20px;
+    transition: color linear 0.2s;
 
-      &:hover {
-        color: #F28123;
-      }
-    }
-
-    .icon-search {
-      transition: color linear 0.2s;
-      color: white;
-
-      &:hover {
-        color: #F28123;
-      }
+    &:hover {
+      color: #F28123;
     }
   }
+
+  &__icon-search {
+    transition: color linear 0.2s;
+    color: white;
+
+    &:hover {
+      color: #F28123;
+    }
+  }
+
 
   &__link {
     transition: color linear 0.2s;
@@ -66,7 +67,8 @@
     font-family: "Open Sans", sans-serif;
   }
 
-  &__list-menu:first-child .head__link {
+  &__list-menu:first-child &__link {
     color: #F28123;
   }
 }
+
