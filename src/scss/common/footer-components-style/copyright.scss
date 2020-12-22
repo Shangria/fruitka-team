@@ -2,7 +2,7 @@
     background-color: #051922;
     border-top: 1px solid #232a35;
 
-    .copyright__wrapper {
+    &__wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 1170px;
@@ -14,11 +14,11 @@
         padding: 0;
         list-style: none;
 
-        &-item {
+        &_item {
             display: inline-block;
         }
 
-        &-link {
+        &_link {
             font-size: 16px;
             color: #fff;
             opacity: 0.7;

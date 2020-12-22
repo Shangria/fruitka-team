@@ -3,8 +3,8 @@ div.footer__col
     ul
     - arrFooterPagesCol = [{href:"index.html", linkName: "Home"}, {href:"about.html", linkName: "About"}, {href:"services.html", linkName: "Shop"}, {href:"news.html", linkName: "News"}, {href:"contact.html", linkName: "Contact"}]
     each element in arrFooterPagesCol
-        li.footer__list-item
-            a.footer__list-item_link(href=element.href) 
+        li.footer__list_item
+            a.footer__list_item_link(href=element.href) 
                 i.fa.fa-angle-right.footer__icon 
                 =element.linkName
         
