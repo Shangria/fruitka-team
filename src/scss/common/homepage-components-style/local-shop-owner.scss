@@ -12,42 +12,42 @@
     flex-direction: column;
     align-items: center;
 
+  }
 
-    .local-shop-owner__avatar {
-      width: 100px;
-      padding-bottom: 15px;
+  &__avatar {
+    width: 100px;
+    padding-bottom: 15px;
 
-      img {
-        border-radius: 50%;
-      }
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      font-size: 19px;
     }
 
-    .local-shop-owner__name {
-      font-weight: bold;
-      text-align: center;
-
-      span {
-        font-size: 19px;
-      }
-
-      p {
-        color: #828c91;
-        padding-top: 15px;
-        font-size: 13px;
-      }
-    }
-
-    .local-shop-owner__inform {
+    p {
+      color: #828c91;
       padding-top: 15px;
-      color: #999999;
-      line-height: 1.8;
-      font-style: italic;
-      text-align: center;
-      font-size: 15px;
+      font-size: 13px;
+    }
+  }
 
-      .icon-quote-right {
-        font-size: 60px;
-      }
+  &__inform {
+    padding-top: 15px;
+    color: #999999;
+    line-height: 1.8;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+
+    .icon-quote-right {
+      font-size: 60px;
     }
   }
 
@@ -55,3 +55,5 @@
     display: none;
   }
 }
+
+
