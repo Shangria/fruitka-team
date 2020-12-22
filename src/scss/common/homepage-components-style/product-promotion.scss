@@ -39,12 +39,6 @@
       line-height: 1.5em;
       color: #5c5959;
     }
-
-    &&__section-title {
-      font-size: 45px;
-      font-weight: bolder;
-      padding-bottom: 10px;
-    }
   }
 
   .section-product-promotion__section-title {
@@ -55,14 +49,8 @@
     background-color: #f28123;
     border-radius: 999px;
     font-size: 0.8rem;
+    justify-content: center;
 
-    .section-product-promotion__price {
-      margin: 0 auto;
-
-      strong {
-        font-size: 2em;
-      }
-    }
   }
 
   .section-product-promotion__box-time {

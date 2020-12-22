@@ -190,35 +190,35 @@ img {
     content: "";
     z-index: -1;
     background-color: rgba(7, 33, 46, 0.6); }
-  .wrapper__banner-content {
+  .wrapper .wrapper__banner-content {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .wrapper__banner-content_box-button {
+    .wrapper .wrapper__banner-content .wrapper__box-button {
       display: flex;
       width: 350px;
       justify-content: space-around; }
-    .wrapper__banner-content_title-max {
+    .wrapper .wrapper__banner-content .wrapper__title-max {
       color: #f28123;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 7px;
       font-size: 15px;
       font-family: "Open Sans", sans-serif; }
-    .wrapper__banner-content__title-min {
+    .wrapper .wrapper__banner-content .wrapper__title-min {
       font-size: 64px;
       color: #fff;
       font-family: "Poppins", sans-serif; }
-  .wrapper__btn-fruit-collection {
+  .wrapper .wrapper__btn-fruit-collection {
     background-color: #f28123; }
-    .wrapper__btn-fruit-collection:hover {
+    .wrapper .wrapper__btn-fruit-collection:hover {
       background-color: #020202;
       color: #f28123; }
-  .wrapper__btn-contact {
+  .wrapper .wrapper__btn-contact {
     background: rgba(255, 255, 255, 0);
     border: #f28123 2px solid; }
-    .wrapper__btn-contact:hover {
+    .wrapper .wrapper__btn-contact:hover {
       background-color: #f28123; }
 
 .list-information {
@@ -242,12 +242,12 @@ img {
     color: #f28123;
     text-align: center;
     line-height: 50px; }
-  .list-information__all-inform {
+  .list-information .list-information__all-inform {
     padding-left: 15px; }
-    .list-information__all-inform__title {
+    .list-information .list-information__all-inform .list-information__title {
       font-weight: bold;
       font-size: 17px; }
-    .list-information__all-inform__text {
+    .list-information .list-information__all-inform .list-information__text {
       font-size: 13px;
       margin-top: 5px;
       color: #5c5959; }
@@ -265,10 +265,10 @@ img {
     width: 70%;
     background-color: #f5f5f5;
     padding-top: 100px; }
-  .section-product-promotion__img-product-promotion {
+  .section-product-promotion .section-product-promotion__img-product-promotion {
     position: relative;
     width: 900px; }
-  .section-product-promotion__store-promotion-price {
+  .section-product-promotion .section-product-promotion__store-promotion-price {
     width: 100px;
     height: 100px;
     background-color: #f49b49;
@@ -279,33 +279,26 @@ img {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .section-product-promotion__product-promotion-inform p {
+  .section-product-promotion .section-product-promotion__product-promotion-inform p {
     margin: 30px 0;
     font-size: 14px;
     line-height: 1.5em;
     color: #5c5959; }
-  .section-product-promotion__product-promotion-inform__section-title {
-    font-size: 45px;
-    font-weight: bolder;
-    padding-bottom: 10px; }
-  .section-product-promotion__store-other-price {
+  .section-product-promotion .section-product-promotion__section-title {
     display: flex;
     align-items: center;
     width: 90px;
     height: 90px;
     background-color: #f28123;
     border-radius: 999px;
-    font-size: 0.8rem; }
-    .section-product-promotion__store-other-price__price {
-      margin: 0 auto; }
-      .section-product-promotion__store-other-price__price strong {
-        font-size: 2em; }
-  .section-product-promotion__box-time {
+    font-size: 0.8rem;
+    justify-content: center; }
+  .section-product-promotion .section-product-promotion__box-time {
     display: flex;
     margin-bottom: 20px; }
-    .section-product-promotion__box-time p {
+    .section-product-promotion .section-product-promotion__box-time p {
       margin-top: 10px; }
-  .section-product-promotion_time-action {
+  .section-product-promotion .section-product-promotion__time-action {
     width: 80px;
     border: #f28123 2px solid;
     margin-left: 5px;
@@ -326,29 +319,29 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .local-shop-owner__avatar {
-    width: 100px;
-    padding-bottom: 15px; }
-    .local-shop-owner__avatar img {
-      border-radius: 50%; }
-  .local-shop-owner__name {
-    font-weight: bold;
-    text-align: center; }
-    .local-shop-owner__name span {
-      font-size: 19px; }
-    .local-shop-owner__name p {
-      color: #828c91;
+    .local-shop-owner__container .local-shop-owner__avatar {
+      width: 100px;
+      padding-bottom: 15px; }
+      .local-shop-owner__container .local-shop-owner__avatar img {
+        border-radius: 50%; }
+    .local-shop-owner__container .local-shop-owner__name {
+      font-weight: bold;
+      text-align: center; }
+      .local-shop-owner__container .local-shop-owner__name span {
+        font-size: 19px; }
+      .local-shop-owner__container .local-shop-owner__name p {
+        color: #828c91;
+        padding-top: 15px;
+        font-size: 13px; }
+    .local-shop-owner__container .local-shop-owner__inform {
       padding-top: 15px;
-      font-size: 13px; }
-  .local-shop-owner__inform {
-    padding-top: 15px;
-    color: #999999;
-    line-height: 1.8;
-    font-style: italic;
-    text-align: center;
-    font-size: 15px; }
-    .local-shop-owner__inform.icon-quote-right {
-      font-size: 60px; }
+      color: #999999;
+      line-height: 1.8;
+      font-style: italic;
+      text-align: center;
+      font-size: 15px; }
+      .local-shop-owner__container .local-shop-owner__inform .icon-quote-right {
+        font-size: 60px; }
   .local-shop-owner_hidden {
     display: none; }
 
@@ -385,7 +378,8 @@ img {
     line-height: 1.8; }
   .products__container:last-child {
     display: flex;
-    margin-top: 80px; }
+    margin-top: 80px;
+    list-style-type: none; }
   .products__col {
     width: 33.3%;
     padding: 20px;
@@ -439,159 +433,137 @@ img {
   max-width: 1170px;
   margin: 0 auto;
   padding: 120px 15px; }
-
-.description__inner {
-  display: flex; }
-
-.description__elem {
-  height: 100%;
-  width: 50%;
-  margin-right: 15px;
-  margin-left: 15px; }
-
-.description__video {
-  background-image: url(../../img/abt.jpg);
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  height: 450px; }
-
-.description__video::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #051922;
-  opacity: 0.3; }
-
-.description__video-btn {
-  position: absolute;
-  background-color: #f28123;
-  color: #051922;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  box-shadow: 0 0 20px #adadad; }
-
-.description__video-btn:hover {
-  background-color: #333;
-  color: #f28123; }
-
-.description__video-btn_icon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.description__content {
-  padding: 50px;
-  padding-left: 30px; }
-
-.description__top-subtitle {
-  font-size: 15px;
-  line-height: 1.6;
-  opacity: 0.8;
-  margin-bottom: 10px; }
-
-.description__title {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 45px;
-  margin-bottom: 18px; }
-
-.description__title span {
-  color: #f28123; }
-
-.description__text {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 10px; }
-
-.description__button {
-  font-family: "Poppins", sans-serif;
-  display: inline-block;
-  background-color: #f28123;
-  color: #fff;
-  padding: 10px 20px;
-  transition: 0.3s;
-  margin-top: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 50px; }
-
-.description__button:hover {
-  background-color: #051922;
-  color: #f28123; }
+  .description__inner {
+    display: flex; }
+  .description__elem {
+    height: 100%;
+    width: 50%;
+    margin-right: 15px;
+    margin-left: 15px; }
+  .description__video {
+    background-image: url(../../img/abt.jpg);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 450px; }
+  .description__video::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #051922;
+    opacity: 0.3; }
+  .description__video-btn {
+    position: absolute;
+    background-color: #f28123;
+    color: #051922;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #adadad; }
+  .description__video-btn:hover {
+    background-color: #333;
+    color: #f28123; }
+  .description__video-btn_icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .description__content {
+    padding: 50px;
+    padding-left: 30px; }
+  .description__top-subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 10px; }
+  .description__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 18px; }
+  .description__title span {
+    color: #f28123; }
+  .description__text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px; }
+  .description__button {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-color: #f28123;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.3s;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50px; }
+  .description__button:hover {
+    background-color: #051922;
+    color: #f28123; }
 
 .shop-banner {
   background-image: url(../../img/1.jpg);
   background-size: cover; }
-
-.shop-banner__inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 110px 15px; }
-
-.shop-banner__title {
-  font-size: 50px;
-  line-height: 1.2em; }
-
-.shop-banner__title span {
-  color: #f28123; }
-
-.shop-banner__box {
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 0.1px;
-  line-height: 1.8;
-  color: #f28123; }
-
-.shop-banner__box span {
-  font-size: 24px;
-  line-height: 1em;
-  color: #051922;
-  font-weight: 400;
-  text-align: center;
-  margin-right: 10px;
-  display: inline-block; }
-
-.shop-banner__box span:last-of-type {
-  margin-right: 0px;
-  margin-left: 10px; }
-
-.shop-banner__button {
-  font-family: "Poppins", sans-serif;
-  display: inline-block;
-  background-color: #f28123;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-size: 18px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s; }
-
-.shop-banner__button:hover {
-  background-color: #051922;
-  color: #f28123; }
+  .shop-banner__inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 110px 15px; }
+  .shop-banner__title {
+    font-size: 50px;
+    line-height: 1.2em; }
+  .shop-banner__title span {
+    color: #f28123; }
+  .shop-banner__box {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #f28123; }
+  .shop-banner__box span {
+    font-size: 24px;
+    line-height: 1em;
+    color: #051922;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 10px;
+    display: inline-block; }
+  .shop-banner__box span:last-of-type {
+    margin-right: 0px;
+    margin-left: 10px; }
+  .shop-banner__button {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-color: #f28123;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s; }
+  .shop-banner__button:hover {
+    background-color: #051922;
+    color: #f28123; }
 
 .latest-news {
   padding: 150px 0; }
