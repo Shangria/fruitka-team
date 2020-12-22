@@ -23,28 +23,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .wrapper__box-button{
-      display: flex;
-      width: 350px;
-      justify-content: space-around;
-    }
-
-    &&_title-max {
-      color: #f28123;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 7px;
-      font-size: 15px;
-      font-family: "Open Sans", sans-serif;
-    }
-
-    &&__title-min {
-      font-size: 64px;
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-    }
   }
+
+  &__box-button {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+  }
+
+  &__title-max {
+    color: #f28123;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  &__title-min {
+    font-size: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+
 
   &__btn-fruit-collection {
     background-color: #f28123;
