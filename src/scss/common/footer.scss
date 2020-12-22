@@ -1,133 +1,114 @@
-.footer__wrapper {
+.footer {
     background-color: #051922;
     color: #fff;
-}
 
-.footer__container {
-    padding: 150px 0;
-    max-width: 1170px;
-    margin: 0 auto;
-}
+    &__container {
+        padding: 150px 15px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
 
-.footer__inner {
-    width: 25%;
-    padding: 0 15px;
+    &__row {
+        display: flex;
+    }
 
-}
+    &__col {
+        width: 25%;
+        padding: 0 15px;
+    }
 
-.footer__row {
-    display: flex;
-}
+    &__title {
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        color: #fff;
 
-.footer__col {
-    .footer-widget__p {
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 20px;
+            height: 2px;
+            background-color: #F28123;
+            content: "";
+        }
+    }
+
+    &__text {
         color: #fff;
         opacity: 0.7;
         line-height: 1.8;
         margin-bottom: 18px;
+        font-size: 14px;
     }
 
-    li {
+    &__list-item {
         opacity: 0.7;
         margin-bottom: 10px;
         line-height: 1.8;
         font-size: 14px;
         list-style: none;
 
-        a {
+        &_link {
             color: #fff;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+
+            &:hover {
+                color: #f59d53;
+            }
         }
     }
-}
 
-.footer-widget__title {
-    font-size: 24px;
-    font-weight: 500;
-    position: relative;
-    padding-bottom: 20px;
-    margin-bottom: 18px;
-    color: #fff;
-
-    &:after {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 20px;
-        height: 2px;
-        background-color: #F28123;
-        content: "";
+    &__icon {
+        &:before {
+            font-weight: 900;
+            color: #F28123;
+            margin-right: 10px;
+        }
     }
-}
 
-.footer__col.get-in-touch__col {
-    .get-in-touch__link {
-        transition: 0.3s;
-        text-decoration: none;
+    &__input[type=email] {
+        border: none;
+        background-color: #012738;
+        width: 78%;
+        padding: 15px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
         color: #fff;
-        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__button {
+        transition: 0.3s;
+        width: 20%;
+        border: none;
+        background-color: #012738;
+        color: #F28123;
+        padding: 14px 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        cursor: pointer;
 
         &:hover {
-            color: #f59d53;
+            background-color: #F28123;
+            color: #051922;
         }
     }
 }
 
-.footer__col.pages__col {
-    ul {
-        li {
-            a {
-                transition: 0.3s;
-                text-decoration: none;
-                display: inline-block;
-            }
 
-            .fa-angle-right {
-                &:before {
-                    font-weight: 900;
-                    color: #F28123;
-                    margin-right: 10px;
-                }
-            }
 
-            &:hover {
-                a {
-                    color: #F28123;
-                }
-            }
-        }
-    }
-}
 
-.footer__col.subscribe__col {
-    .footer-widget__form {
-        .footer-widget__input[type=email] {
-            border: none;
-            background-color: #012738;
-            width: 78%;
-            padding: 15px;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            color: #fff;
-            font-family: 'Open Sans', sans-serif;
-        }
 
-        .footer-widget__button {
-            transition: 0.3s;
-            width: 20%;
-            border: none;
-            background-color: #012738;
-            color: #F28123;
-            padding: 14px 0;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
-            cursor: pointer;
 
-            &:hover {
-                background-color: #F28123;
-                color: #051922;
-            }
-        }
-    }
-}
+
+
+
+
 
 @import "./footer-components-style/copyright";
