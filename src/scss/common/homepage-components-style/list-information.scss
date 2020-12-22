@@ -1,23 +1,29 @@
-.list-information {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 150px;
+.list-information-wrapper {
   background-color: #f5f5f5;
-  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+
+  &__box {
+    max-width: 1170px;
+    display: flex;
+    height: 150px;
+    font-family: sans-serif;
+    min-width: 1140px;
+    justify-content: space-between;
+  }
 
   &__list-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 60px;
+    padding: 20px;
   }
 
   &__icon-border {
     width: 50px;
     height: 50px;
     border: #f28123 dotted 2px;
-    border-radius: 999px;
+    border-radius: 50%;
     font-size: 25px;
     color: #f28123;
     text-align: center;
@@ -26,16 +32,16 @@
 
   &__all-inform {
     padding-left: 15px;
+  }
 
-    &&__title {
-      font-weight: bold;
-      font-size: 17px;
-    }
+  &__title {
+    font-weight: bold;
+    font-size: 17px;
+  }
 
-    &&__text {
-      font-size: 13px;
-      margin-top: 5px;
-      color: #5c5959;
-    }
+  &__text {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #5c5959;
   }
 }
