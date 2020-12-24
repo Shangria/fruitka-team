@@ -1,0 +1,9 @@
+section.list-information-wrapper
+            .list-information-wrapper__box
+                    - arrListInformation = [{h4: 'Free Shipping', p: 'When order over $75'}, {h4: '24/7 Support', p: 'Get support all day'}, {h4: 'Refund', p: 'Get refund within 3 days!'}]
+                    each element in arrListInformation
+                        .list-information-wrapper__list-container
+                            i.fa.fa-truck.list-information-wrapper__icon-border
+                            .list-information-wrapper__all-inform
+                                h4.list-information-wrapper__title= element.h4
+                                p.list-information-wrapper__text= element.p
