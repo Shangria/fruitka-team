@@ -176,7 +176,7 @@ img {
 
 .wrapper {
   height: 100vh;
-  background: url("../../img/hero-bg.jpg") center center no-repeat fixed;
+  background: url("../img/hero-bg.jpg") center center no-repeat fixed;
   background-size: cover; }
   .wrapper__banner {
     display: flex;
@@ -443,7 +443,7 @@ img {
     margin-right: 15px;
     margin-left: 15px; }
   .description__video {
-    background-image: url(../../img/abt.jpg);
+    background-image: url(../img/abt.jpg);
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-size: cover;
@@ -524,7 +524,7 @@ img {
     color: #f28123; }
 
 .shop-banner {
-  background-image: url(../../img/1.jpg);
+  background-image: url(../img/1.jpg);
   background-size: cover; }
   .shop-banner__inner {
     max-width: 960px;
@@ -666,13 +666,13 @@ img {
       color: #f28123; }
 
 .news__first__background {
-  background-image: url(../../img/latest-news/news-bg-1.jpg); }
+  background-image: url(../img/latest-news/news-bg-1.jpg); }
 
 .news__second__background {
-  background-image: url(../../img/latest-news/news-bg-2.jpg); }
+  background-image: url(../img/latest-news/news-bg-2.jpg); }
 
 .news__third__background {
-  background-image: url(../../img/latest-news/news-bg-3.jpg); }
+  background-image: url(../img/latest-news/news-bg-3.jpg); }
 
 .carousel {
   background-color: #f5f5f5;
