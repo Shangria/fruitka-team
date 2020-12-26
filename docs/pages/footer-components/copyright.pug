@@ -1,0 +1,14 @@
+div.copyright
+    div.copyright__wrapper
+        div.copyright__container
+            | Copyrights &copy; 2019 - 
+            a.copyright__link(href='#')
+                | Imran Hossain
+            | ,  All Rights Reserved.
+        div
+            ul.copyright__list
+                - arrCopyrightList = [{href:"#", index:"fa fa-facebook-f"}, {href:"#", index:"fa fa-twitter"}, {href:"#", index:"fa fa-instagram"}, {href:"#", index:"fa fa-linkedin"}, {href:"#", index:"fa fa-dribbble"}]
+                each element in arrCopyrightList
+                    li.copyright__list_item
+                        a.copyright__list_link(href=element.href)
+                            i(class=element.index)

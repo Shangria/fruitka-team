@@ -6,11 +6,11 @@
   "scripts": {
     "build": "run-p scss-compile pug-compile",
     "dev": "run-p scss-compile scss-watch pug-watch",
-    "pug-compile": "pug -P -o ./dist/ ./src/pages/index.pug",
-    "pug-watch": "pug -P -o ./dist/ -w ./src/pages/index.pug",
-    "scss-compile": "node-sass ./src/scss/style.scss ./dist/css/style.css",
-    "scss-watch": "node-sass -w ./src/scss/style.scss ./dist/css/style.css",
-    "dist": "recursive-copy -w ./src/ ./dist/"
+    "pug-compile": "pug -P -o ./docs/ ./src/pages/index.pug",
+    "pug-watch": "pug -P -o ./docs/ -w ./src/pages/index.pug",
+    "scss-compile": "node-sass ./src/scss/style.scss ./docs/css/style.css",
+    "scss-watch": "node-sass -w ./src/scss/style.scss ./docs/css/style.css",
+    "docs": "recursive-copy -w ./src/ ./docs/"
   },
   "author": "\"fruitka-team\"",
   "license": "ISC",

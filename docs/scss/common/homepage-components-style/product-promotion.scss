@@ -1,0 +1,73 @@
+.section-product-promotion {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 600px;
+  font-family: sans-serif;
+
+  &__container-promotion-info {
+    display: flex;
+    width: 70%;
+    background-color: #f5f5f5;
+    padding: 100px 15px 50px;
+  }
+
+  &__img-product-promotion {
+    position: relative;
+    width: 900px;
+  }
+
+  &__store-promotion-price {
+    width: 100px;
+    height: 100px;
+    background-color: #f49b49;
+    border-radius: 999px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__product-promotion-inform {
+    p {
+      margin: 30px 0;
+      font-size: 14px;
+      line-height: 1.5em;
+      color: #5c5959;
+    }
+  }
+
+  &__section-title {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: #f28123;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    justify-content: center;
+
+  }
+
+  &__box-time {
+    display: flex;
+    margin-bottom: 20px;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  &__time-action {
+    width: 80px;
+    border: #f28123 2px solid;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
