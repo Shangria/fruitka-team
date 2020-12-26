@@ -83,17 +83,6 @@
     margin-bottom: 10px;
   }
 
-  &__title {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 45px;
-    margin-bottom: 18px;
-  }
-
-  &__title span {
-    color: #f28123;
-  }
-
   &__text {
     font-size: 15px;
     line-height: 1.6;
@@ -101,20 +90,6 @@
   }
 
   &__button {
-    font-family: "Poppins", sans-serif;
-    display: inline-block;
-    background-color: #f28123;
-    color: #fff;
-    padding: 10px 20px;
-    transition: 0.3s;
     margin-top: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 50px;
-  }
-
-  &__button:hover {
-    background-color: #051922;
-    color: #f28123;
   }
 }

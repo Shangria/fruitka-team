@@ -48,20 +48,17 @@
 
 
   &__btn-fruit-collection {
-    background-color: #f28123;
-
-    &:hover {
-      background-color: #020202;
-      color: #f28123;
-    }
+    font-size: 13px;
   }
 
-  &__btn-contact {
+  .wrapper__btn-contact {
     background: rgba(255, 255, 255, 0);
     border: #f28123 2px solid;
+    font-size: 13px;
 
     &:hover {
       background-color: #f28123;
+      color: white;
     }
   }
 }

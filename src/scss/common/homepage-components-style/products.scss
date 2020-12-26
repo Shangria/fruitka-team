@@ -10,10 +10,7 @@
   }
 
   &__title {
-    font-size: 40px;
     position: relative;
-    padding-bottom: 15px;
-    text-align: center;
   }
 
   &__title::after {
@@ -25,10 +22,6 @@
     width: 50px;
     height: 2px;
     background-color: #f28123;
-  }
-
-  &__title span {
-    color: #f28123;
   }
 
   &__subtitle {
@@ -93,21 +86,7 @@
   }
 
   &__box-button {
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    background-color: #f28123;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
     display: flex;
-    align-items: center;
-    transition: 0.3s;
-  }
-
-  &__box-button:hover {
-    background-color: #051922;
-    color: #f28123;
   }
 
   &__icon {

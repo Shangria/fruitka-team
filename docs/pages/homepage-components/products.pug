@@ -1,11 +1,11 @@
 section.products
     div.products__container
-        h3.products__title 
-            span Our 
-            |Products 
+        h3.products__title.main-titles
+            span.color-word Our
+            | Products
         p.products__subtitle
-            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            |Aliquid, fuga quas itaque eveniet beatae optio.
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            | Aliquid, fuga quas itaque eveniet beatae optio.
     ul.products__container
         - arrProducts = [{src: "./img/products/product-img-1.jpg", alt: "strawberry-img", title: "Strawberry", cost: "85$"}, {src: "./img/products/product-img-2.jpg", alt: "berry-img", title: "Berry", cost: "70$"}, {src: "./img/products/product-img-3.jpg", alt: "lemon-img", title: "Lemon", cost: "35$"}]
         each element in arrProducts
@@ -16,6 +16,6 @@ section.products
                     div.products__box-text
                         span Per Kg
                         =element.cost
-                    a.products__box-button(href="#") 
-                        i.fa.fa-shopping-cart.products__icon                      
-                        |Add to Cart
+                    a.products__box-button.btn-main(href="#")
+                        i.fa.fa-shopping-cart.products__icon
+                        | Add to Cart
