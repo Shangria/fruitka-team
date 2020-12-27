@@ -58,16 +58,23 @@
   }
 }
 
-@include breakpoint(sm-min) {
-  @include breakpoint(sm-max) {
-    .header {
-      &__navigation {
-        width: 100%;
-      }
 
+@include breakpoint(sm-max) {
+  @include breakpoint(md-max) {
+    .header {
       &__icon {
         display: none;
       }
     }
+  }
+}
+
+
+@include breakpoint(sm-max) {
+  .header__navigation {
+    width: 100%;
+  }
+  &__img-logo {
+    width: 90px;
   }
 }
