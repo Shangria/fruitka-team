@@ -71,3 +71,9 @@
   }
 }
 
+@import "src/scss/common/global-styles/media";
+@include breakpoint(sm-max) {
+  .header__navigation {
+    width: 90%;
+  }
+}

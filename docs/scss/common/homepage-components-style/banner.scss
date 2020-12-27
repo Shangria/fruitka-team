@@ -46,12 +46,11 @@
     font-family: "Poppins", sans-serif;
   }
 
-
   &__btn-fruit-collection {
     font-size: 13px;
   }
 
-  .wrapper__btn-contact {
+  &__btn-contact {
     background: rgba(255, 255, 255, 0);
     border: #f28123 2px solid;
     font-size: 13px;
@@ -62,3 +61,37 @@
     }
   }
 }
+
+@import "src/scss/common/global-styles/media";
+@include breakpoint(md-max) {
+
+  .wrapper__banner-content {
+    width: 60%;
+    text-align: center;
+
+    .wrapper__title-min {
+      font-size: 35px;
+      @include breakpoint(sm-min) {
+        font-size: 20px;
+      }
+    }
+
+    .wrapper__box-button {
+      padding-top: 30px;
+    }
+  }
+}
+
+@include breakpoint(sm-min) {
+  @include breakpoint(sm-max) {
+    .wrapper__box-button {
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper__btn-contact{
+      margin-top: 15px;
+    }
+  }
+}
+
+

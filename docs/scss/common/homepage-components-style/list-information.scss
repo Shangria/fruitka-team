@@ -4,12 +4,10 @@
   justify-content: center;
 
   &__box {
-    max-width: 1170px;
+    width: 80%;
     display: flex;
     height: 150px;
-    font-family: sans-serif;
-    min-width: 1140px;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   &__list-container {
@@ -43,5 +41,19 @@
     font-size: 13px;
     margin-top: 5px;
     color: #5c5959;
+  }
+}
+
+@import "src/scss/common/global-styles/media";
+@include breakpoint(md-max) {
+  .list-information-wrapper__box{
+    width: 100%;
+  }
+}
+@include breakpoint(md-max) {
+  .list-information-wrapper__box{
+    display: block;
+    height: auto;
+    padding-left: 50px;
   }
 }

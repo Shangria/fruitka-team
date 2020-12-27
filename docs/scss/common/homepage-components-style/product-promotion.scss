@@ -71,3 +71,38 @@
     font-size: 2rem;
   }
 }
+
+@import "src/scss/common/global-styles/media";
+@include breakpoint(md-max) {
+  .section-product-promotion__store-promotion-price {
+    display: none;
+  }
+  .section-product-promotion__store-promotion-inform {
+    padding-left: 15px;
+  }
+}
+
+@include breakpoint(sm-min) {
+  @include breakpoint(sm-max) {
+    .section-product-promotion{
+      height: auto;
+    }
+    .section-product-promotion__product-promotion-inform {
+      width: 100%;
+    }
+    .section-product-promotion__img-product-promotion img{
+      display: none;
+    }
+    .section-product-promotion__time-action {
+      p {
+        margin: 0;
+      }
+    }
+    .section-product-promotion__container-promotion-info {
+      padding: 0;
+    }
+    .section-product-promotion__store-promotion-price{
+      display: none;
+    }
+  }
+}
