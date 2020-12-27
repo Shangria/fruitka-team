@@ -54,24 +54,9 @@
       color: #F28123;
     }
   }
-
-  &__menu {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding: 15px;
-    width: 50%;
-    font-size: 13px;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  &__list-menu:first-child &__link {
-    color: #F28123;
-  }
 }
 
-@import "src/scss/common/global-styles/media";
+@import "../global-styles/media";
 @include breakpoint(sm-max) {
   .header__navigation {
     width: 90%;

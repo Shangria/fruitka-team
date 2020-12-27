@@ -1,3 +1,5 @@
+@import "src/scss/common/global-styles/media";
+
 .local-shop-owner {
   font-family: sans-serif;
   width: 100%;
@@ -55,7 +57,7 @@
     display: none;
   }
 }
-@import "src/scss/common/global-styles/media";
+
 @include breakpoint(md-max) {
   .local-shop-owner__container{
     width: 80%;

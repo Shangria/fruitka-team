@@ -3,11 +3,7 @@ header.header
         .header__img-logo
             a.header__logo-link(href='#')
                 img(src='./img/logo.png')
-        ul.header__menu
-            - arr = ['Home', 'About', 'Pages', 'News', 'Contact', 'Shop']
-            each element in arr
-                li.head__list-menu
-                    a.header__link(href='#') #{element}
+        include menu
         .header__icon
             a.header__link(href='#')
                 i.fa.fa-search
