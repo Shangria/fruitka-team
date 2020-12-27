@@ -5,16 +5,6 @@ window.addEventListener('load', function () {
 
 
     menuClick.addEventListener('click', function () {
-
-        const headerMenu = menuBox.querySelector('.header__menu');
-        debugger;
-        headerMenu.classList.toggle('header__show');
-        // if (headerMenu.classList.contains('header__show')) {
-        //     headerMenu.classList.remove('header__show');
-        // }else {
-        //     headerMenu.classList.add('header__show');
-        // }
-        // console.log(headerMenu);
-
+        menuBox.querySelector('.header__menu').classList.toggle('header__show');
     })
 })

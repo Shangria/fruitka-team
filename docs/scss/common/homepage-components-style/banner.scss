@@ -1,3 +1,5 @@
+@import "src/scss/common/global-styles/media";
+
 .wrapper {
   height: 100vh;
   background: url("../img/hero-bg.jpg") center center no-repeat fixed;
@@ -62,9 +64,7 @@
   }
 }
 
-@import "src/scss/common/global-styles/media";
 @include breakpoint(md-max) {
-
   .wrapper__banner-content {
     width: 60%;
     text-align: center;

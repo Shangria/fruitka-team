@@ -5,6 +5,6 @@ window.addEventListener('load', function () {
 
 
     menuClick.addEventListener('click', function () {
-        return menuBox.querySelector('.header__menu').classList.toggle('header__show');
+        menuBox.querySelector('.header__menu').classList.toggle('header__show');
     })
 })

@@ -1,3 +1,5 @@
+@import "src/scss/common/global-styles/media";
+
 .header {
   position: fixed;
   top: 0;
@@ -56,9 +58,16 @@
   }
 }
 
-@import "../global-styles/media";
-@include breakpoint(sm-max) {
-  .header__navigation {
-    width: 90%;
+@include breakpoint(sm-min) {
+  @include breakpoint(sm-max) {
+    .header {
+      &__navigation {
+        width: 100%;
+      }
+
+      &__icon {
+        display: none;
+      }
+    }
   }
 }

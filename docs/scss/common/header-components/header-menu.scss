@@ -9,6 +9,9 @@
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
   }
+  &__menu-box{
+    display: flex;
+  }
 
   &__link {
     transition: color linear 0.2s;
@@ -40,7 +43,7 @@
         cursor: pointer;
 
         &:hover, &:focus {
-          background-color: #2980B9;
+          background-color: #000000;
         }
       }
 
