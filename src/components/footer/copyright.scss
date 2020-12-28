@@ -16,7 +16,7 @@
                 padding: 0 30px;
             }
         }
-        @include breakpoint(tablet-768) {
+        @include breakpoint(tablet) {
             & {
                 flex-wrap: wrap;
                 justify-content: center;
@@ -45,7 +45,7 @@
             &:hover {
                 color: #f59d53;
             }
-            @include breakpoint(tablet-768) {
+            @include breakpoint(tablet) {
                 & {
                     padding: 10px 10px;
                 }
@@ -59,7 +59,7 @@
         padding: 16px 0;
         font-size: 15px;
 
-        @include breakpoint(tablet-768) {
+        @include breakpoint(tablet) {
             & {
                 width: 100%;
                 text-align: center;
