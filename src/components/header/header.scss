@@ -61,6 +61,14 @@
 @include breakpoint(sm-max) {
   @include breakpoint(md-max) {
     .header {
+      .&__navigation {
+        width: 100%;
+      }
+
+      &__img-logo {
+        width: 90px;
+      }
+
       &__icon {
         display: none;
       }
