@@ -6,8 +6,8 @@
   "scripts": {
     "build": "run-p js img scss-compile pug-compile",
     "dev": "run-p scss-compile scss-watch pug-watch",
-    "pug-compile": "pug -P -o ./docs/ ./src/pages/index.pug",
-    "pug-watch": "pug -P -o ./docs/ -w ./src/pages/index.pug",
+    "pug-compile": "pug -P -o ./docs/ ./src/pages/",
+    "pug-watch": "pug -P -o ./docs/ -w ./src/pages/",
     "scss-compile": "node-sass ./src/scss/style.scss ./docs/css/style.css",
     "scss-watch": "node-sass -w ./src/scss/style.scss ./docs/css/style.css",
     "img": "recursive-copy ./src/img/ ./docs/img",
