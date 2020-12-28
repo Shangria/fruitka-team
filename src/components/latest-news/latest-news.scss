@@ -39,6 +39,14 @@
       margin: 0 auto;
     }
   }
+  
+  &-subtitle{
+    @include breakpoint(sm-max) {
+      & {
+       font-size: 13px;
+      }
+    }
+  }
 
   &__row {
     display: flex;

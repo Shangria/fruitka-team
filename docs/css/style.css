@@ -642,6 +642,9 @@ font-family: 'Poppins', sans-serif;
       height: 2px;
       background-color: #f28123;
       margin: 0 auto; }
+  @media (max-width: 460px) {
+    .latest-news-subtitle {
+      font-size: 13px; } }
   .latest-news__row {
     display: flex;
     list-style-type: none; }
