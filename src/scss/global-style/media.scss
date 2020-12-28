@@ -19,7 +19,11 @@
     @media (min-width: 960px) {
       @content;
     }
-  } @else if $point == tablet {
+  }  @else if $point == tablet-600 {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }  @else if $point == tablet {
     @media (max-width: 720px) {
       @content;
     }
