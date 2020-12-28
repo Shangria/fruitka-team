@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  transition: background-color, color ease-out 5ms;
+  transition: all 0.3s;
 
   &:hover {
     background-color: black;

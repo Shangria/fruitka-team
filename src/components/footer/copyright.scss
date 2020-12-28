@@ -1,14 +1,31 @@
+@import "src/scss/global-style/media";
+
 .copyright {
     background-color: #051922;
     border-top: 1px solid #232a35;
+    
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 1170px;
         margin: 0 auto;
+
+        @include breakpoint(lg-max) {
+            & {
+                padding: 0 30px;
+            }
+        }
+        @include breakpoint(tablet-768) {
+            & {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    
     }
 
+    
     &__list {
         margin: 0;
         padding: 0;
@@ -28,15 +45,27 @@
             &:hover {
                 color: #f59d53;
             }
+            @include breakpoint(tablet-768) {
+                & {
+                    padding: 10px 10px;
+                }
+            }
         }
     }
 
     &__container {
-        margin: 0;
         color: #fff;
         opacity: 0.7;
         padding: 16px 0;
         font-size: 15px;
+
+        @include breakpoint(tablet-768) {
+            & {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0 0;
+            }
+        }
     }
 
     &__link {

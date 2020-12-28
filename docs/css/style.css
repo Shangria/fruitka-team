@@ -619,10 +619,16 @@ font-family: 'Poppins', sans-serif;
   padding: 150px 15px;
   max-width: 1170px;
   margin: 0 auto; }
+  @media (max-width: 820px) {
+    .latest-news {
+      padding: 60px 15px; } }
   .latest-news-title__wrapper {
     text-align: center;
     margin-bottom: 80px;
     position: relative; }
+    @media (max-width: 820px) {
+      .latest-news-title__wrapper {
+        margin-bottom: 30px; } }
   .latest-news__title {
     position: relative;
     padding-bottom: 15px; }
@@ -639,6 +645,10 @@ font-family: 'Poppins', sans-serif;
   .latest-news__row {
     display: flex;
     list-style-type: none; }
+    @media (max-width: 1024px) {
+      .latest-news__row {
+        flex-wrap: wrap;
+        justify-content: center; } }
   .latest-news__background {
     height: 200px;
     background-size: cover;
@@ -654,6 +664,12 @@ font-family: 'Poppins', sans-serif;
     -webkit-box-shadow: 0 0 20px #dddddd;
     box-shadow: 0 0 20px #dddddd;
     transition: 0.3s; }
+    @media (max-width: 820px) {
+      .latest-news__col {
+        width: 70%; } }
+    @media (max-width: 460px) {
+      .latest-news__col {
+        width: 90%; } }
     .latest-news__col:hover {
       -webkit-box-shadow: 0 0 0;
       box-shadow: 0 0 0;
@@ -668,6 +684,9 @@ font-family: 'Poppins', sans-serif;
       border-bottom-right-radius: 5px; }
     .latest-news__col__text {
       margin-bottom: 30px; }
+      @media (max-width: 460px) {
+        .latest-news__col__text {
+          display: none; } }
     .latest-news__col__button {
       font-family: "Open Sans", sans-serif;
       display: inline-block;
@@ -692,6 +711,9 @@ font-family: 'Poppins', sans-serif;
     justify-content: center; }
   .latest-news__button {
     margin-top: 80px; }
+    @media (max-width: 820px) {
+      .latest-news__button {
+        margin-top: 0px; } }
 
 .news__first__background {
   background-image: url(../img/latest-news/news-bg-1.jpg); }
@@ -724,11 +746,45 @@ font-family: 'Poppins', sans-serif;
     padding: 150px 15px;
     max-width: 1170px;
     margin: 0 auto; }
+    @media (max-width: 1024px) {
+      .footer__container {
+        padding: 100px 30px; } }
+    @media (max-width: 820px) {
+      .footer__container {
+        padding: 50px 50px; } }
+    @media (max-width: 820px) {
+      .footer__container {
+        padding: 20px 20px; } }
   .footer__row {
     display: flex; }
+    @media (max-width: 1024px) {
+      .footer__row {
+        flex-wrap: wrap; } }
+    @media (max-width: 460px) {
+      .footer__row {
+        flex-direction: column-reverse; } }
   .footer__col {
     width: 25%;
     padding: 0 15px; }
+    @media (max-width: 1024px) {
+      .footer__col {
+        width: 50%; } }
+    @media (max-width: 600px) {
+      .footer__col {
+        width: 100%; }
+      .footer__col:nth-child(2) {
+        width: 70%; }
+      .footer__col:nth-child(3) {
+        width: 30%; } }
+    @media (max-width: 460px) {
+      .footer__col {
+        width: 100%; }
+      .footer__col:nth-child(1) {
+        display: none; }
+      .footer__col:nth-child(2) {
+        width: 100%; }
+      .footer__col:nth-child(3) {
+        width: 100%; } }
   .footer__title {
     font-family: "Poppins", sans-serif;
     font-size: 24px;
@@ -799,6 +855,13 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto; }
+    @media (max-width: 1024px) {
+      .copyright__wrapper {
+        padding: 0 30px; } }
+    @media (max-width: 768px) {
+      .copyright__wrapper {
+        flex-wrap: wrap;
+        justify-content: center; } }
   .copyright__list {
     margin: 0;
     padding: 0;
@@ -813,12 +876,19 @@ font-family: 'Poppins', sans-serif;
       display: block; }
       .copyright__list_link:hover {
         color: #f59d53; }
+      @media (max-width: 768px) {
+        .copyright__list_link {
+          padding: 10px 10px; } }
   .copyright__container {
-    margin: 0;
     color: #fff;
     opacity: 0.7;
     padding: 16px 0;
     font-size: 15px; }
+    @media (max-width: 768px) {
+      .copyright__container {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 0; } }
   .copyright__link {
     color: #F28123;
     font-weight: 700;
@@ -838,7 +908,7 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  transition: background-color, color ease-out 5ms; }
+  transition: all 0.3s; }
   .btn-main:hover {
     background-color: black;
     color: #f28123; }
