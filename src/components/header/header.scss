@@ -1,4 +1,4 @@
-@import "src/scss/common/global-styles/media";
+@import "src/scss/global-style/media";
 
 .header {
   position: fixed;
@@ -34,7 +34,7 @@
     transition: color linear 0.2s;
 
     &:hover {
-      color: #F28123;
+      color: #f28123;
     }
   }
 
@@ -43,7 +43,7 @@
     color: white;
 
     &:hover {
-      color: #F28123;
+      color: #f28123;
     }
   }
 
@@ -53,11 +53,10 @@
     color: white;
 
     &:hover {
-      color: #F28123;
+      color: #f28123;
     }
   }
 }
-
 
 @include breakpoint(sm-max) {
   @include breakpoint(md-max) {
@@ -68,7 +67,6 @@
     }
   }
 }
-
 
 @include breakpoint(sm-max) {
   .header__navigation {

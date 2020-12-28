@@ -44,14 +44,14 @@
   }
 }
 
-@import "src/scss/common/global-styles/media";
+@import "src/scss/global-style/media";
 @include breakpoint(md-max) {
-  .list-information-wrapper__box{
+  .list-information-wrapper__box {
     width: 100%;
   }
 }
 @include breakpoint(md-max) {
-  .list-information-wrapper__box{
+  .list-information-wrapper__box {
     display: block;
     height: auto;
     padding-left: 50px;

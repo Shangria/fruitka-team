@@ -1,4 +1,4 @@
-@import "src/scss/common/global-styles/media";
+@import "src/scss/global-style/media";
 
 .wrapper {
   height: 100vh;
@@ -88,10 +88,8 @@
       flex-direction: column;
       align-items: center;
     }
-    .wrapper__btn-contact{
+    .wrapper__btn-contact {
       margin-top: 15px;
     }
   }
 }
-
-
