@@ -49,7 +49,6 @@
     border-radius: 999px;
     font-size: 0.8rem;
     justify-content: center;
-
   }
 
   &__box-time {
@@ -72,7 +71,7 @@
   }
 }
 
-@import "src/scss/common/global-styles/media";
+@import "src/scss/global-style/media";
 @include breakpoint(md-max) {
   .section-product-promotion__store-promotion-price {
     display: none;
@@ -107,7 +106,7 @@
     }
   }
 }
-@import "src/scss/common/global-styles/media";
+@import "src/scss/global-style/media";
 @include breakpoint(md-max) {
   .section-product-promotion__product-promotion-inform .main-titles {
     font-size: 30px;

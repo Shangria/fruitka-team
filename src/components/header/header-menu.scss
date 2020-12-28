@@ -1,4 +1,4 @@
-@import "src/scss/common/global-styles/media";
+@import "src/scss/global-style/media";
 
 .header {
   &__menu-box {
@@ -20,7 +20,7 @@
   }
 
   &__list-menu:first-child &__link {
-    color: #F28123;
+    color: #f28123;
   }
 
   &__link {
@@ -30,10 +30,9 @@
     padding-right: 25px;
 
     &:hover {
-      color: #F28123;
+      color: #f28123;
     }
   }
-
 }
 
 @include breakpoint(md-max) {
@@ -41,6 +40,13 @@
     &__link {
       padding-right: 10px;
     }
+  }
+}
+
+@include breakpoint(sm-max) {
+  &__link {
+    padding-right: 5px;
+
   }
 }
 
@@ -80,10 +86,10 @@
         padding: 10px;
       }
 
-      &:hover, &:focus {
-        background-color: rgba(16, 42, 61, 0.6);
+        &:hover, &:focus {
+          background-color: rgba(16, 42, 61, 0.6);
+        }
       }
-    }
 
     &__list-menu {
       padding-right: 5px;
@@ -94,4 +100,5 @@
     }
   }
 }
+
 
