@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "run-p scss-compile pug-compile",
+    "build": "run-p js img scss-compile pug-compile",
     "dev": "run-p scss-compile scss-watch pug-watch",
     "pug-compile": "pug -P -o ./docs/ ./src/pages/index.pug",
     "pug-watch": "pug -P -o ./docs/ -w ./src/pages/index.pug",
     "scss-compile": "node-sass ./src/scss/style.scss ./docs/css/style.css",
     "scss-watch": "node-sass -w ./src/scss/style.scss ./docs/css/style.css",
-    "docs": "recursive-copy -w ./src/ ./docs/"
+    "img": "recursive-copy ./src/img/ ./docs/img",
+    "js": "recursive-copy ./src/js ./docs/js"
   },
   "author": "\"fruitka-team\"",
   "license": "ISC",

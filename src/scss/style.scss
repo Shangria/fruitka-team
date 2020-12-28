@@ -7,14 +7,30 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
-@import "common/header-components/header";
+@import "../components/header/header";
 
-@import "common/header-components/header-menu";
+@import "../components/header/header-menu";
 
-@import "./common/global";
+@import "../components/banner/banner";
 
-@import "./common/footer";
+@import "../components/list-information/list-information";
 
-@import "common/global-styles/btn-main";
+@import "../components/product-promotion/product-promotion";
 
-@import "common/global-styles/common-styles";
+@import "../components/local-shop-owner/local-shop-owner";
+
+@import "../components/products/products";
+
+@import "../components/description/description";
+
+@import "../components/shop-banner/shop-banner";
+
+@import "../components/latest-news/latest-news";
+
+@import "../components/carousel/carousel";
+
+@import "../components/footer/footer";
+
+@import "./global-style/btn-main";
+
+@import "./global-style/common-styles";
