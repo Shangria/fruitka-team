@@ -1,10 +1,11 @@
 window.addEventListener('load', function () {
 
     const menuBox = document.querySelector('.header__menu-box');
-    const menuClick = menuBox.querySelector('.header__menu-click');
+    const menuBurger = menuBox.querySelector('.header__menu-burger');
 
 
-    menuClick.addEventListener('click', function () {
-        menuBox.querySelector('.header__menu').classList.toggle('header__show');
+    menuBurger.addEventListener('click', function () {
+        menuBox.querySelector('.header__menu-burger').classList.toggle('active');
+        menuBox.querySelector('.header__menu').classList.toggle('active');
     })
 })
