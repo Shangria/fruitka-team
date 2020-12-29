@@ -1,8 +1,13 @@
 div.header__menu-box
-    div.header__menu-click
-        span Меню
+    .header__menu-click
+        -arrMenuClick = [{href:'./index.html',class:'fa fa-home'}, {href:'#',class:'fa fa-newspaper-o'}, {href:'#',class:'fa fa-book'}, {href:'#',class:'fa fa-shopping-bag'}]
+        each element in arrMenuClick
+            a.header__link(href=element.href)
+                i(class=element.class)
+    .header__menu-burger
+        span.header__menu-burger__item
     ul.header__menu
-         - arr = ['Home', 'About', 'Pages', 'News', 'Contact', 'Shop']
-         each element in arr
-             li.head__list-menu
-                  a.header__link(href='#') #{element}
+        - arr = [{href:'./index.html',name:'Home'},{href:'#',name:'About'}, {href:'#',name:'Pages'},{href:'#',name:'News'},{href:'#',name:'Contact'},{href:'./shop.html',name:'Shop'}]
+        each element in arr
+            li.head__list-menu
+                a.header__link(href=element.href)=element.name
