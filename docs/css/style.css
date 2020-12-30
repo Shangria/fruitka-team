@@ -92,11 +92,11 @@ font-family: 'Poppins', sans-serif;
   .header_background-color {
     background-color: #051922;
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     transition-timing-function: linear; }
   .header_background-color-opacity {
     transition-property: all;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     transition-timing-function: linear; }
   .header__inner {
     max-width: 1170px;
