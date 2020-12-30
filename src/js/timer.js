@@ -1,7 +1,7 @@
 (function (){
     window.addEventListener('load', function () {
+
         const target_date = new Date().getTime() + (1000 * 3600 * 48); // установить дату обратного отсчета
-        let days, hours, minutes, seconds; // переменные для единиц времени
 
         const daysHtml = document.getElementById("section-product-promotion-days"); // получить элемент тега
         const hoursHtml = document.getElementById("section-product-promotion-hours"); // получить элемент тега
@@ -16,6 +16,8 @@
         }, 1000);
 
         function getCountdown() {
+
+            let days, hours, minutes, seconds; // переменные для единиц времени
 
             let current_date = new Date().getTime();
             let seconds_left = (target_date - current_date) / 1000;
