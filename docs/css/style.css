@@ -86,8 +86,18 @@ font-family: 'Poppins', sans-serif;
 */
 .header {
   position: fixed;
+  height: 80px;
   width: 100%;
   z-index: 1; }
+  .header_background-color {
+    background-color: #051922;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
+  .header_background-color-opacity {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
   .header__inner {
     max-width: 1170px;
     margin: 0 auto;
