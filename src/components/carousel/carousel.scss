@@ -1,6 +1,13 @@
+@import "src/scss/global-style/media";
+
 .carousel {
   background-color: #f5f5f5;
   padding: 50px 0;
+  @include breakpoint(sm-max) {
+    & {
+     display: none;
+    }
+  }
 
   &__container {
     max-width: 1170px;

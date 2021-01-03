@@ -1,0 +1,12 @@
+table.total-table
+    thead.total-table-head
+        tr.total-table-head__row 
+            - arrTotalTableHead = ["Total", "Price"]
+            each element in arrTotalTableHead
+                th.total-table-head__titles #{element} 
+    tbody.total-table-body
+        - arrTotalTableBody = [{bodyName: "Subtotal:"}, {bodyName: "Shipping:"}, {bodyName: "Total:"}]
+        each element in arrTotalTableBody
+            tr.total-table-body__row
+                td.total-table-body_name=element.bodyName
+                td.total-table-body_data    

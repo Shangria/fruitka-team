@@ -40,7 +40,7 @@
     }
   }
   
-  &-subtitle{
+  &__subtitle{
     @include breakpoint(sm-max) {
       & {
        font-size: 13px;

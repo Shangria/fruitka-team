@@ -1,0 +1,23 @@
+div.product-table__section
+    table.product-table
+        thead.product-table-head
+            tr.product-table-head__row
+                - arrProductTableHead = ["", "Product Image", "Name", "Price", "Quantity", "Total"]
+                each element in arrProductTableHead 
+                    th.product-table-head__titles #{element}
+        tbody.product-table-body
+            - arrProductTableBody = [{href:"#", totalName: "Strawberry", inputClass: "product-table-body__quantity__input",  totalPrice: "$85", index: "fa fa-times-circle", dataClass: "product-table-body_data", src: "./img/products/product-img-1.jpg"}, {href:"#", totalName: "Grapes", inputClass: "product-table-body__quantity__input", totalPrice: "$70", index: "fa fa-times-circle", dataClass: "product-table-body_data", src: "./img/products/product-img-2.jpg"}, {href:"#", totalName: "Lemon",  inputClass: "product-table-body__quantity__input", totalPrice: "$30", index: "fa fa-times-circle", dataClass: "product-table-body_data", src: "./img/products/product-img-3.jpg"}]
+            each element in arrProductTableBody
+                tr.product-table-body__row
+                    td(class=element.dataClass) 
+                        a.product-table-body_remove__link(href=element.href)
+                            i.product-table-body_remove(class=element.index)
+                    td(class=element.dataClass)
+                        img.product-table-body__image(src=element.src)
+                    td.product-table-body__name(class=element.dataClass)
+                        =element.totalName
+                    td.product-table-body__price(class=element.dataClass)
+                        =element.totalPrice
+                    td.product-table-body__quantity(class=element.dataClass)
+                        input(type='number', placeholder='0', class=element.inputClass)
+                    td.product-table-body__total(class=element.dataClass)
