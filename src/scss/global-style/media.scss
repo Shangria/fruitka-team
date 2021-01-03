@@ -31,5 +31,9 @@
     @media (max-width: 500px) {
       @content;
     }
+  } @else if $point == mobile300 {
+    @media (max-width: 500px) {
+      @content;
+    }
   }
 }
