@@ -10,22 +10,25 @@
     <script src="./js/header-menu.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="header__navigation">
-        <div class="header__img-logo"><a class="header__logo-link" href="#"><img src="./img/logo.png"/></a></div>
-        <div class="header__menu-box">
-          <div class="header__menu-click"><span>Меню</span></div>
-          <ul class="header__menu">
-            <li class="head__list-menu"><a class="header__link" href="#">Home</a></li>
-            <li class="head__list-menu"><a class="header__link" href="#">About</a></li>
-            <li class="head__list-menu"><a class="header__link" href="#">Pages</a></li>
-            <li class="head__list-menu"><a class="header__link" href="#">News</a></li>
-            <li class="head__list-menu"><a class="header__link" href="#">Contact</a></li>
-            <li class="head__list-menu"><a class="header__link" href="#">Shop</a></li>
-          </ul>
-        </div>
-        <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="#"><i class="fa fa-shopping-cart"></i></a></div>
-      </nav>
+    <header class="header" id="header-scroll">
+      <div class="header__inner"><a class="header__img-logo" href="./index.html"><img class="header__img-logo" src="./img/logo.png"/></a>
+        <nav class="header__navigation">
+          <div class="header__menu-box">
+            <div class="header__menu-click"><a class="header__link" href="./index.html"><i class="fa fa-home"></i></a><a class="header__link" href="#"><i class="fa fa-newspaper-o"></i></a><a class="header__link" href="#"><i class="fa fa-book"></i></a><a class="header__link" href="#"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+            <div class="header__menu-burger"><span class="header__menu-burger__item"></span></div>
+            <ul class="header__menu">
+              <li class="head__list-menu"><a class="header__link" href="./index.html">Home</a></li>
+              <li class="head__list-menu"><a class="header__link" href="#">About</a></li>
+              <li class="head__list-menu"><a class="header__link" href="#">Pages</a></li>
+              <li class="head__list-menu"><a class="header__link" href="#">News</a></li>
+              <li class="head__list-menu"><a class="header__link" href="#">Contact</a></li>
+              <li class="head__list-menu"><a class="header__link" href="./shop.html">Shop</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="./shop.html"><i class="fa fa-shopping-cart"></i></a></div>
+      </div>
     </header>
     <section class="banner-shop"> 
       <div class="banner-shop__inner">
