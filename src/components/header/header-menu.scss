@@ -35,70 +35,70 @@
   }
 }
 
-@include breakpoint(md-max) {
-  .header {
-    &__link {
-      padding-right: 10px;
-    }
-  }
-}
+// @include breakpoint(md-max) {
+//   .header {
+//     &__link {
+//       padding-right: 10px;
+//     }
+//   }
+// }
 
-@include breakpoint(sm-max) {
-  &__link {
-    padding-right: 5px;
+// @include breakpoint(sm-max) {
+//   &__link {
+//     padding-right: 5px;
 
-  }
-}
+//   }
+// }
 
-@include breakpoint(sm-max) {
-  .header {
-    position: absolute;
+// @include breakpoint(sm-max) {
+//   .header {
+//     position: absolute;
 
-    &__menu-box {
-      position: relative;
-      display: inline-block;
-    }
+//     &__menu-box {
+//       position: relative;
+//       display: inline-block;
+//     }
 
-    &__menu {
-      display: none;
-      width: 200px;
-      position: absolute;
-      right: 0;
-      top: 55px;
-      background-color: rgba(22, 39, 47, 1);
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
-      z-index: 1;
-    }
+//     &__menu {
+//       display: none;
+//       width: 200px;
+//       position: absolute;
+//       right: 0;
+//       top: 55px;
+//       background-color: rgba(22, 39, 47, 1);
+//       min-width: 160px;
+//       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+//       z-index: 1;
+//     }
 
-    &__menu-click {
-      position: absolute;
-      right: 0;
-      display: block;
-      background-color: rgba(7, 33, 46, 0.6);
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
+//     &__menu-click {
+//       position: absolute;
+//       right: 0;
+//       display: block;
+//       background-color: rgba(7, 33, 46, 0.6);
+//       color: white;
+//       padding: 16px;
+//       font-size: 16px;
+//       border: none;
+//       cursor: pointer;
 
-      span {
-        padding: 10px;
-      }
+//       span {
+//         padding: 10px;
+//       }
 
-        &:hover, &:focus {
-          background-color: rgba(16, 42, 61, 0.6);
-        }
-      }
+//         &:hover, &:focus {
+//           background-color: rgba(16, 42, 61, 0.6);
+//         }
+//       }
 
-    &__list-menu {
-      padding-right: 5px;
-    }
+//     &__list-menu {
+//       padding-right: 5px;
+//     }
 
-    &__show {
-      display: block;
-    }
-  }
-}
+//     &__show {
+//       display: block;
+//     }
+//   }
+// }
 
 

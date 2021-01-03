@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shop</title>
+    <title>Cart</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -27,46 +27,105 @@
         <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="#"><i class="fa fa-shopping-cart"></i></a></div>
       </nav>
     </header>
-    <section class="banner-shop"> 
-      <div class="banner-shop__inner">
-        <div class="banner-shop__text">
-          <p class="banner-shop__subtitle">FRESH AND ORGANIC</p>
-          <h1 class="banner-shop__title">
-             Shop</h1>
+    <section class="cart-banner"> 
+      <div class="cart-banner__inner">
+        <div class="cart-banner__text">
+          <p class="cart-banner__subtitle">FRESH AND ORGANIC</p>
+          <h1 class="cart-banner__title">
+             Cart</h1>
         </div>
       </div>
     </section>
-    <section class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item">All    </li>
-        <li class="pagination__item">Strawberry    </li>
-        <li class="pagination__item">Berry    </li>
-        <li class="pagination__item">Lemon    </li>
-      </ul>
-      <ul class="products__container">
-        <li class="products__col"><img class="products__img" src="./img/products/product-img-1.jpg" alt="strawberry-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Strawberry</h3>
-            <div class="products__box-text"><span>Per Kg</span>85$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col"><img class="products__img" src="./img/products/product-img-2.jpg" alt="berry-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Berry</h3>
-            <div class="products__box-text"><span>Per Kg</span>70$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col"><img class="products__img" src="./img/products/product-img-3.jpg" alt="lemon-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Lemon</h3>
-            <div class="products__box-text"><span>Per Kg</span>35$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <div class="cart-tables__container">
+      <div class="product-table__section">
+        <table class="product-table">
+          <thead class="product-table-head">
+            <tr class="product-table-head__row">
+              <th class="product-table-head__titles"></th>
+              <th class="product-table-head__titles">Product Image</th>
+              <th class="product-table-head__titles">Name</th>
+              <th class="product-table-head__titles">Price</th>
+              <th class="product-table-head__titles">Quantity</th>
+              <th class="product-table-head__titles">Total</th>
+            </tr>
+          </thead>
+          <tbody class="product-table-body">
+            <tr class="product-table-body__row">
+              <td class="product-table-body_data"> <a class="product-table-body_remove__link" href="#"><i class="product-table-body_remove fa fa-times-circle"></i></a></td>
+              <td class="product-table-body_data"><img class="product-table-body__image" src="./img/products/product-img-1.jpg"/></td>
+              <td class="product-table-body__name product-table-body_data">Strawberry
+              </td>
+              <td class="product-table-body__price product-table-body_data">$85
+              </td>
+              <td class="product-table-body__quantity product-table-body_data">
+                <input class="product-table-body__quantity__input" type="number" placeholder="0"/>
+              </td>
+              <td class="product-table-body__total product-table-body_data"></td>
+            </tr>
+            <tr class="product-table-body__row">
+              <td class="product-table-body_data"> <a class="product-table-body_remove__link" href="#"><i class="product-table-body_remove fa fa-times-circle"></i></a></td>
+              <td class="product-table-body_data"><img class="product-table-body__image" src="./img/products/product-img-2.jpg"/></td>
+              <td class="product-table-body__name product-table-body_data">Grapes
+              </td>
+              <td class="product-table-body__price product-table-body_data">$70
+              </td>
+              <td class="product-table-body__quantity product-table-body_data">
+                <input class="product-table-body__quantity__input" type="number" placeholder="0"/>
+              </td>
+              <td class="product-table-body__total product-table-body_data"></td>
+            </tr>
+            <tr class="product-table-body__row">
+              <td class="product-table-body_data"> <a class="product-table-body_remove__link" href="#"><i class="product-table-body_remove fa fa-times-circle"></i></a></td>
+              <td class="product-table-body_data"><img class="product-table-body__image" src="./img/products/product-img-3.jpg"/></td>
+              <td class="product-table-body__name product-table-body_data">Lemon
+              </td>
+              <td class="product-table-body__price product-table-body_data">$30
+              </td>
+              <td class="product-table-body__quantity product-table-body_data">
+                <input class="product-table-body__quantity__input" type="number" placeholder="0"/>
+              </td>
+              <td class="product-table-body__total product-table-body_data"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="total-table__section">
+        <table class="total-table">
+          <thead class="total-table-head">
+            <tr class="total-table-head__row"> 
+              <th class="total-table-head__titles">Total </th>
+              <th class="total-table-head__titles">Price </th>
+            </tr>
+          </thead>
+          <tbody class="total-table-body">
+            <tr class="total-table-body__row">
+              <td class="total-table-body_name">Subtotal:</td>
+              <td class="total-table-body_data">   </td>
+            </tr>
+            <tr class="total-table-body__row">
+              <td class="total-table-body_name">Shipping:</td>
+              <td class="total-table-body_data">   </td>
+            </tr>
+            <tr class="total-table-body__row">
+              <td class="total-table-body_name">Total:</td>
+              <td class="total-table-body_data">   </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="total-table__button"><a class="total-table__button__link" href="#">Update Cart</a><a class="total-table__button__link" href="#">Check Out</a></div>
+        <div class="cart-coupon">
+          <h4 class="cart-coupon__title">Apply Coupon</h4>
+          <form class="cart-coupon__form">
+            <p>
+              <input class="cart-coupon__form__input_text" type="text" placeholder="Coupon"/>
+            </p>
+            <p>
+              <input class="cart-coupon__form__input_submit" type="submit" value="Apply"/>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="carousel">
       <div class="carousel__container">
         <div class="carousel__row">
