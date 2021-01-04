@@ -230,6 +230,7 @@ font-family: 'Poppins', sans-serif;
     color: #f28123; }
 
 .wrapper {
+  position: relative;
   height: 100vh;
   background: url("../img/hero-bg.jpg") center center no-repeat fixed;
   background-size: cover; }
@@ -296,12 +297,27 @@ font-family: 'Poppins', sans-serif;
     margin-top: 15px; } }
 
 .search {
-  display: none;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  z-index: 99999;
   background-color: #051922;
-  justify-content: center;
-  align-items: center; }
+  width: 100%;
+  height: 100%; }
+  .search_display-delete {
+    display: none; }
+  .search__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .search__btn_close {
+    position: absolute;
+    top: 55px;
+    right: 150px;
+    text-align: center;
+    padding: 1px 5px;
+    background-color: #fcf9f9; }
   .search__container {
     display: flex;
     flex-direction: column;
@@ -324,6 +340,19 @@ font-family: 'Poppins', sans-serif;
     .search__line::placeholder {
       color: white;
       font-weight: bold; }
+  .search__btn {
+    margin-top: 30px;
+    border: none;
+    width: 140px;
+    background-color: #f28123;
+    color: black;
+    padding: 20px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s; }
+    .search__btn:hover {
+      background-color: white; }
 
 .list-information-wrapper {
   background-color: #f5f5f5;
@@ -1233,7 +1262,7 @@ font-family: 'Poppins', sans-serif;
     padding: 8px 20px;
     border-radius: 25px; }
 
-.btn-main, .wrapper__btn-fruit-collection, .wrapper__btn-contact, .search__btn, .section-product-promotion__btn, .products__box-button, .description__button, .shop-banner__button, .latest-news__button {
+.btn-main, .wrapper__btn-fruit-collection, .wrapper__btn-contact, .section-product-promotion__btn, .products__box-button, .description__button, .shop-banner__button, .latest-news__button {
   width: 160px;
   cursor: pointer;
   background-color: #f28123;
@@ -1246,7 +1275,7 @@ font-family: 'Poppins', sans-serif;
   justify-content: center;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s; }
-  .btn-main:hover, .wrapper__btn-fruit-collection:hover, .wrapper__btn-contact:hover, .search__btn:hover, .section-product-promotion__btn:hover, .products__box-button:hover, .description__button:hover, .shop-banner__button:hover, .latest-news__button:hover {
+  .btn-main:hover, .wrapper__btn-fruit-collection:hover, .wrapper__btn-contact:hover, .section-product-promotion__btn:hover, .products__box-button:hover, .description__button:hover, .shop-banner__button:hover, .latest-news__button:hover {
     background-color: #051922;
     color: #f28123; }
 
