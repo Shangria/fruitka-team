@@ -49,10 +49,12 @@
   }
 
   &__btn-fruit-collection {
+    @extend .btn-main;
     font-size: 13px;
   }
 
   &__btn-contact {
+    @extend .btn-main;
     background: rgba(255, 255, 255, 0);
     border: #f28123 2px solid;
     font-size: 13px;

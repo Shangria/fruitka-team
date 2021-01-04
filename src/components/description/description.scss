@@ -26,6 +26,12 @@
     width: 50%;
     margin-right: 15px;
     margin-left: 15px;
+    h2{
+      @extend .main-titles;
+    }
+    span{
+      @extend .color-word;
+    }
     @include breakpoint(lg-max) {
       & {
         width: 80%;
@@ -125,6 +131,7 @@
   }
 
   &__button {
+    @extend .btn-main;
     margin-top: 20px;
   }
 }

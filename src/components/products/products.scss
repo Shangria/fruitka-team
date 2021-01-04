@@ -12,7 +12,11 @@
   }
 
   &__title {
+    @extend .main-titles;
     position: relative;
+    span{
+      @extend .color-word;
+    }
   }
 
   &__title::after {
@@ -106,6 +110,7 @@
   }
 
   &__box-button {
+    @extend .btn-main;
     display: flex;
   }
 
