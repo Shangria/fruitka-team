@@ -1,9 +1,9 @@
 window.addEventListener('load', function () {
-    debugger
 
     const ownersBlock = document.getElementById('local-shop-owner_slider');
     const liArray = [...ownersBlock.querySelectorAll('li')];
     let currentIndex;
+
 
     function toggleSlider() {
         let nextIndex;
@@ -17,9 +17,10 @@ window.addEventListener('load', function () {
 
         liArray.forEach(function (element, index) {
             if (index === nextIndex) {
-                element.classList.remove('local-shop-owner_hidden');
+                element.style.right='50%';
+                element.style.transition= 'right ease 1s';
             } else {
-                element.classList.add('local-shop-owner_hidden');
+                element.style.right='-100%';
             }
         });
 
@@ -27,5 +28,5 @@ window.addEventListener('load', function () {
     }
 
     toggleSlider();
-    setInterval(toggleSlider, 2000);
+    setInterval(toggleSlider, 6000);
 });

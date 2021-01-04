@@ -1,9 +1,9 @@
 section
     ul.local-shop-owner#local-shop-owner_slider
-         - arrlocalShopOwner = [{img: './img/avatar/avatar1.png', span: 'Saira Hakim',sel:' local-shop-owner_hidden'}, {img: './img/avatar/avatar2.png', span: 'Jacob Sikim', sel:' local-shop-owner_hidden'}, {img: './img/avatar/avatar3.png', span:'David Niph', sel:' local-shop-owner_hidden'}]
+         - arrlocalShopOwner = [{img: './img/avatar/avatar1.png', span: 'Saira Hakim',sel:' local-shop-owner__container1'}, {img: './img/avatar/avatar2.png', span: 'Jacob Sikim', sel:' local-shop-owner_hidden'}, {img: './img/avatar/avatar3.png', span:'David Niph', sel:' local-shop-owner_hidden'}]
          each element,i in arrlocalShopOwner
              if i<3
-                li(class='local-shop-owner__container')
+                li(class='local-shop-owner__container'+i)
                     .local-shop-owner__avatar
                         img(src=element.img)
                     .local-shop-owner__name
