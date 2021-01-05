@@ -298,6 +298,7 @@ font-family: 'Poppins', sans-serif;
 
 .search {
   position: fixed;
+  display: none;
   z-index: 99999;
   background-color: #051922;
   width: 100%;
@@ -488,33 +489,19 @@ font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   overflow: hidden; }
-  .local-shop-owner__container0 {
+  .local-shop-owner__container {
     position: absolute;
     top: 50%;
+    right: -100%;
+    transform: translate(50%, -50%);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: right ease 1s; }
+  .local-shop-owner_slider-parametrs {
     right: 50%;
-    transform: translate(50%, -50%);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .local-shop-owner__container1 {
-    position: absolute;
-    top: 50%;
-    right: -50%;
-    transform: translate(50%, -50%);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .local-shop-owner__container2 {
-    position: absolute;
-    top: 50%;
-    right: -150%;
-    transform: translate(50%, -50%);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    transition: right ease 1s; }
   .local-shop-owner__avatar {
     width: 100px;
     padding-bottom: 15px; }
