@@ -1076,8 +1076,10 @@ font-family: 'Poppins', sans-serif;
   font-size: 14px;
   margin-bottom: 30px; }
   .product-table__section {
-    margin: 0 10px;
-    overflow-x: scroll; }
+    margin: 0 10px; }
+    @media (max-width: 460px) {
+      .product-table__section {
+        overflow-x: scroll; } }
   @media (max-width: 300px) {
     .product-table {
       margin-left: 7px; } }
