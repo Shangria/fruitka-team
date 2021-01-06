@@ -10,35 +10,21 @@
   justify-content: center;
   overflow: hidden;
 
-  &__container0 {
+  &__container {
     position: absolute;
     top: 50%;
+    right: -100%;
+    transform: translate(50%, -50%);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: right ease 1s;
+  }
+
+  &_slider-parametrs {
     right: 50%;
-    transform: translate(50%, -50%);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__container1 {
-    position: absolute;
-    top: 50%;
-    right: -50%;
-    transform: translate(50%, -50%);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__container2 {
-    position: absolute;
-    top: 50%;
-    right: -150%;
-    transform: translate(50%, -50%);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: right ease 1s;
   }
 
   &__avatar {

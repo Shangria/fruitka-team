@@ -7,6 +7,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include breakpoint(sm-max) {
+    padding: 5px;
+  }
 
   &__list {
     display: flex;

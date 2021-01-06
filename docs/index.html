@@ -34,11 +34,21 @@
       </div>
     </header>
     <main class="wrapper">
+      <section class="search">
+        <div class="search__wrapper">
+          <div class="search__btn_close"><i class="fa fa-close"></i></div>
+          <div class="search__container">
+            <h3>search for:</h3>
+            <input class="search__line" type="text" placeholder="Keywords"/>
+            <button class="search__btn" type="submit">Search<i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </section>
       <section class="wrapper__banner-opacity wrapper__banner">
         <div class="wrapper__banner-content">
           <h3 class="wrapper__title-max">Fresh &amp; Organic</h3>
           <h1 class="wrapper__title-min">Delicious Seasonal Fruits</h1>
-          <div class="wrapper__box-button"><a class="wrapper__btn-fruit-collection btn-main" href="#">Fruit Collection</a><a class="wrapper__btn-contact btn-main" href="#"> Contact Us</a></div>
+          <div class="wrapper__box-button"><a class="wrapper__btn-fruit-collection" href="#">Fruit Collection</a><a class="wrapper__btn-contact" href="#"> Contact Us</a></div>
         </div>
       </section>
       <section class="list-information-wrapper">
@@ -65,7 +75,7 @@
       </section>
       <section class="products">
         <div class="products__container">
-          <h3 class="products__title main-titles"><span class="color-word">Our</span> Products</h3>
+          <h3 class="products__title"><span>Our</span> Products</h3>
           <p class="products__subtitle">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Aliquid, fuga quas itaque eveniet beatae optio.
@@ -76,21 +86,21 @@
             <div class="products__box">
               <h3 class="products__box-title">Strawberry</h3>
               <div class="products__box-text"><span>Per Kg</span>85$
-              </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+              </div><a class="products__box-button" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
             </div>
           </li>
           <li class="products__col"><img class="products__img" src="./img/products/product-img-2.jpg" alt="berry-img"/>
             <div class="products__box">
               <h3 class="products__box-title">Berry</h3>
               <div class="products__box-text"><span>Per Kg</span>70$
-              </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+              </div><a class="products__box-button" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
             </div>
           </li>
           <li class="products__col"><img class="products__img" src="./img/products/product-img-3.jpg" alt="lemon-img"/>
             <div class="products__box">
               <h3 class="products__box-title">Lemon</h3>
               <div class="products__box-text"><span>Per Kg</span>35$
-              </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+              </div><a class="products__box-button" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
             </div>
           </li>
         </ul>
@@ -103,7 +113,7 @@
             </div>
           </div>
           <div class="section-product-promotion__product-promotion-inform">
-            <h2 class="main-titles">Deal<span class="color-word"> of the month</span></h2><span>HIKAN STRWABERRY</span>
+            <h2>Deal<span> of the month</span></h2><span>HIKAN STRWABERRY</span>
             <p>
               Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea.
               Perspiciatis unde omnis iste natus error sit voluptatem accusant
@@ -121,13 +131,13 @@
               <div class="section-product-promotion__time-action"><span class="color-word" id="section-product-promotion-secs">00</span>
                 <p>Secs</p>
               </div>
-            </div><a class="btn-main btn-add-to-card" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+            </div><a class="section-product-promotion__btn btn-add-to-card" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
           </div>
         </div>
       </section>
       <section>
         <ul class="local-shop-owner" id="local-shop-owner_slider">
-          <li class="local-shop-owner__container0">
+          <li class="local-shop-owner__container">
             <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar1.png"/></div>
             <div class="local-shop-owner__name"><span>Saira Hakim</span>
               <p>Local shop owner</p>
@@ -142,7 +152,7 @@
               <p class="icon-quote-right"></p>
             </div>
           </li>
-          <li class="local-shop-owner__container1">
+          <li class="local-shop-owner__container">
             <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar2.png"/></div>
             <div class="local-shop-owner__name"><span>Jacob Sikim</span>
               <p>Local shop owner</p>
@@ -157,7 +167,7 @@
               <p class="icon-quote-right"></p>
             </div>
           </li>
-          <li class="local-shop-owner__container2">
+          <li class="local-shop-owner__container">
             <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar3.png"/></div>
             <div class="local-shop-owner__name"><span>David Niph</span>
               <p>Local shop owner</p>
@@ -178,7 +188,7 @@
         <div class="description__inner">
           <div class="description__elem description__video"><a class="description__video-btn" href="#"><i class="fa fa-play"></i></a></div>
           <div class="description__elem description__content"><span class="description__top-subtitle">Since Year 1999</span>
-            <h2 class="description__title main-titles">We are <span class="color-word">Fruitkha</span></h2>
+            <h2>We are <span>Fruitkha</span></h2>
             <p class="description__text">
                Etiam vulputate ut augue vel sodales. 
               In sollicitudin neque et massa porttitor vestibulum ac vel nisi. 
@@ -188,7 +198,7 @@
             <p class="description__text">
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
               Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.
-            </p><a class="description__button btn-main" href="#">know more</a>
+            </p><a class="description__button" href="#">know more</a>
           </div>
         </div>
       </section>
@@ -201,7 +211,7 @@
       </section>
       <section class="latest-news">
         <div class="latest-news-title__wrapper">
-          <h3 class="latest-news__title main-titles">Our<span class="latest-news__title_color color-word"> News</span></h3>
+          <h3 class="latest-news__title">Our<span> News</span></h3>
           <p class="latest-news__subtitle">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Aliquid, fuga quas itaque eveniet beatae optio.
@@ -242,7 +252,7 @@
             </div>
           </li>
         </ul>
-        <div class="latest-news__button-wrapper"><a class="latest-news__button btn-main" href="news.html">More News</a></div>
+        <div class="latest-news__button-wrapper"><a class="latest-news__button" href="news.html">More News</a></div>
       </section>
       <section class="carousel">
         <div class="carousel__container">

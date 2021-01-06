@@ -3,7 +3,6 @@
   justify-content: center;
   width: 100%;
   background-color: #f5f5f5;
-  height: 600px;
   font-family: sans-serif;
 
   &__container-promotion-info {
@@ -32,6 +31,14 @@
   }
 
   &__product-promotion-inform {
+    h2 {
+      @extend .main-titles;
+
+      span {
+        @extend .color-word;
+      }
+    }
+
     p {
       margin: 30px 0;
       font-size: 14px;
@@ -49,6 +56,10 @@
     border-radius: 999px;
     font-size: 0.8rem;
     justify-content: center;
+  }
+
+  &__btn {
+    @extend .btn-main;
   }
 
   &__box-time {
@@ -106,12 +117,14 @@
     }
   }
 }
+
 @import "src/scss/global-style/media";
 @include breakpoint(md-max) {
   .section-product-promotion__product-promotion-inform .main-titles {
     font-size: 30px;
   }
 }
+
 @include breakpoint(md-max) {
   .main-titles {
     font-size: 20px;
