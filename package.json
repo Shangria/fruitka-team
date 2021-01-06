@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "run-p static-resources scss-compile pug-compile",
-    "dev": "run-p static-resources img scss-compile scss-watch pug-watch",
+    "dev": "run-p static-resources scss-compile scss-watch pug-watch",
     "pug-compile": "pug -P -o ./docs/ ./src/pages/",
     "pug-watch": "pug -P -o ./docs/ -w ./src/pages/",
     "scss-compile": "node-sass ./src/scss/style.scss ./docs/css/style.css",
