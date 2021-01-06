@@ -2,9 +2,11 @@
 
 .header {
   position: fixed;
-  height: 80px;
   width: 100%;
   z-index: 999;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
 
   &_background-color {
     background-color: #051922;
@@ -26,6 +28,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    transition: 0.3s;
+    &_scroll {
+      padding: 0px 20px;
+    }
   }
 
   &__navigation {
@@ -104,4 +110,3 @@
 //     width: 90px;
 //   }
 // }
-    
