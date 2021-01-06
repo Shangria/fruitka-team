@@ -1272,17 +1272,11 @@ font-family: 'Poppins', sans-serif;
   .pagination__list {
     display: flex;
     list-style-type: none; }
-<<<<<<< HEAD
     @media (max-width: 600px) {
       .pagination__list {
         max-width: 300px;
         flex-wrap: wrap;
         justify-content: center; } }
-=======
-    @media (max-width: 460px) {
-      .pagination__list {
-        flex-wrap: wrap; } }
->>>>>>> ba9bba2ffec7f68c1fedf61861cb2246b549116e
   .pagination__item {
     font-weight: 700;
     font-size: 18px;
@@ -1291,7 +1285,6 @@ font-family: 'Poppins', sans-serif;
     color: #323232;
     cursor: pointer;
     padding: 8px 20px;
-<<<<<<< HEAD
     border-radius: 25px;
     transition: 0.3s; }
     .pagination__item:hover {
@@ -1357,15 +1350,6 @@ font-family: 'Poppins', sans-serif;
   .pagination__btn {
     display: flex;
     list-style-type: none; }
-=======
-    border-radius: 25px; }
-    @media (max-width: 460px) {
-      .pagination__item {
-        font-size: 14px; } }
-  .pagination_item-color {
-    background-color: #f49b49;
-    border: none; }
->>>>>>> ba9bba2ffec7f68c1fedf61861cb2246b549116e
 
 .btn-main, .wrapper__btn-fruit-collection, .wrapper__btn-contact, .section-product-promotion__btn, .products__box-button, .description__button, .shop-banner__button, .latest-news__button {
   width: 160px;
