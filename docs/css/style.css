@@ -1076,15 +1076,11 @@ font-family: 'Poppins', sans-serif;
   font-size: 14px;
   margin-bottom: 30px; }
   .product-table__section {
-    margin: 0 5px; }
-    @media (max-width: 768px) {
+    margin: 0 10px; }
+    @media (max-width: 460px) {
       .product-table__section {
-        overflow-x: scroll; }
-        .product-table__section ::-webkit-scrollbar {
-          width: 3px;
-          height: 3px;
-          background-color: #999; } }
-  @media (max-width: 500px) {
+        overflow-x: scroll; } }
+  @media (max-width: 300px) {
     .product-table {
       margin-left: 7px; } }
   .product-table-head__row {
@@ -1094,12 +1090,21 @@ font-family: 'Poppins', sans-serif;
     border-right: 1px solid #efefef;
     font-weight: 500;
     text-align: center; }
+    @media (max-width: 768px) {
+      .product-table-head__titles {
+        font-size: 12px; } }
+    @media (max-width: 500px) {
+      .product-table-head__titles {
+        padding: 5px 15px; } }
   .product-table-body_data {
     border: 1px solid #efefef;
     padding: 20px 30px;
     color: #051922;
     text-align: center;
     position: relative; }
+    @media (max-width: 768px) {
+      .product-table-body_data {
+        padding: 15px 10px; } }
   .product-table-body_remove__link {
     text-decoration: none;
     color: #000;
@@ -1109,6 +1114,9 @@ font-family: 'Poppins', sans-serif;
       color: #f28123; }
     .product-table-body_remove__link:active {
       color: #ff0000; }
+    @media (max-width: 768px) {
+      .product-table-body_remove__link {
+        font-size: 30px; } }
   .product-table-body__image {
     max-width: 50px;
     position: absolute;
@@ -1120,6 +1128,9 @@ font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     padding: 10px;
     width: 100px; }
+    @media (max-width: 768px) {
+      .product-table-body__quantity__input {
+        width: 50px; } }
 
 .total-table {
   width: 350px;
@@ -1131,12 +1142,12 @@ font-family: 'Poppins', sans-serif;
       width: 675px; } }
   @media (max-width: 768px) {
     .total-table {
-      width: 520px; } }
+      width: 496px; } }
   @media (max-width: 600px) {
     .total-table {
-      width: 300px; } }
+      width: 270px; } }
   .total-table__section {
-    margin: 0 5px; }
+    margin: 0 10px; }
   .total-table-head__row {
     background-color: #efefef; }
   .total-table-head__titles {
@@ -1144,7 +1155,10 @@ font-family: 'Poppins', sans-serif;
     border-right: 1px solid #efefef;
     font-weight: 500;
     text-align: inherit;
-    font-size: 15px; }
+    font-size: 14px; }
+    @media (max-width: 500px) {
+      .total-table-head__titles {
+        padding: 10px 20px; } }
   .total-table-body_data, .total-table-body_name {
     border: 1px solid #efefef;
     padding: 15px 20px;
