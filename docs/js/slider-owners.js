@@ -18,6 +18,7 @@ window.addEventListener('load', function () {
         liArray.forEach(function (element, index) {
             if (index === nextIndex) {
                 element.classList.add('local-shop-owner_slider-parametrs');
+
             }
             else {
                 element.classList.remove('local-shop-owner_slider-parametrs');

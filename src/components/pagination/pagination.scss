@@ -1,3 +1,5 @@
+@import "src/scss/global-style/media";
+
 .pagination {
   max-width: 1170px;
   margin: 0 auto;
@@ -5,10 +7,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include breakpoint(sm-max) {
+    padding: 5px;
+  }
 
   &__list {
     display: flex;
     list-style-type: none;
+    @include breakpoint(sm-max) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -20,5 +28,12 @@
     cursor: pointer;
     padding: 8px 20px;
     border-radius: 25px;
+    @include breakpoint(sm-max) {
+      font-size: 14px;
+    }
+  }
+  &_item-color{
+    background-color: #f49b49;
+    border: none;
   }
 }

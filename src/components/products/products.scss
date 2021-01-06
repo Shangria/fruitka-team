@@ -12,11 +12,11 @@
   }
 
   &__title {
-    @extend .main-titles;
     position: relative;
     span{
       @extend .color-word;
     }
+    @extend .main-titles;
   }
 
   &__title::after {
@@ -41,6 +41,7 @@
 
   &__container:last-child {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 80px;
     list-style-type: none;
     @include breakpoint(tablet) {
@@ -48,11 +49,14 @@
         flex-direction: column;
         align-items: center;
       }
+      @include breakpoint(sm-max) {
+        margin: 5px;
+      }
     }
   }
 
   &__col {
-    width: 33.3%;
+    width: 30%;
     padding: 20px;
     padding-bottom: 50px;
     box-shadow: 0 0 20px #e4e4e4;
@@ -76,6 +80,9 @@
 
   &__col:hover {
     box-shadow: none;
+  }
+  &_col-hidden{
+    display: none;
   }
 
   &__img {
