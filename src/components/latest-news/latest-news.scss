@@ -23,8 +23,12 @@
   }
 
   &__title {
+    @extend .main-titles;
     position: relative;
     padding-bottom: 15px;
+    span{
+      @extend .color-word;
+    }
 
 
     &::after {
@@ -39,7 +43,7 @@
       margin: 0 auto;
     }
   }
-  
+
   &__subtitle{
     @include breakpoint(sm-max) {
       & {
@@ -127,7 +131,7 @@
       &:hover {
         color: #f28123;
 
-        
+
       }
     }
 
@@ -155,6 +159,7 @@
   }
 
   &__button {
+    @extend .btn-main;
     margin-top: 80px;
     @include breakpoint(md-max) {
       & {

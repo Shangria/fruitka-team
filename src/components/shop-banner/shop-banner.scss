@@ -41,16 +41,7 @@
   }
 
   &__button {
-    font-family: "Poppins", sans-serif;
-    display: inline-block;
-    background-color: #f28123;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 18px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
+    @extend .btn-main;
   }
 
   &__button:hover {

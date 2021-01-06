@@ -17,10 +17,11 @@ window.addEventListener('load', function () {
 
         liArray.forEach(function (element, index) {
             if (index === nextIndex) {
-                element.style.right='50%';
-                element.style.transition= 'right ease 1s';
-            } else {
-                element.style.right='-100%';
+                element.classList.add('local-shop-owner_slider-parametrs');
+
+            }
+            else {
+                element.classList.remove('local-shop-owner_slider-parametrs');
             }
         });
 
@@ -28,5 +29,5 @@ window.addEventListener('load', function () {
     }
 
     toggleSlider();
-    setInterval(toggleSlider, 6000);
+    setInterval(toggleSlider, 5000);
 });
