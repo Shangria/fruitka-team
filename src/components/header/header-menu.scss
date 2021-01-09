@@ -34,14 +34,18 @@
   &__sub-menu{
     position: absolute;
     top: 80%;
-    display: none;
+    display: flex;
     width: 220px;
     flex-direction: column;
     background-color: #fff;
     border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .55s opacity, .55s visibility;
   }
   &_sub-menu-active{
-    display: flex;
+    opacity: 1;
+    visibility: visible;
   }
   &__sub-link{
     color: black;
