@@ -9,7 +9,6 @@ window.addEventListener('load', function () {
     function hideLoaderRemove() {
         loaderWrapper.remove();
     }
-
-   hideLoader();
+    hideLoader();
     setTimeout(hideLoaderRemove,1000)
 });
