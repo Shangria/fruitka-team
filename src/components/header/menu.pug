@@ -7,7 +7,22 @@ div.header__menu-box
     .header__menu-burger
         span.header__menu-burger__item
     ul.header__menu
-        - arr = [{href:'./index.html',name:'Home'},{href:'#',name:'About'}, {href:'#',name:'Pages'},{href:'#',name:'News'},{href:'#',name:'Contact'},{href:'./shop.html',name:'Shop'}]
+        -
+             arr = [{href:'#',name:'Home',items: [{href: '#', name: 'Static Home'}, {href: '#', name:  'Slider Home'}]},
+                 {href:'#',name:'About',items:[{href: '#'}]},
+                 {href:'#', name:'Pages',items: [{href:'#', name:'404 page'},{href:'#', name:'About'},{href:'#', name:'Check Out'},{href:'#', name:'Contact'},{href:'#', name:'News'},{href:'#', name:'Shop'} ]},
+                 {href:'#',name:'News', items: [{href:'#', name:'News'},{href:'#', name:'Single News'}]},
+                 {href:'#',name:'Contact',items: [{href:'#'}]},
+                 {href:'#',name:'Shop',items: [{href:'#', name:'Shop'},{href:'#', name:'Check Out'}, {href:'#', name:'Single Product'},{href:'#', name:'Cart'}]}]
         each element in arr
             li.head__list-menu
                 a.header__link(href=element.href)=element.name
+                ul.sub-menu
+                    each subEl  in element
+                        each item in subEl
+                            if (typeof (item.href) && typeof (item.name)==='undefined')
+                                - item=''
+                            else
+                                a(href=''+item.href)=''+ item.name
+
+
