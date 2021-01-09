@@ -1,13 +1,15 @@
 window.addEventListener('load', function () {
-    debugger
+
+    const loaderWrapper = document.getElementById('loader__wrapper');
 
     function hideLoader() {
-        const loaderWrapper = document.getElementById('loader__wrapper');
         loaderWrapper.classList.add('loader-hidden');
     }
 
-    function delayLoader() {
-        setTimeout(() => hideLoader().apply(this, arguments), 1500);
+    function hideLoaderRemove() {
+        loaderWrapper.remove();
     }
-    delayLoader();
+
+   hideLoader();
+    setTimeout(hideLoaderRemove,1000)
 });

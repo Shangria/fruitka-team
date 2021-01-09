@@ -8,7 +8,7 @@
   right: 0;
   top: 0;
   z-index: 99999;
-  transition: .55s opacity, .55s visibility;
+  transition: 1s opacity, 3s visibility;
 
   &-hidden {
     opacity: 0;
