@@ -47,9 +47,11 @@
     opacity: 1;
     visibility: visible;
   }
+  &__sub-list{
+    padding: 10px 30px;
+  }
   &__sub-link{
     color: black;
-    padding: 10px 30px;
     @extend .link-default;
     &:hover{
       color: #f49b49;

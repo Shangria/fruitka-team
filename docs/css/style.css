@@ -269,9 +269,11 @@ font-family: 'Poppins', sans-serif;
   opacity: 1;
   visibility: visible; }
 
-.header__sub-link {
-  color: black;
+.header__sub-list {
   padding: 10px 30px; }
+
+.header__sub-link {
+  color: black; }
   .header__sub-link:hover {
     color: #f49b49; }
 

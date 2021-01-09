@@ -8,21 +8,19 @@ div.header__menu-box
         span.header__menu-burger__item
     ul.header__menu#header__menu-title
         -
-             arr = [{href:'./index.html',name:'Home',items: [{href: './index.html', name: 'Static Home'}, {href: '#', name:  'Slider Home'}]},
-                 {href:'#',name:'About',items:[{href: '#'}]},
+             arr = [
+                 {href:'./index.html',name:'Home',items: [{href: './index.html', name: 'Static Home'}, {href: '#', name:  'Slider Home'}]},
+                 {href:'#',name:'About',items:[]},
                  {href:'#', name:'Pages',items: [{href:'#', name:'404 page'},{href:'#', name:'About'},{href:'./cart.html', name:'Cart'},{href:'#', name:'Check Out'},{href:'#', name:'Contact'},{href:'#', name:'News'},{href:'./shop.html', name:'Shop'} ]},
                  {href:'#',name:'News', items: [{href:'#', name:'News'},{href:'#', name:'Single News'}]},
-                 {href:'#',name:'Contact',items: [{href:'#'}]},
-                 {href:'./shop.html',name:'Shop',items: [{href:'./shop.html', name:'Shop'},{href:'#', name:'Check Out'}, {href:'#', name:'Single Product'},{href:'./cart.html', name:'Cart'}]}]
+                 {href:'#',name:'Contact',items: []},
+                 {href:'./shop.html',name:'Shop',items: [{href:'./shop.html', name:'Shop'},{href:'#', name:'Check Out'}, {href:'#', name:'Single Product'},{href:'./cart.html', name:'Cart'}]}
+                 ]
         each element in arr
             li(data-sub-menu=element.name).head__list-menu
                 a.header__link(href=element.href)=element.name
                 ul.header__sub-menu
-                    each subEl  in element
-                        each item in subEl
-                            if (typeof (item.href) && typeof (item.name)==='undefined')
-                                - item=''
-                            else
-                                a.header__sub-link(href=''+item.href)=''+ item.name
-
+                    each item  in element.items
+                        li.header__sub-list
+                            a.header__sub-link(href=''+item.href)=''+ item.name
 
