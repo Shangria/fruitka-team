@@ -1,13 +1,13 @@
-.contact-wrapper
+section.contact-wrapper
     .contact-wrapper__container
-        .contact-wrapper__form-title
-            h3 Have you any question?
-            p.contact-wrapper__form-text
+        .contact-wrapper__text-box
+            h3.contact-wrapper__title Have you any question?
+            p.contact-wrapper__text
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione!
                 | Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum
                 | minus voluptate? Dolore, esse natus!
             form(action='' method='post')
-                label(for='POST-name') Name:
+                label(for='POST-name')
                 .contact-wrapper__input-box
                     input#POST-name(type='text' name='name' placeholder='Name')
                     input#POST-email(type='text' name='email' placeholder='Email')
@@ -21,24 +21,24 @@
         .contact-wrapper__contacts
             -
                 arrListContacts = [{
-                                     h4: 'Shop Address',
+                                     h: 'Shop Address',
                                      p: '34/8, East Hukupara Gifirtok, Sadan. Country Name',
                                      i: 'fa fa-map'
                                      },
                                  {
-                                    h4: 'Shop Hours',
+                                     h: 'Shop Hours',
                                      p: 'MON - FRIDAY: 8 to 9 PM SAT - SUN: 10 to 8 PM',
-                                    i: 'fa fa-clock-o'
+                                     i: 'fa fa-clock-o'
                                  },
                                  {
-                                     h4: 'Contact',
+                                     h: 'Contact',
                                      p: 'Phone: +00 111 222 3333 Email: support@fruitkha.com',
                                      i: 'fa fa-address-book'
                                  }]
             each element in arrListContacts
                 .contact-wrapper__item
-                    h4=element.h4
-                    ii(class='' + element.i)
+                    h3.contact-wrapper__title-contact=element.h
+                    i(class='' + element.i)
                     p.contact-wrapper_item-text=element.p
 
 

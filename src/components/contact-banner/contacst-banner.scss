@@ -1,42 +1,20 @@
-.contact-banner  {
-    position: relative;
-    background-image: url(../img/breadcrumb-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    height: 450px;
+.contact-banner {
+  @extend .cart-banner;
 
-    &__inner {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: "";
-        background-color: #07212e;
-        opacity: 0.8;
-    }
+  &__inner {
+    @extend .cart-banner__inner;
 
-    &__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+  }
 
-    &__subtitle {
-        color: #f28123;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 7px;
-    }
+  &__text {
+    @extend .cart-banner__text;
+  }
 
-    &__title {
-        font-size: 50px;
-        font-weight: 900;
-        color: #fff;
-        font-family: Poppins, sans-serif;
-    }
+  &__subtitle {
+    @extend .cart-banner__subtitle;
+  }
+
+  &__title {
+    @extend .cart-banner__title;
+  }
 }

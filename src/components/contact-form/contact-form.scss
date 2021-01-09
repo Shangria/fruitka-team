@@ -1,7 +1,29 @@
 .contact-wrapper {
 
   &__container {
-  width: 90%;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 150px 10px 10px;
   }
+
+  &__text-box {
+    width: 70%;
+    padding-right: 100px;
+  }
+
+  &__title {
+    font-size: 30px;
+  }
+  &__text {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+
+  &__contacts {
+    width: 30%;
+  }
+
+
 
 }
