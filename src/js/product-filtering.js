@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
 
-    const productTypeFilters = document.querySelectorAll('[data-product-type-filter]');
+
+    const productTypeFilters = document.get('[data-product-type-filter]');
 
     function filterProducts(filterType) {
         const products = document.querySelectorAll('[data-product-type]');
