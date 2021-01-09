@@ -6,7 +6,7 @@ div.header__menu-box
                 i(class=element.class)
     .header__menu-burger
         span.header__menu-burger__item
-    ul.header__menu
+    ul.header__menu#header__menu-title
         -
              arr = [{href:'#',name:'Home',items: [{href: '#', name: 'Static Home'}, {href: '#', name:  'Slider Home'}]},
                  {href:'#',name:'About',items:[{href: '#'}]},
@@ -15,14 +15,14 @@ div.header__menu-box
                  {href:'#',name:'Contact',items: [{href:'#'}]},
                  {href:'#',name:'Shop',items: [{href:'#', name:'Shop'},{href:'#', name:'Check Out'}, {href:'#', name:'Single Product'},{href:'#', name:'Cart'}]}]
         each element in arr
-            li.head__list-menu
+            li(data-sub-menu=element.name).head__list-menu
                 a.header__link(href=element.href)=element.name
-                ul.sub-menu
+                ul.header__sub-menu
                     each subEl  in element
                         each item in subEl
                             if (typeof (item.href) && typeof (item.name)==='undefined')
                                 - item=''
                             else
-                                a(href=''+item.href)=''+ item.name
+                                a.header__sub-link(href=''+item.href)=''+ item.name
 
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script src="./js/header-menu.js"></script>
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/header-sub-menu.js"></script>
   </head>
   <body>
     <header class="header" id="header-scroll">
@@ -18,29 +19,29 @@
             <div class="header__menu-click"><a class="header__link" href="./index.html"><i class="fa fa-home"></i></a><a class="header__link" href="#"><i class="fa fa-newspaper-o"></i></a><a class="header__link" href="#"><i class="fa fa-book"></i></a><a class="header__link" href="#"><i class="fa fa-shopping-bag"></i></a>
             </div>
             <div class="header__menu-burger"><span class="header__menu-burger__item"></span></div>
-            <ul class="header__menu">
-              <li class="head__list-menu"><a class="header__link" href="#">Home</a>
-                <ul class="sub-menu"><a href="#">Static Home</a><a href="#">Slider Home</a>
+            <ul class="header__menu" id="header__menu-title">
+              <li class="head__list-menu" data-sub-menu="Home"><a class="header__link" href="#">Home</a>
+                <ul class="header__sub-menu"><a class="header__sub-link" href="#">Static Home</a><a class="header__sub-link" href="#">Slider Home</a>
                 </ul>
               </li>
-              <li class="head__list-menu"><a class="header__link" href="#">About</a>
-                <ul class="sub-menu">
+              <li class="head__list-menu" data-sub-menu="About"><a class="header__link" href="#">About</a>
+                <ul class="header__sub-menu">
                 </ul>
               </li>
-              <li class="head__list-menu"><a class="header__link" href="#">Pages</a>
-                <ul class="sub-menu"><a href="#">404 page</a><a href="#">About</a><a href="#">Check Out</a><a href="#">Contact</a><a href="#">News</a><a href="#">Shop</a>
+              <li class="head__list-menu" data-sub-menu="Pages"><a class="header__link" href="#">Pages</a>
+                <ul class="header__sub-menu"><a class="header__sub-link" href="#">404 page</a><a class="header__sub-link" href="#">About</a><a class="header__sub-link" href="#">Check Out</a><a class="header__sub-link" href="#">Contact</a><a class="header__sub-link" href="#">News</a><a class="header__sub-link" href="#">Shop</a>
                 </ul>
               </li>
-              <li class="head__list-menu"><a class="header__link" href="#">News</a>
-                <ul class="sub-menu"><a href="#">News</a><a href="#">Single News</a>
+              <li class="head__list-menu" data-sub-menu="News"><a class="header__link" href="#">News</a>
+                <ul class="header__sub-menu"><a class="header__sub-link" href="#">News</a><a class="header__sub-link" href="#">Single News</a>
                 </ul>
               </li>
-              <li class="head__list-menu"><a class="header__link" href="#">Contact</a>
-                <ul class="sub-menu">
+              <li class="head__list-menu" data-sub-menu="Contact"><a class="header__link" href="#">Contact</a>
+                <ul class="header__sub-menu">
                 </ul>
               </li>
-              <li class="head__list-menu"><a class="header__link" href="#">Shop</a>
-                <ul class="sub-menu"><a href="#">Shop</a><a href="#">Check Out</a><a href="#">Single Product</a><a href="#">Cart</a>
+              <li class="head__list-menu" data-sub-menu="Shop"><a class="header__link" href="#">Shop</a>
+                <ul class="header__sub-menu"><a class="header__sub-link" href="#">Shop</a><a class="header__sub-link" href="#">Check Out</a><a class="header__sub-link" href="#">Single Product</a><a class="header__sub-link" href="#">Cart</a>
                 </ul>
               </li>
             </ul>
