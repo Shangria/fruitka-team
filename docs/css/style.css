@@ -514,28 +514,46 @@ font-family: 'Poppins', sans-serif;
   height: max-content; }
 
 .contact-wrapper__item {
-  padding-left: 40px;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
 
 .contact-wrapper__item-text {
   line-height: 1.8;
-  opacity: 0.8; }
+  opacity: 0.8;
+  padding-left: 40px; }
 
 .contact-wrapper .fa {
-  color: #f49b49; }
+  color: #f49b49;
+  padding-right: 10px;
+  font-size: 20px; }
+
+.contact-wrapper__title-contact {
+  font-size: 20px; }
 
 .contact-wrapper__fined-title {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #162133;
-  width: 100%; }
+  width: 100%;
+  align-items: center;
+  height: 200px; }
 
 .contact-wrapper__fined-text {
   color: #fff;
-  font-size: 40px;
+  font-size: 50px;
   margin: 0;
-  font-weight: 600;
-  padding: 95px 0; }
+  font-weight: 600; }
+
+.contact-wrapper__item-box {
+  display: flex;
+  align-items: center; }
+
+.contact-wrapper__fineed-map {
+  width: 100%; }
+
+.contact-wrapper .fa-map-marker {
+  font-size: 60px;
+  padding-right: 10px; }
 
 .list-information-wrapper {
   background-color: #f5f5f5;

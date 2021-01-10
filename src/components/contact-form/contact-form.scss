@@ -71,33 +71,53 @@
   }
 
   &__item {
-    padding-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   &__item-text {
     @extend .contact-wrapper__input-box;
     line-height: 1.8;
     opacity: 0.8;
+    padding-left: 40px;
   }
 
   .fa {
     color: #f49b49;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  &__title-contact{
+    font-size: 20px;
   }
 
   &__fined-title {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     background-color: #162133;
     width: 100%;
+    align-items: center;
+    height: 200px;
   }
 
   &__fined-text {
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
     font-weight: 600;
-    padding: 95px 0;
   }
 
+  &__item-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__fineed-map {
+    width: 100%;
+  }
+
+  .fa-map-marker {
+    font-size: 60px;
+    padding-right: 10px;
+  }
 }
