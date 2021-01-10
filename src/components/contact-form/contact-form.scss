@@ -15,15 +15,89 @@
   &__title {
     font-size: 30px;
   }
+
   &__text {
-    padding-top: 50px;
+    padding: 30px 10px 40px 0;;
     font-size: 15px;
+    color: #454545;
+  }
+
+  &__input-box {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #051922;
+    margin: 0 0 10px 0;
+
+    #POST-name, #POST-email, #POST-phone, #POST-subject {
+      width: 49%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+
+    #POST-message {
+      border: 1px solid #ddd;
+      padding: 15px;
+      height: 200px;
+      border-radius: 3px;
+      width: 100%;
+      resize: none;
+    }
+  }
+
+  .contact-wrapper__btn {
+    border: none;
+    padding: 20px 30px;
+    color: #012738;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 30px;
+  }
+
+  &__btn {
+    @extend .btn-main;
   }
 
   &__contacts {
     width: 30%;
+    background-color: #FBFBFB;
+    padding: 45px 30px;
+    border-radius: 5px;
+    height: max-content;
   }
 
+  &__item {
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
 
+  &__item-text {
+    @extend .contact-wrapper__input-box;
+    line-height: 1.8;
+    opacity: 0.8;
+  }
+
+  .fa {
+    color: #f49b49;
+  }
+
+  &__fined-title {
+    display: flex;
+    justify-content: center;
+    background-color: #162133;
+    width: 100%;
+  }
+
+  &__fined-text {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+    padding: 95px 0;
+  }
 
 }

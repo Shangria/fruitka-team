@@ -49,21 +49,28 @@
     font-family: "Poppins", sans-serif;
   }
 
-  &__btn-fruit-collection {
-    @extend .btn-main;
+  .wrapper__btn-fruit-collection {
+    width: 160px;
     font-size: 13px;
   }
 
-  &__btn-contact {
+  &__btn-fruit-collection {
     @extend .btn-main;
+  }
+
+  .wrapper__btn-contact {
     background: rgba(255, 255, 255, 0);
     border: #f28123 2px solid;
     font-size: 13px;
+    width: 160px;
 
     &:hover {
       background-color: #f28123;
       color: white;
     }
+  }
+  &__btn-contact {
+    @extend .btn-main;
   }
 }
 
