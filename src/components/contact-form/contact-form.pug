@@ -1,0 +1,52 @@
+section.contact-wrapper
+    .contact-wrapper__container
+        .contact-wrapper__text-box
+            h3.contact-wrapper__title Have you any question?
+            p.contact-wrapper__text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione!
+                | Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum
+                | minus voluptate? Dolore, esse natus!
+            form(action='' method='post')
+                label(for='POST-name')
+                .contact-wrapper__input-box
+                    input#POST-name(type='text' name='name' placeholder='Name')
+                    input#POST-email(type='text' name='email' placeholder='Email')
+                .contact-wrapper__input-box
+                    input#POST-phone(type='text' name='phone' placeholder='Phone')
+                    input#POST-subject(type='text' name='subject' placeholder='Subject')
+                .contact-wrapper__input-box
+                    input#POST-message(type='textarea' name='message' placeholder='Message')
+                .contact-wrapper__input-submit
+                    button.contact-wrapper__btn(type='submit') submit
+        .contact-wrapper__contacts
+            -
+                arrListContacts = [{
+                                     h: 'Shop Address',
+                                     p: '34/8, East Hukupara Gifirtok, Sadan. Country Name',
+                                     i: 'fa fa-map'
+                                     },
+                                 {
+                                     h: 'Shop Hours',
+                                     p: 'MON - FRIDAY: 8 to 9 PM SAT - SUN: 10 to 8 PM',
+                                     i: 'fa fa-clock-o'
+                                 },
+                                 {
+                                     h: 'Contact',
+                                     p: 'Phone: +00 111 222 3333 Email: support@fruitkha.com',
+                                     i: 'fa fa-address-book'
+                                 }]
+            each element in arrListContacts
+                .contact-wrapper__item
+                    .contact-wrapper__item-box
+                        i(class='' + element.i)
+                        h3.contact-wrapper__title-contact=element.h
+                p.contact-wrapper__item-text=element.p
+    .contact-wrapper__fined-container
+        .contact-wrapper__fined-title
+            i.fa.fa-map-marker
+            p.contact-wrapper__fined-text Find Our Location
+        iframe.contact-wrapper__fineed-map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344039.6035663243!2d-78.50690721212774!3d17.728891213713425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edbba1b5c17ad65%3A0xbfcdccfe20624462!2z0KHQsNC50LvQtdC90YIg0KXQuNC70LssINCv0LzQsNC50LrQsA!5e0!3m2!1sru!2sua!4v1610284512835!5m2!1sru!2sua' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+
+
+
+

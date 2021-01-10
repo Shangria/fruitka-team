@@ -1,0 +1,20 @@
+.contact-banner {
+  @extend .cart-banner;
+
+  &__inner {
+    @extend .cart-banner__inner;
+
+  }
+
+  &__text {
+    @extend .cart-banner__text;
+  }
+
+  &__subtitle {
+    @extend .cart-banner__subtitle;
+  }
+
+  &__title {
+    @extend .cart-banner__title;
+  }
+}

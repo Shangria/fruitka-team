@@ -61,20 +61,8 @@
 
 
   &__btn {
-    margin-top: 30px;
-    border: none;
-    width: 140px;
-    background-color: #f28123;
-    color: black;
-    padding: 20px 15px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    transition: all 0.3s;
+   @extend .btn-main;
 
-    &:hover {
-      background-color: white;
-    }
   }
 }
 
