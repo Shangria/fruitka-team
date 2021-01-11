@@ -6,6 +6,7 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
+@import "../components/loader/loader";
 
 @import "../components/header/header";
 
@@ -14,6 +15,10 @@ font-family: 'Poppins', sans-serif;
 @import "../components/banner/banner";
 
 @import "../components/search/search";
+
+@import "../components/contact-banner/contacst-banner";
+
+@import "../components/contact-form/contact-form";
 
 @import "../components/list-information/list-information";
 

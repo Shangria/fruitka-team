@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shop</title>
+    <title>Cart</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="./js/header-menu.js"></script>
     <script src="./js/header-scroll.js"></script>
-    <script src="./js/product-filtering.js"></script>
     <script src="./js/header-sub-menu.js"></script>
     <script src="./js/loader.js"></script>
   </head>
@@ -91,38 +90,67 @@
         <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
       </div>
     </header>
-    <section class="banner-shop"> 
-      <div class="banner-shop__inner">
-        <div class="banner-shop__text">
-          <p class="banner-shop__subtitle">FRESH AND ORGANIC</p>
-          <h1 class="banner-shop__title">
-             Shop</h1>
+    <section class="contact-banner">
+      <div class="contact-banner__inner">
+        <div class="contact-banner__text">
+          <p class="contact-banner__subtitle">GET 24/7 SUPPORT</p>
+          <h1 class="contact-banner__title">Contact us</h1>
         </div>
       </div>
     </section>
-    <section class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item" data-filter="all">All    </li>
-        <li class="pagination__item" data-filter="berries">Berries    </li>
-        <li class="pagination__item" data-filter="citruses">Citruses    </li>
-        <li class="pagination__item" data-filter="fruits">Fruits    </li>
-      </ul>
-      <ul class="pagination__container"></ul>
-      <ul class="pagination__btn">
-        <li class="pagination__item">1</li>
-        <li class="pagination__item">2</li>
-        <li class="pagination__item">3</li>
-      </ul>
-    </section>
-    <section class="carousel">
-      <div class="carousel__container">
-        <div class="carousel__row">
-          <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/1.png" alt="carousel-logo"/></div>
-          <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/2.png" alt="carousel-logo"/></div>
-          <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/3.png" alt="carousel-logo"/></div>
-          <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/4.png" alt="carousel-logo"/></div>
-          <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/5.png" alt="carousel-logo"/></div>
+    <section class="contact-wrapper">
+      <div class="contact-wrapper__container">
+        <div class="contact-wrapper__text-box">
+          <h3 class="contact-wrapper__title">Have you any question?</h3>
+          <p class="contact-wrapper__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione!
+            Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum
+            minus voluptate? Dolore, esse natus!
+          </p>
+          <form action="" method="post">
+            <label for="POST-name"></label>
+            <div class="contact-wrapper__input-box">
+              <input id="POST-name" type="text" name="name" placeholder="Name"/>
+              <input id="POST-email" type="text" name="email" placeholder="Email"/>
+            </div>
+            <div class="contact-wrapper__input-box">
+              <input id="POST-phone" type="text" name="phone" placeholder="Phone"/>
+              <input id="POST-subject" type="text" name="subject" placeholder="Subject"/>
+            </div>
+            <div class="contact-wrapper__input-box">
+              <input id="POST-message" type="textarea" name="message" placeholder="Message"/>
+            </div>
+            <div class="contact-wrapper__input-submit">
+              <button class="contact-wrapper__btn" type="submit">submit</button>
+            </div>
+          </form>
         </div>
+        <div class="contact-wrapper__contacts">
+          <div class="contact-wrapper__item">
+            <div class="contact-wrapper__item-box"><i class="fa fa-map"></i>
+              <h3 class="contact-wrapper__title-contact">Shop Address</h3>
+            </div>
+          </div>
+          <p class="contact-wrapper__item-text">34/8, East Hukupara Gifirtok, Sadan. Country Name</p>
+          <div class="contact-wrapper__item">
+            <div class="contact-wrapper__item-box"><i class="fa fa-clock-o"></i>
+              <h3 class="contact-wrapper__title-contact">Shop Hours</h3>
+            </div>
+          </div>
+          <p class="contact-wrapper__item-text">MON - FRIDAY: 8 to 9 PM SAT - SUN: 10 to 8 PM</p>
+          <div class="contact-wrapper__item">
+            <div class="contact-wrapper__item-box"><i class="fa fa-address-book"></i>
+              <h3 class="contact-wrapper__title-contact">Contact</h3>
+            </div>
+          </div>
+          <p class="contact-wrapper__item-text">Phone: +00 111 222 3333 Email: support@fruitkha.com</p>
+        </div>
+      </div>
+      <div class="contact-wrapper__fined-container">
+        <div class="contact-wrapper__fined-title"><i class="fa fa-map-marker"></i>
+          <p class="contact-wrapper__fined-text">Find Our Location</p>
+        </div>
+        <iframe class="contact-wrapper__fineed-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344039.6035663243!2d-78.50690721212774!3d17.728891213713425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edbba1b5c17ad65%3A0xbfcdccfe20624462!2z0KHQsNC50LvQtdC90YIg0KXQuNC70LssINCv0LzQsNC50LrQsA!5e0!3m2!1sru!2sua!4v1610284512835!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
     <footer class="footer">   
@@ -178,6 +206,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/pagination.js"> </script>
   </body>
 </html>
