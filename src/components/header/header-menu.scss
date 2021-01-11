@@ -1,5 +1,9 @@
 @import "src/scss/global-style/media";
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   &__menu {
     display: flex;
@@ -12,8 +16,8 @@
     }
     @include breakpoint(mobile500) {
       position: fixed;
-      top: -100%;
-      left: 0;
+      top: 0;
+      right: -100%;
       height: 100%;
       width: 100%;
       padding: 100px 20px 20px 20px;
@@ -27,7 +31,7 @@
     }
 
     &.active {
-      top: 0;
+      right: 0;
     }
   }
 
@@ -43,55 +47,69 @@
 
   &__menu-burger {
     display: none;
+    background-color: #f28123;
+    border-radius: 5px;
     position: relative;
     width: 40px;
     height: 30px;
     z-index: 1;
+    height: 35px;
 
-    &.active &__item {
+    &.active &_item:nth-child(2) {
       transform: scale(0);
     }
 
-    &.active::before {
+    &.active &_item:nth-child(1) {
       transform: rotate(45deg);
-      top: 13.5px;
+      width: 50%;
+      top: 10px;
+      animation-delay: 0.2s;
+      animation: header-arrow 1s infinite;
     }
 
-    &.active::after {
+    &.active &_item:nth-child(3) {
       transform: rotate(-45deg);
-      bottom: 13.5px;
+      width: 50%;
+      bottom: 10px;
+      animation-delay: 0.2s;
+      animation: header-arrow 1s infinite;
     }
 
-    &__item {
+    &_item {
       position: absolute;
-      top: 13.5px;
-      background-color: #f28123;
+      background-color: #051922;
       display: block;
+      border-radius: 5px;
       height: 3px;
-      width: 100%;
-    }
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      display: block;
-      background-color: #f28123;
-      height: 3px;
-      width: 100%;
+      left: 4px;
+      width: 80%;
       transition: 0.3s;
     }
 
-    &::after {
-      bottom: 0;
+    &_item:nth-child(1) {
+      top: 5px;
     }
 
-    &::before {
-      top: 0;
+    &_item:nth-child(2) {
+      top: 16px;
+      width: 50%;
+    }
+
+    &_item:nth-child(3) {
+      bottom: 5px;
     }
 
     @include breakpoint(mobile500) {
       display: block;
+    }
+
+    @keyframes header-arrow {
+      20% {
+        left: 7px;
+      }
+      100% {
+        left: 15px;
+      }
     }
   }
 

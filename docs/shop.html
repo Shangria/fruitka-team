@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script src="./js/header-menu.js"></script>
     <script src="./js/header-scroll.js"></script>
-    <script src="./js/product-filtering.js"></script>
   </head>
   <body>
     <header class="header" id="header-scroll">
@@ -18,7 +17,7 @@
           <div class="header__menu-box">
             <div class="header__menu-click"><a class="header__link" href="./index.html"><i class="fa fa-home"></i></a><a class="header__link" href="#"><i class="fa fa-newspaper-o"></i></a><a class="header__link" href="#"><i class="fa fa-book"></i></a><a class="header__link" href="#"><i class="fa fa-shopping-bag"></i></a>
             </div>
-            <div class="header__menu-burger"><span class="header__menu-burger__item"></span></div>
+            <div class="header__menu-burger"><span class="header__menu-burger_item"></span><span class="header__menu-burger_item"></span><span class="header__menu-burger_item"></span></div>
             <ul class="header__menu">
               <li class="head__list-menu"><a class="header__link" href="./index.html">Home</a></li>
               <li class="head__list-menu"><a class="header__link" href="#">About</a></li>
@@ -42,63 +41,17 @@
       </div>
     </section>
     <section class="pagination">
-      <ul class="pagination__list" id="pagination__list-id">
-        <li class="pagination__item" data-product-type-filter="all">All</li>
-        <li class="pagination__item" data-product-type-filter="berries">Berries</li>
-        <li class="pagination__item" data-product-type-filter="citruses">Citruses</li>
-        <li class="pagination__item" data-product-type-filter="fruits">Fruits</li>
+      <ul class="pagination__list">
+        <li class="pagination__item" data-filter="all">All    </li>
+        <li class="pagination__item" data-filter="berries">Berries    </li>
+        <li class="pagination__item" data-filter="citruses">Citruses    </li>
+        <li class="pagination__item" data-filter="fruits">Fruits    </li>
       </ul>
-<<<<<<< HEAD
       <ul class="pagination__container"></ul>
       <ul class="pagination__btn">
         <li class="pagination__item">1</li>
         <li class="pagination__item">2</li>
         <li class="pagination__item">3</li>
-=======
-      <ul class="products__container" id="pagination__products-container">
-        <li class="products__col" data-product-type="berries"><img class="products__img" src="./img/products/product-img-1.jpg" alt="strawberry-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Strawberry</h3>
-            <div class="products__box-text"><span>Per Kg</span>85$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col" data-product-type="citruses"><img class="products__img" src="./img/products/product-img-7.jpg" alt="orange-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Orange</h3>
-            <div class="products__box-text"><span>Per Kg</span>85$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col" data-product-type="berries"><img class="products__img" src="./img/products/product-img-2.jpg" alt="berry-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Berry</h3>
-            <div class="products__box-text"><span>Per Kg</span>70$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col" data-product-type="citruses"><img class="products__img" src="./img/products/product-img-3.jpg" alt="lemon-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Lemon</h3>
-            <div class="products__box-text"><span>Per Kg</span>35$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col" data-product-type="fruits"><img class="products__img" src="./img/products/product-img-4.jpg" alt="kiwi-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Kiwi</h3>
-            <div class="products__box-text"><span>Per Kg</span>35$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
-        <li class="products__col" data-product-type="fruits"><img class="products__img" src="./img/products/product-img-5.jpg" alt="apple-img"/>
-          <div class="products__box">
-            <h3 class="products__box-title">Apple</h3>
-            <div class="products__box-text"><span>Per Kg</span>35$
-            </div><a class="products__box-button btn-main" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
-          </div>
-        </li>
->>>>>>> ba9bba2ffec7f68c1fedf61861cb2246b549116e
       </ul>
     </section>
     <section class="carousel">
