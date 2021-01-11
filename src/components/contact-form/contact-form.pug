@@ -15,7 +15,7 @@ section.contact-wrapper
                     input#POST-phone(type='text' name='phone' placeholder='Phone')
                     input#POST-subject(type='text' name='subject' placeholder='Subject')
                 .contact-wrapper__input-box
-                    input#POST-message(type='textarea' name='message' placeholder='Message')
+                    textarea#POST-message(name='message' placeholder='Message')
                 .contact-wrapper__input-submit
                     button.contact-wrapper__btn(type='submit') submit
         .contact-wrapper__contacts
@@ -40,7 +40,7 @@ section.contact-wrapper
                     .contact-wrapper__item-box
                         i(class='' + element.i)
                         h3.contact-wrapper__title-contact=element.h
-                p.contact-wrapper__item-text=element.p
+                    p.contact-wrapper__item-text=element.p
     .contact-wrapper__fined-container
         .contact-wrapper__fined-title
             i.fa.fa-map-marker

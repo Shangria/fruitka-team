@@ -458,15 +458,30 @@ font-family: 'Poppins', sans-serif;
       color: white;
       font-weight: bold; }
 
+@media (max-width: 1024px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column; } }
+
 .contact-wrapper__container {
   width: 80%;
   display: flex;
   margin: 0 auto;
   padding: 150px 10px 10px; }
+  @media (max-width: 1024px) {
+    .contact-wrapper__container {
+      flex-direction: column;
+      width: 90%;
+      padding-top: 15px; } }
 
 .contact-wrapper__text-box {
   width: 70%;
   padding-right: 100px; }
+  @media (max-width: 1024px) {
+    .contact-wrapper__text-box {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0; } }
 
 .contact-wrapper__title {
   font-size: 30px; }
@@ -512,6 +527,14 @@ font-family: 'Poppins', sans-serif;
   padding: 45px 30px;
   border-radius: 5px;
   height: max-content; }
+  @media (max-width: 1024px) {
+    .contact-wrapper__contacts {
+      width: 100%;
+      display: flex; } }
+  @media (max-width: 820px) {
+    .contact-wrapper__contacts {
+      flex-direction: column;
+      margin: 0 auto; } }
 
 .contact-wrapper__item {
   margin-bottom: 15px; }
@@ -538,11 +561,19 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   height: 200px; }
 
+@media (max-width: 1024px) {
+  .contact-wrapper__fined-container {
+    display: flex;
+    flex-direction: column; } }
+
 .contact-wrapper__fined-text {
   color: #fff;
   font-size: 50px;
   margin: 0;
   font-weight: 600; }
+  @media (max-width: 500px) {
+    .contact-wrapper__fined-text {
+      font-size: 25px; } }
 
 .contact-wrapper__item-box {
   display: flex;
@@ -554,6 +585,9 @@ font-family: 'Poppins', sans-serif;
 .contact-wrapper .fa-map-marker {
   font-size: 60px;
   padding-right: 10px; }
+  @media (max-width: 500px) {
+    .contact-wrapper .fa-map-marker {
+      font-size: 35px; } }
 
 .list-information-wrapper {
   background-color: #f5f5f5;
