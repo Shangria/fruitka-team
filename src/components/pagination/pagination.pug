@@ -1,36 +1,11 @@
 section.pagination
-    ul.pagination__list#pagination__list-id
+    ul.pagination__list
         -arrList = ["All", "Berries", "Citruses", "Fruits"];
         each element in arrList
-            li.pagination__item #{element}    
+            li.pagination__item(data-filter='' + element.toLowerCase()) #{element}    
     ul.pagination__container
-        //- - arrProducts = [{src: "./img/products/product-img-1.jpg", alt: "strawberry-img", title: "Strawberry", cost: "85$"}, {src: "./img/products/product-img-2.jpg", alt: "berry-img", title: "Berry", cost: "70$"}, {src: "./img/products/product-img-3.jpg", alt: "lemon-img", title: "Lemon", cost: "35$"}]
-        //- each element in arrProducts
-        //-     li.pagination__col
-        //-         img.pagination__img(src=element.src, alt=element.alt)
-        //-         div.pagination__box
-        //-             h3.pagination__box-title=element.title
-        //-             div.pagination__box-text
-        //-                 span Per Kg
-        //-                 =element.cost
-        //-             a.pagination__box-button.btn-main(href="#")
-        //-                 i.fa.fa-shopping-cart.pagination__icon
-        //-                 | Add to Cart
+        
     ul.pagination__btn
         -arrBtn = [1,2,3];
         each element in arrBtn
             li.pagination__item #{element}
-    //-         li.pagination__item(data-product-type-filter='' + element.toLowerCase()) #{element}
-    //- ul.products__container#pagination__products-container
-    //-     - arrProducts = [{src: "./img/products/product-img-1.jpg", alt: "strawberry-img", title: "Strawberry", cost: "85$", type:'berries'},{src: "./img/products/product-img-7.jpg", alt: "orange-img", title: "Orange", cost: "85$", type:'citruses'}, {src: "./img/products/product-img-2.jpg", alt: "berry-img", title: "Berry", cost: "70$", type:'berries'}, {src: "./img/products/product-img-3.jpg", alt: "lemon-img", title: "Lemon", cost: "35$", type:'citruses'}, {src: "./img/products/product-img-4.jpg", alt: "kiwi-img", title: "Kiwi", cost: "35$", type:'fruits'},{src: "./img/products/product-img-5.jpg", alt: "apple-img", title: "Apple", cost: "35$", type:'fruits'}]
-    //-     each element in arrProducts
-    //-         li.products__col(data-product-type=element.type)
-    //-             img.products__img(src=element.src, alt=element.alt)
-    //-             div.products__box
-    //-                 h3.products__box-title=element.title
-    //-                 div.products__box-text
-    //-                     span Per Kg
-    //-                     =element.cost
-    //-                 a.products__box-button.btn-main(href="#")
-    //-                     i.fa.fa-shopping-cart.products__icon
-    //-                     | Add to Cart

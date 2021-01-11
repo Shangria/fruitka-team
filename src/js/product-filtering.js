@@ -4,10 +4,10 @@ window.addEventListener('load', function () {
     const productTypeFilters = document.get('[data-product-type-filter]');
 
     function filterProducts(filterType) {
-        const products = document.querySelectorAll('[data-product-type]');
+        const products = document.querySelectorAll('[data-type]');
 
         products.forEach(function (productElement) {
-            const productType = productElement.getAttribute('data-product-type');
+            const productType = productElement.getAttribute('data-type');
             if (filterType === 'all' || filterType === productType) {
                 productElement.classList.remove('products_col-hidden');
             } else {
@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
 
     {
         productTypeFilters.forEach(function (filterElement) {
-            const filterType = filterElement.getAttribute('data-product-type-filter');
+            const filterType = filterElement.getAttribute('data-filter');
 
             filterElement.addEventListener('click', function () {
 

@@ -42,7 +42,9 @@
           <div class="header__menu-box">
             <div class="header__menu-click"><a class="header__link" href="./index.html"><i class="fa fa-home"></i></a><a class="header__link" href="#"><i class="fa fa-newspaper-o"></i></a><a class="header__link" href="#"><i class="fa fa-book"></i></a><a class="header__link" href="#"><i class="fa fa-shopping-bag"></i></a>
             </div>
-            <div class="header__menu-burger"><span class="header__menu-burger__item"></span></div>
+            <div class="header__menu-burger"><span class="header__menu-burger_item"></span><span class="header__menu-burger_item"></span><span class="header__menu-burger_item"></span></div>
+            <ul class="header__menu"><span class="header__menu-burger__item"></span>
+            </ul>
             <ul class="header__menu" id="header__menu-title">
               <li class="head__list-menu" data-sub-menu="Home"><a class="header__link" href="./index.html">Home</a>
                 <ul class="header__sub-menu">
@@ -99,11 +101,11 @@
       </div>
     </section>
     <section class="pagination">
-      <ul class="pagination__list" id="pagination__list-id">
-        <li class="pagination__item">All    </li>
-        <li class="pagination__item">Berries    </li>
-        <li class="pagination__item">Citruses    </li>
-        <li class="pagination__item">Fruits    </li>
+      <ul class="pagination__list">
+        <li class="pagination__item" data-filter="all">All    </li>
+        <li class="pagination__item" data-filter="berries">Berries    </li>
+        <li class="pagination__item" data-filter="citruses">Citruses    </li>
+        <li class="pagination__item" data-filter="fruits">Fruits    </li>
       </ul>
       <ul class="pagination__container"></ul>
       <ul class="pagination__btn">
