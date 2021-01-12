@@ -44,10 +44,12 @@
     letter-spacing: 0.1px;
     line-height: 1.8;
     color: #051922;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
+    display: flex;
+
 
     #POST-name, #POST-email, #POST-phone, #POST-subject {
-      width: 49%;
+      width: 100%;
       padding: 15px;
       border: 1px solid #ddd;
       border-radius: 3px;
@@ -60,6 +62,30 @@
       border-radius: 3px;
       width: 100%;
       resize: none;
+    }
+  }
+
+  &__input-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  &__error-message {
+    color: #ff0000;
+    background-color: #ff00000f;
+    width: 49%;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    .fa-ban {
+      color: #ff0000;
+      font-size: 20px;
+
     }
   }
 
@@ -96,6 +122,12 @@
 
   &__item {
     margin-bottom: 15px;
+
+    .fa {
+      color: #f49b49;
+      padding-right: 10px;
+      font-size: 20px;
+    }
   }
 
   &__item-text {
@@ -105,11 +137,6 @@
     padding-left: 40px;
   }
 
-  .fa {
-    color: #f49b49;
-    padding-right: 10px;
-    font-size: 20px;
-  }
 
   &__title-contact {
     font-size: 20px;

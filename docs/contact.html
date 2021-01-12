@@ -11,6 +11,7 @@
     <script src="./js/header-scroll.js"></script>
     <script src="./js/header-sub-menu.js"></script>
     <script src="./js/loader.js"></script>
+    <script src="./js/form-validation.js"></script>
   </head>
   <body>
     <div class="loader" id="loader__wrapper">
@@ -105,18 +106,28 @@
             Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum
             minus voluptate? Dolore, esse natus!
           </p>
-          <form action="" method="post">
+          <form id="contact__form" action="" method="post" autocomplete="off">
             <label for="POST-name"></label>
             <div class="contact-wrapper__input-box">
-              <input id="POST-name" type="text" name="name" placeholder="Name"/>
-              <input id="POST-email" type="text" name="email" placeholder="Email"/>
+              <div class="contact-wrapper__input-item">
+                <input id="POST-name" type="text" data-input="data-input" name="name" placeholder="Name"/>
+              </div>
+              <div class="contact-wrapper__input-item">
+                <input id="POST-email" type="text" data-input="data-input" name="email" placeholder="Email"/>
+              </div>
             </div>
             <div class="contact-wrapper__input-box">
-              <input id="POST-phone" type="text" name="phone" placeholder="Phone"/>
-              <input id="POST-subject" type="text" name="subject" placeholder="Subject"/>
+              <div class="contact-wrapper__input-item">
+                <input id="POST-phone" type="text" data-input="data-input" name="phone" placeholder="Phone"/>
+              </div>
+              <div class="contact-wrapper__input-item">
+                <input id="POST-subject" type="text" data-input="data-input" name="subject" placeholder="Subject"/>
+              </div>
             </div>
             <div class="contact-wrapper__input-box">
-              <textarea id="POST-message" name="message" placeholder="Message"></textarea>
+              <div class="contact-wrapper__input-item">
+                <textarea id="POST-message" name="message" data-input="data-input" placeholder="Message"></textarea>
+              </div>
             </div>
             <div class="contact-wrapper__input-submit">
               <button class="contact-wrapper__btn" type="submit">submit</button>

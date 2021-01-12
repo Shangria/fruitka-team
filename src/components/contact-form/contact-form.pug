@@ -6,16 +6,21 @@ section.contact-wrapper
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione!
                 | Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum
                 | minus voluptate? Dolore, esse natus!
-            form(action='' method='post')
+            form#contact__form(action='' method='post' autocomplete='off')
                 label(for='POST-name')
                 .contact-wrapper__input-box
-                    input#POST-name(type='text' name='name' placeholder='Name')
-                    input#POST-email(type='text' name='email' placeholder='Email')
+                    .contact-wrapper__input-item
+                        input#POST-name(type='text' data-input name='name' placeholder='Name')
+                    .contact-wrapper__input-item
+                        input#POST-email(type='text' data-input name='email' placeholder='Email')
                 .contact-wrapper__input-box
-                    input#POST-phone(type='text' name='phone' placeholder='Phone')
-                    input#POST-subject(type='text' name='subject' placeholder='Subject')
+                    .contact-wrapper__input-item
+                        input#POST-phone(type='text' data-input name='phone' placeholder='Phone')
+                    .contact-wrapper__input-item
+                        input#POST-subject(type='text' data-input name='subject' placeholder='Subject')
                 .contact-wrapper__input-box
-                    textarea#POST-message(name='message' placeholder='Message')
+                    .contact-wrapper__input-item
+                        textarea#POST-message(name='message' data-input placeholder='Message')
                 .contact-wrapper__input-submit
                     button.contact-wrapper__btn(type='submit') submit
         .contact-wrapper__contacts

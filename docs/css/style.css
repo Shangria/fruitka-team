@@ -515,9 +515,10 @@ font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1px;
   line-height: 1.8;
   color: #051922;
-  margin: 0 0 10px 0; }
+  margin: 0 0 30px 0;
+  display: flex; }
   .contact-wrapper__input-box #POST-name, .contact-wrapper__item-text #POST-name, .contact-wrapper__input-box #POST-email, .contact-wrapper__item-text #POST-email, .contact-wrapper__input-box #POST-phone, .contact-wrapper__item-text #POST-phone, .contact-wrapper__input-box #POST-subject, .contact-wrapper__item-text #POST-subject {
-    width: 49%;
+    width: 100%;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 3px; }
@@ -528,6 +529,25 @@ font-family: 'Poppins', sans-serif;
     border-radius: 3px;
     width: 100%;
     resize: none; }
+
+.contact-wrapper__input-item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-left: 5px; }
+
+.contact-wrapper__error-message {
+  color: #ff0000;
+  background-color: #ff00000f;
+  width: 49%;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between; }
+  .contact-wrapper__error-message .fa-ban {
+    color: #ff0000;
+    font-size: 20px; }
 
 .contact-wrapper .contact-wrapper__btn {
   border: none;
@@ -556,16 +576,15 @@ font-family: 'Poppins', sans-serif;
 
 .contact-wrapper__item {
   margin-bottom: 15px; }
+  .contact-wrapper__item .fa {
+    color: #f49b49;
+    padding-right: 10px;
+    font-size: 20px; }
 
 .contact-wrapper__item-text {
   line-height: 1.8;
   opacity: 0.8;
   padding-left: 40px; }
-
-.contact-wrapper .fa {
-  color: #f49b49;
-  padding-right: 10px;
-  font-size: 20px; }
 
 .contact-wrapper__title-contact {
   font-size: 20px; }
