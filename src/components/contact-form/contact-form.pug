@@ -10,36 +10,36 @@ section.contact-wrapper
                 label(for='POST-name')
                 .contact-wrapper__input-box
                     .contact-wrapper__input-item
-                        input#POST-name(type='text' data-input name='name' placeholder='Name')
+                        input#POST-name(type='text'  name='name' placeholder='Name' data-input-validation="required" data-input-validation-message="User name is a mandatory field")
                     .contact-wrapper__input-item
-                        input#POST-email(type='text' data-input name='email' placeholder='Email')
+                        input#POST-email(type='text' name='email' placeholder='Email' data-input-validation="email" data-input-validation-message="Email should contain a '@' charter")
                 .contact-wrapper__input-box
                     .contact-wrapper__input-item
-                        input#POST-phone(type='text' data-input name='phone' placeholder='Phone')
+                        input#POST-phone(type='text' name='phone' placeholder='Phone' data-input-validation="phone")
                     .contact-wrapper__input-item
-                        input#POST-subject(type='text' data-input name='subject' placeholder='Subject')
+                        input#POST-subject(type='text' name='subject' placeholder='Subject' data-input-validation="required")
                 .contact-wrapper__input-box
                     .contact-wrapper__input-item
-                        textarea#POST-message(name='message' data-input placeholder='Message')
+                        textarea#POST-message(name='message' placeholder='Message' data-input-validation="required")
                 .contact-wrapper__input-submit
                     button.contact-wrapper__btn(type='submit') submit
         .contact-wrapper__contacts
             -
                 arrListContacts = [{
-                                     h: 'Shop Address',
-                                     p: '34/8, East Hukupara Gifirtok, Sadan. Country Name',
-                                     i: 'fa fa-map'
-                                     },
-                                 {
-                                     h: 'Shop Hours',
-                                     p: 'MON - FRIDAY: 8 to 9 PM SAT - SUN: 10 to 8 PM',
-                                     i: 'fa fa-clock-o'
-                                 },
-                                 {
-                                     h: 'Contact',
-                                     p: 'Phone: +00 111 222 3333 Email: support@fruitkha.com',
-                                     i: 'fa fa-address-book'
-                                 }]
+                    h: 'Shop Address',
+                    p: '34/8, East Hukupara Gifirtok, Sadan. Country Name',
+                    i: 'fa fa-map'
+                },
+                    {
+                        h: 'Shop Hours',
+                        p: 'MON - FRIDAY: 8 to 9 PM SAT - SUN: 10 to 8 PM',
+                        i: 'fa fa-clock-o'
+                    },
+                    {
+                        h: 'Contact',
+                        p: 'Phone: +00 111 222 3333 Email: support@fruitkha.com',
+                        i: 'fa fa-address-book'
+                    }]
             each element in arrListContacts
                 .contact-wrapper__item
                     .contact-wrapper__item-box
