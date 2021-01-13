@@ -20,15 +20,24 @@ window.addEventListener('load', function (event) {
     })
 
     function validateForm() {
+        debugger;
         formInputs.forEach(function (element, index) {
             let popUpDiv = document.getElementById(`${element.name + element.id}`);
             if (element.value === '') {
-                debugger;
+
                 if (popUpDiv == null) {
                     popUpDiv = document.createElement('div');
                     popUpDiv.className = 'contact-wrapper__error-message';
                     popUpDiv.id = `${element.name + element.id}`;
                     popUpDiv.innerHTML = `<p>Enter a valid ${element.name}</p> <i class="fa fa-ban" aria-hidden="true"></i>`;
+                    element.parentElement.insertBefore(popUpDiv, element.nextSibling);
+                }
+            } else if (element.name == 'phone' && isNaN(element.value)) {
+                if (popUpDiv == null) {
+                    popUpDiv = document.createElement('div');
+                    popUpDiv.className = 'contact-wrapper__error-message';
+                    popUpDiv.id = `${element.name + element.id}`;
+                    popUpDiv.innerHTML = `<p>Enter a number ${element.name}</p> <i class="fa fa-ban" aria-hidden="true"></i>`;
                     element.parentElement.insertBefore(popUpDiv, element.nextSibling);
                 }
             } else {

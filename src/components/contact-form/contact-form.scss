@@ -30,6 +30,9 @@
 
   &__title {
     font-size: 30px;
+    @include breakpoint(mobile500) {
+      font-size: 20px;
+    }
   }
 
   &__text {
@@ -46,6 +49,9 @@
     color: #051922;
     margin: 0 0 30px 0;
     display: flex;
+    @include breakpoint(mobile500) {
+      flex-direction: column;
+    }
 
 
     #POST-name, #POST-email, #POST-phone, #POST-subject {
@@ -70,12 +76,14 @@
     width: 100%;
     flex-direction: column;
     margin-left: 5px;
+    @include breakpoint(mobile500) {
+      margin-bottom: 20px;
+    }
   }
 
   &__error-message {
     color: #ff0000;
     background-color: #ff00000f;
-    width: 49%;
     padding: 5px;
     border-radius: 4px;
     font-size: 12px;
