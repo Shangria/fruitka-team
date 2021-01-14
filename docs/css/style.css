@@ -1394,12 +1394,11 @@ font-family: 'Poppins', sans-serif;
 .product-table {
   font-family: "Open-sans", sans-serif;
   font-size: 14px;
+  margin: 0 10px;
   margin-bottom: 30px; }
-  .product-table__section {
-    margin: 0 10px; }
-    @media (max-width: 460px) {
-      .product-table__section {
-        overflow-x: scroll; } }
+  @media (max-width: 460px) {
+    .product-table {
+      overflow-x: scroll; } }
   @media (max-width: 300px) {
     .product-table {
       margin-left: 7px; } }
@@ -1416,6 +1415,10 @@ font-family: 'Poppins', sans-serif;
     @media (max-width: 500px) {
       .product-table-head__titles {
         padding: 5px 15px; } }
+  .product-table-body__row {
+    cursor: move; }
+    .product-table-body__row.dragging {
+      opacity: 0.5; }
   .product-table-body_data {
     border: 1px solid #efefef;
     padding: 20px 30px;
