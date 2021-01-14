@@ -25,11 +25,13 @@ function getDragAfterElement(tbody, y) {
 function dragstart(e) {
     const event = e.target;
 
+    if(!event.matches('.product-table-body__row')) return;
+
     event.classList.add('dragging');
 }
 
 function dragover(e) {
-    e.preventDefault();
+    e.preventDefault();   
     const draggable = tbody.querySelector('.dragging');
     const afterElement = getDragAfterElement(tbody, e.clientY);
 
