@@ -1379,14 +1379,14 @@ font-family: 'Poppins', sans-serif;
     color: #fff;
     font-family: Poppins, sans-serif; }
 
-.cart-tables__container {
+.cart-tables__section {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   padding: 150px 0; }
   @media (max-width: 1024px) {
-    .cart-tables__container {
+    .cart-tables__section {
       display: flex;
       flex-wrap: wrap;
       padding: 65px 0; } }
@@ -1394,10 +1394,11 @@ font-family: 'Poppins', sans-serif;
 .product-table {
   font-family: "Open-sans", sans-serif;
   font-size: 14px;
-  margin: 0 10px;
   margin-bottom: 30px; }
-  @media (max-width: 460px) {
-    .product-table {
+  .product-table__wrapper {
+    margin: 0 10px; }
+  @media (max-width: 500px) {
+    .product-table__wrapper {
       overflow-x: scroll; } }
   @media (max-width: 300px) {
     .product-table {
@@ -1427,7 +1428,7 @@ font-family: 'Poppins', sans-serif;
     position: relative; }
     @media (max-width: 768px) {
       .product-table-body_data {
-        padding: 15px 10px; } }
+        padding: 15px 12px; } }
   .product-table-body_remove__link {
     text-decoration: none;
     color: #000;
