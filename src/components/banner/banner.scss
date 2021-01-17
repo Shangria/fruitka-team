@@ -1,20 +1,23 @@
 @import "src/scss/global-style/media";
+@import "src/scss/global-style/animate";
 
-@keyframes banner-slide-in {
-  from {
-    margin-top: -50px;
-  }
-  to {
-    margin-top: 0px;
-  }
-}
+//@keyframes banner-slide-opacity {
+//  from{
+//    opacity: 1;
+//  }
+//  to{
+//    opacity: 0;
+//  }
+//}
 
 .wrapper {
   &__banner {
     display: flex;
     align-items: center;
     overflow: hidden;
+    background: url("../img/hero-bg.jpg") center center no-repeat fixed;
   }
+
 
   &__banner_slide {
     position: relative;
@@ -26,20 +29,37 @@
     background: url("../img/hero-bg.jpg") center center no-repeat fixed;
     background-size: cover;
     flex: 0 0 100%;
+    transition: left ease 0.5s;
+
+
+    &.slider-hidden {
+      left: 100%;
+    }
+
+    &.slider-shown {
+      left: 0;
+    }
 
     &.slider-shown {
       order: 1;
 
 
       .wrapper__title-min {
-        animation: banner-slide-in 2s;
+        animation: fadeInDown 2s;
+      }
+
+      .wrapper__title-max {
+        animation: fadeInDown 2s;
+      }
+
+      .wrapper__box-button {
+        animation: fadeInDown 2s;
       }
     }
 
     &.slider-hidden {
       order: 2;
     }
-
   }
 
   &__banner-opacity {
@@ -111,7 +131,6 @@
 
   &__title-min {
     font-size: 64px;
-    //color: #fff;
     font-family: "Poppins", sans-serif;
   }
 

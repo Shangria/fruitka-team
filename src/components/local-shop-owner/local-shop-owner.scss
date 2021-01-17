@@ -8,7 +8,6 @@
   padding-top: 130px;
   display: flex;
   justify-content: center;
-  border: 1px solid;
   overflow: hidden;
 
   &__container {
@@ -21,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     transition: left ease 1s;
-    border: 1px solid;
 
     &.slider-hidden {
       left: 100%;
