@@ -20,8 +20,6 @@
   &__banner_slide {
     position: relative;
     height: 100vh;
-    display: flex;
-    align-items: center;
     line-height: 100px;
     background: url("../img/hero-bg.jpg") center center no-repeat fixed;
     background-size: cover;
@@ -43,21 +41,23 @@
 
 
       .wrapper__title-min {
-        animation: fadeInDown 2s;
+        animation: slideInDown 2s;
       }
 
       .wrapper__title-max {
-        animation: fadeInDown 2s;
+        animation: slideInDown 2s;
       }
 
       .wrapper__box-button {
-        animation: fadeInDown 2s;
+        animation: slideInDown 2s;
       }
     }
 
     &.slider-hidden {
       order: 2;
     }
+
+
   }
 
   &__banner-opacity {

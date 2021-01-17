@@ -5338,8 +5338,6 @@ font-family: 'Poppins', sans-serif;
 .wrapper__banner_slide {
   position: relative;
   height: 100vh;
-  display: flex;
-  align-items: center;
   line-height: 100px;
   background: url("../img/hero-bg.jpg") center center no-repeat fixed;
   background-size: cover;
@@ -5353,11 +5351,11 @@ font-family: 'Poppins', sans-serif;
   .wrapper__banner_slide.slider-shown {
     order: 1; }
     .wrapper__banner_slide.slider-shown .wrapper__title-min {
-      animation: fadeInDown 2s; }
+      animation: slideInDown 2s; }
     .wrapper__banner_slide.slider-shown .wrapper__title-max {
-      animation: fadeInDown 2s; }
+      animation: slideInDown 2s; }
     .wrapper__banner_slide.slider-shown .wrapper__box-button {
-      animation: fadeInDown 2s; }
+      animation: slideInDown 2s; }
   .wrapper__banner_slide.slider-hidden {
     order: 2; }
 
