@@ -1,4 +1,4 @@
-function Slider(slides) {
+function Slider(slides, autoscrollInterval) {
     const me = this;
     let sliderElements;
     let currentIndex = 0;
@@ -12,7 +12,8 @@ function Slider(slides) {
         sliderElements = [];
         for (const slide of slides) {
             sliderElements.push(slide);
-            slide.style.order = '1';
+            slide.classList.add('slider-hidden');
+            slide.classList.remove('slider-shown');
         }
         setSlide(0);
     }
@@ -66,18 +67,22 @@ function Slider(slides) {
 
         sliderElements.map(function (element, index) {
                 if (index === currentIndex) {
-                    element.style.order = '0';
+                    element.classList.remove('slider-hidden');
+                    element.classList.add('slider-shown');
                 } else {
-                    element.style.order = '1';
+                    element.classList.add('slider-hidden');
+                    element.classList.remove('slider-shown');
                 }
             }
         );
     }
 
     function startAutoSlide(direction) {
-        timeoutId = setTimeout(function () {
-            changeSlide(direction);
-        }, 4000)
+        if (autoscrollInterval) {
+            timeoutId = setTimeout(function () {
+                changeSlide(direction);
+            }, autoscrollInterval);
+        }
     }
 
     function stopAutoSlide() {

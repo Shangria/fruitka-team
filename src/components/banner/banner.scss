@@ -1,5 +1,14 @@
 @import "src/scss/global-style/media";
 
+@keyframes banner-slide-in {
+  from {
+    margin-top: -50px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
 .wrapper {
   &__banner {
     display: flex;
@@ -17,6 +26,19 @@
     background: url("../img/hero-bg.jpg") center center no-repeat fixed;
     background-size: cover;
     flex: 0 0 100%;
+
+    &.slider-shown {
+      order: 1;
+
+
+      .wrapper__title-min {
+        animation: banner-slide-in 2s;
+      }
+    }
+
+    &.slider-hidden {
+      order: 2;
+    }
 
   }
 
@@ -89,7 +111,7 @@
 
   &__title-min {
     font-size: 64px;
-    color: #fff;
+    //color: #fff;
     font-family: "Poppins", sans-serif;
   }
 

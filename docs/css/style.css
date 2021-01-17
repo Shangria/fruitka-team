@@ -367,6 +367,12 @@ font-family: 'Poppins', sans-serif;
   .header__link:hover {
     color: #f28123; }
 
+@keyframes banner-slide-in {
+  from {
+    margin-top: -50px; }
+  to {
+    margin-top: 0px; } }
+
 .wrapper__banner {
   display: flex;
   align-items: center;
@@ -382,6 +388,12 @@ font-family: 'Poppins', sans-serif;
   background: url("../img/hero-bg.jpg") center center no-repeat fixed;
   background-size: cover;
   flex: 0 0 100%; }
+  .wrapper__banner_slide.slider-shown {
+    order: 1; }
+    .wrapper__banner_slide.slider-shown .wrapper__title-min {
+      animation: banner-slide-in 2s; }
+  .wrapper__banner_slide.slider-hidden {
+    order: 2; }
 
 .wrapper__banner-opacity {
   display: flex;
@@ -438,7 +450,6 @@ font-family: 'Poppins', sans-serif;
 
 .wrapper__title-min {
   font-size: 64px;
-  color: #fff;
   font-family: "Poppins", sans-serif; }
 
 .wrapper .wrapper__btn-fruit-collection {
@@ -811,17 +822,23 @@ font-family: 'Poppins', sans-serif;
   padding-top: 130px;
   display: flex;
   justify-content: center;
+  border: 1px solid;
   overflow: hidden; }
   .local-shop-owner__container {
     position: absolute;
     top: 50%;
-    right: -100%;
+    left: 100%;
     transform: translate(50%, -50%);
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: right ease 1s; }
+    transition: left ease 1s;
+    border: 1px solid; }
+    .local-shop-owner__container.slider-hidden {
+      left: 100%; }
+    .local-shop-owner__container.slider-shown {
+      left: 0; }
   .local-shop-owner_slider-parametrs {
     right: 50%;
     transition: right ease 1s; }
