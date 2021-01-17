@@ -12,8 +12,6 @@
 
 .wrapper {
   &__banner {
-    display: flex;
-    align-items: center;
     overflow: hidden;
     background: url("../img/hero-bg.jpg") center center no-repeat fixed;
   }
@@ -25,11 +23,11 @@
     display: flex;
     align-items: center;
     line-height: 100px;
-    overflow: hidden;
     background: url("../img/hero-bg.jpg") center center no-repeat fixed;
     background-size: cover;
     flex: 0 0 100%;
     transition: left ease 0.5s;
+    box-shadow: -2px 1px 24px 0px rgba(255, 255, 255, 0.2);
 
 
     &.slider-hidden {
