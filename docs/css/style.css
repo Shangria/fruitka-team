@@ -5332,46 +5332,37 @@ font-family: 'Poppins', sans-serif;
     transition: none !important; } }
 
 .wrapper__banner {
-  overflow: hidden;
-  background: url("../img/hero-bg.jpg") center center no-repeat fixed; }
-
-.wrapper__banner_slide {
-  position: relative;
+  background: linear-gradient(rgba(7, 33, 46, 0.6), rgba(7, 33, 46, 0.6)), url("../img/hero-bg.jpg") center center no-repeat fixed;
   height: 100vh;
-  line-height: 100px;
-  background: url("../img/hero-bg.jpg") center center no-repeat fixed;
-  background-size: cover;
-  flex: 0 0 100%;
-  transition: left ease 0.5s;
-  box-shadow: -2px 1px 24px 0px rgba(255, 255, 255, 0.2); }
-  .wrapper__banner_slide.slider-hidden {
-    left: 100%; }
-  .wrapper__banner_slide.slider-shown {
-    left: 0; }
-  .wrapper__banner_slide.slider-shown {
-    order: 1; }
-    .wrapper__banner_slide.slider-shown .wrapper__title-min {
-      animation: slideInDown 2s; }
-    .wrapper__banner_slide.slider-shown .wrapper__title-max {
-      animation: slideInDown 2s; }
-    .wrapper__banner_slide.slider-shown .wrapper__box-button {
-      animation: slideInDown 2s; }
-  .wrapper__banner_slide.slider-hidden {
-    order: 2; }
-
-.wrapper__banner-opacity {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: rgba(7, 33, 46, 0.6); }
+  overflow: hidden; }
 
-.wrapper__banner-slider-container {
-  width: 100%;
+.wrapper .wrapper__banner-sliders-box {
   flex: 0 0 100%;
-  position: relative;
+  position: relative; }
+  .wrapper .wrapper__banner-sliders-box.slider-shown {
+    order: 1; }
+    .wrapper .wrapper__banner-sliders-box.slider-shown .wrapper__banner_slide {
+      animation: fadeInLeft 1s; }
+    .wrapper .wrapper__banner-sliders-box.slider-shown .wrapper__title-min {
+      animation: fadeInUp 3s; }
+    .wrapper .wrapper__banner-sliders-box.slider-shown .wrapper__title-max {
+      animation: fadeInUp 2s; }
+    .wrapper .wrapper__banner-sliders-box.slider-shown .wrapper__box-button {
+      animation: fadeInUp 2s; }
+  .wrapper .wrapper__banner-sliders-box.slider-hidden {
+    order: 2; }
+    .wrapper .wrapper__banner-sliders-box.slider-hidden .wrapper__banner_slide {
+      animation: fadeInRight 1s; }
+
+.wrapper__banner_slide {
   display: flex;
+  height: 100vh;
+  line-height: 100px;
+  background: linear-gradient(rgba(7, 33, 46, 0.6), rgba(7, 33, 46, 0.6)), url("../img/hero-bg.jpg") center center no-repeat fixed;
+  background-size: cover;
+  box-shadow: -2px 1px 24px 0px rgba(255, 255, 255, 0.2);
   justify-content: center;
   align-items: center; }
 
@@ -5390,7 +5381,8 @@ font-family: 'Poppins', sans-serif;
   width: max-content;
   position: absolute;
   right: 0;
-  padding-right: 15px; }
+  padding-right: 15px;
+  z-index: 2; }
 
 .wrapper__banner-content {
   position: absolute;
