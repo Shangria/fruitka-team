@@ -4,9 +4,12 @@ function Slider(slides, autoscrollInterval) {
     let currentIndex = 0;
     let timeoutId;
 
+
     me.prev = prev;
     me.next = next;
     me.setSlide = setSlide;
+    me.touchSlider = touchSlider;
+    me.getInitialPoint = getInitialPoint;
 
     {
         sliderElements = [];
@@ -91,6 +94,23 @@ function Slider(slides, autoscrollInterval) {
             clearTimeout(timeoutId);
         }
     }
+    function getInitialPoint() {
+        return event.changedTouches[0];
+    }
 
+    function touchSlider(initialPoint, element) {
+        let finalPoint = event.changedTouches[0];
+        const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+        const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+        if (xAbs > 20 || yAbs > 20) {
+            if (xAbs > yAbs) {
+                if (finalPoint.pageX < initialPoint.pageX) {
+                    element.next();
+                } else {
+                    element.prev()
+                }
+            }
+        }
+    }
 }
 

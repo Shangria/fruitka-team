@@ -16,32 +16,20 @@ window.addEventListener('load', function () {
     });
 
     let initialPoint;
-    let finalPoint;
 
     slider.addEventListener('touchstart', function (event) {
 
         event.preventDefault();
         event.stopPropagation();
-        initialPoint = event.changedTouches[0];
+        initialPoint = sliderBox.getInitialPoint();
     }, false);
 
-    document.addEventListener('touchend', function (event) {
+    slider.addEventListener('touchend', function (event) {
 
         event.preventDefault();
         event.stopPropagation();
+        sliderBox.touchSlider(initialPoint,sliderBox)
 
-        finalPoint = event.changedTouches[0];
-        const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
-        const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
-        if (xAbs > 20 || yAbs > 20) {
-            if (xAbs > yAbs) {
-                if (finalPoint.pageX < initialPoint.pageX) {
-                    sliderBox.next();
-                } else {
-                    sliderBox.prev()
-                }
-            }
-        }
     }, false);
 });
 
