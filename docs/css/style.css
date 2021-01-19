@@ -5810,13 +5810,12 @@ font-family: 'Poppins', sans-serif;
       border-radius: 50%; }
   .local-shop-owner__name {
     font-weight: bold;
-    text-align: center; }
-    .local-shop-owner__name span {
-      font-size: 19px; }
-    .local-shop-owner__name p {
-      color: #828c91;
-      padding-top: 15px;
-      font-size: 13px; }
+    text-align: center;
+    font-size: 19px; }
+  .local-shop-owner__title {
+    color: #828c91;
+    padding-top: 15px;
+    font-size: 13px; }
   .local-shop-owner__inform {
     padding-top: 15px;
     color: #999999;
@@ -5824,8 +5823,8 @@ font-family: 'Poppins', sans-serif;
     font-style: italic;
     text-align: center;
     font-size: 15px; }
-    .local-shop-owner__inform .icon-quote-right {
-      font-size: 60px; }
+  .local-shop-owner__icon {
+    font-size: 30px; }
   .local-shop-owner_hidden {
     display: none; }
 
@@ -5928,7 +5927,7 @@ font-family: 'Poppins', sans-serif;
   padding: 120px 15px; }
   @media (max-width: 1024px) {
     .description {
-      padding: 80px 15px; } }
+      padding: 10px 15px; } }
   .description__inner {
     display: flex; }
     @media (max-width: 1024px) {
