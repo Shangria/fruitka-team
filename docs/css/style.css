@@ -5351,8 +5351,10 @@ font-family: 'Poppins', sans-serif;
       animation: fadeInUp 2s; }
     .wrapper .wrapper__banner-sliders-box.slider-shown .wrapper__box-button {
       animation: fadeInUp 2s; }
-  .wrapper .wrapper__banner-sliders-box.slider-hidden .wrapper__banner_slide {
-    animation: fadeInRight 1s; }
+  .wrapper .wrapper__banner-sliders-box.slider-hidden {
+    order: 2; }
+    .wrapper .wrapper__banner-sliders-box.slider-hidden .wrapper__banner_slide {
+      animation: fadeInRight 1s; }
 
 .wrapper__banner_slide {
   display: flex;
