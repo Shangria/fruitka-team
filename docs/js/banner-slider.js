@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
 
         event.preventDefault();
         event.stopPropagation();
-debugger
+
         finalPoint = event.changedTouches[0];
         const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
         const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
@@ -43,6 +43,5 @@ debugger
             }
         }
     }, false);
-
 });
 
