@@ -19,13 +19,11 @@ window.addEventListener('load', function () {
 
     slider.addEventListener('touchstart', function (event) {
 
-        event.stopPropagation();
         initialPoint = sliderBox.getInitialPoint();
     }, false);
 
     slider.addEventListener('touchend', function (event) {
 
-        event.stopPropagation();
         sliderBox.touchSlider(initialPoint,sliderBox)
 
     }, false);
