@@ -21,6 +21,7 @@
     align-items: center;
     transition: left ease 1s;
 
+
     &.slider-hidden {
       left: 100%;
     }
@@ -79,6 +80,6 @@
 
 @include breakpoint(md-max) {
   .local-shop-owner__container {
-    width: 80%;
+    width: 50%;
   }
 }

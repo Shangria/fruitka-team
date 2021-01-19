@@ -11,7 +11,7 @@ function Slider(slides, autoscrollInterval) {
     {
         sliderElements = [];
         for (const slide of slides) {
-            debugger
+
             sliderElements.push(slide);
             slide.classList.add('slider-hidden');
             slide.classList.remove('slider-shown');
