@@ -7,6 +7,7 @@ window.addEventListener('load', function () {
     sliderBox.addEventListener('touchstart', function (event) {
 
         initialPoint = slider.getInitialPoint();
+
     }, false);
 
     sliderBox.addEventListener('touchend', function (event) {
