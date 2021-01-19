@@ -140,13 +140,13 @@
 
 @include breakpoint(md-max) {
   .wrapper__banner-content {
-    width: 60%;
+    width: 75%;
     text-align: center;
 
     .wrapper__title-min {
       font-size: 35px;
       @include breakpoint(sm-min) {
-        font-size: 20px;
+        font-size: 40px;
       }
     }
 
