@@ -5372,6 +5372,9 @@ font-family: 'Poppins', sans-serif;
   left: 0;
   padding-left: 15px;
   z-index: 2; }
+  @media (max-width: 768px) {
+    .wrapper__banner-arrow-left {
+      display: none; } }
 
 .wrapper .fa-arrow-left, .wrapper .fa-arrow-right {
   font-size: 35px;
@@ -5383,6 +5386,9 @@ font-family: 'Poppins', sans-serif;
   right: 0;
   padding-right: 15px;
   z-index: 2; }
+  @media (max-width: 768px) {
+    .wrapper__banner-arrow-right {
+      display: none; } }
 
 .wrapper__banner-content {
   position: absolute;
