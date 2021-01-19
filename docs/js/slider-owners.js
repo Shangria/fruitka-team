@@ -6,15 +6,12 @@ window.addEventListener('load', function () {
 
     sliderBox.addEventListener('touchstart', function (event) {
 
-        event.preventDefault();
-        event.stopPropagation();
         initialPoint = slider.getInitialPoint();
+
     }, false);
 
     sliderBox.addEventListener('touchend', function (event) {
 
-        event.preventDefault();
-        event.stopPropagation();
         slider.touchSlider(initialPoint,slider)
 
     }, false);
