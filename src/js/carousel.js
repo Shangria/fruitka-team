@@ -10,14 +10,15 @@ window.addEventListener('load', () => {
 
     function carousel() {
         carouselRow.style.transform = `translateX(-${itemWidth}px)`;
-        let firstElem = carouselRow.firstElementChild;
-        let clone = firstElem.cloneNode(true);
+        const firstElem = carouselRow.firstElementChild;
+        const clone = firstElem.cloneNode(true);
         
         
 
         carouselRow.addEventListener('transitionend', () => {
-            carouselRow.appendChild(clone);
-            firstElem.remove();
+            clone.remove();
+            carouselRow.appendChild(firstElem);
+            
 
             carouselRow.style.transition = 'none';
             carouselRow.style.transform = `translateX(0)`;
