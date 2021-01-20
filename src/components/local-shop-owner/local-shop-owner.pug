@@ -6,13 +6,14 @@ section
                 li(class='local-shop-owner__container')
                     .local-shop-owner__avatar
                         img(src=element.img)
-                    .local-shop-owner__name
-                        span=element.span
-                        p Local shop owner
+                    div
+                        span.local-shop-owner__name=element.span
+                        p.local-shop-owner__title Local shop owner
                     .local-shop-owner__inform
-                        p
+                        span
                             | " Sed ut perspiciatis unde omnis iste natus error veritatis et
                             | quasi architecto beatae vitae dict eaque ipsa quae ab illo
                             | inventore Sed ut perspiciatis unde omnis iste natus error
                             | sit voluptatem accusantium "
-                        p.icon-quote-right
+                        div.local-shop-owner__icon
+                            i.fa.fa-quote-right(aria-hidden="true")
