@@ -81,6 +81,7 @@
     -webkit-box-shadow: 0 0 20px #dddddd;
     box-shadow: 0 0 20px #dddddd;
     transition: 0.3s;
+    
     @include breakpoint(md-max){
       &{
         width: 70%;

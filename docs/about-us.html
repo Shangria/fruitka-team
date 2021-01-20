@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shop</title>
+    <title>About </title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="./js/slider.js"></script>
     <script src="./js/header-menu.js"></script>
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/slider-owners.js"></script>
     <script src="./js/header-sub-menu.js"></script>
     <script src="./js/loader.js"></script>
     <script src="./js/carousel.js"></script>
-    <script src="./js/search.js"></script>
   </head>
   <body>
     <div class="loader" id="loader__wrapper">
@@ -87,40 +88,164 @@
             </ul>
           </div>
         </nav>
-        <div class="header__icon"><a class="header__link" id="search-link"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
+        <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
       </div>
     </header>
-    <section class="search" id="search-window">
-      <div class="search__wrapper">
-        <div class="search__btn_close" id="search-close"><i class="fa fa-close"></i></div>
-        <div class="search__container">
-          <h3>search for:</h3>
-          <input class="search__line" id="search-input" type="text" placeholder="Keywords"/>
-          <button class="search__btn" id="search-btn-send" type="submit">Search<i class="fa fa-search"></i></button>
+    <section class="about-us-banner"> 
+      <div class="about-us-banner__inner">
+        <div class="about-us-banner__text">
+          <p class="about-us-banner__subtitle">WE SALE FRESH FRUITS</p>
+          <h1 class="about-us-banner__title">
+             About Us</h1>
         </div>
       </div>
     </section>
-    <section class="banner-shop"> 
-      <div class="banner-shop__inner">
-        <div class="banner-shop__text">
-          <p class="banner-shop__subtitle">FRESH AND ORGANIC</p>
-          <h1 class="banner-shop__title">
-             Shop</h1>
+    <section class="advantages">
+      <div class="avantages__wrapper">
+        <h3 class="advantages__title">Why<span> Fruitkha</span></h3>
+        <div class="advantages__list">
+          <div class="advantages__list__item">
+            <div class="advantages__list__icon"><i class="fa fa-truck"></i></div>
+            <div class="advantages__list__info">
+              <h6 class="advantages__list__title">Home Delivery
+              </h6>
+              <p class="advantages__list__text">sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.                   </p>
+            </div>
+          </div>
+          <div class="advantages__list__item">
+            <div class="advantages__list__icon"><i class="fa fa-money"></i></div>
+            <div class="advantages__list__info">
+              <h6 class="advantages__list__title">Best Price
+              </h6>
+              <p class="advantages__list__text">sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.                   </p>
+            </div>
+          </div>
+          <div class="advantages__list__item">
+            <div class="advantages__list__icon"><i class="fa fa-briefcase"></i></div>
+            <div class="advantages__list__info">
+              <h6 class="advantages__list__title">Custom Box
+              </h6>
+              <p class="advantages__list__text">sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.                   </p>
+            </div>
+          </div>
+          <div class="advantages__list__item">
+            <div class="advantages__list__icon"><i class="fa fa-refresh"></i></div>
+            <div class="advantages__list__info">
+              <h6 class="advantages__list__title">Quick Refund
+              </h6>
+              <p class="advantages__list__text">sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.                   </p>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="advantages__image__wrapper"><img class="advantages__image" src="./img/feature-bg.jpg"/></div>
     </section>
-    <section class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item" data-filter="all">All    </li>
-        <li class="pagination__item" data-filter="berries">Berries    </li>
-        <li class="pagination__item" data-filter="citruses">Citruses    </li>
-        <li class="pagination__item" data-filter="fruits">Fruits    </li>
-      </ul>
-      <ul class="pagination__container"></ul>
-      <ul class="pagination__btn">
-        <li class="pagination__item">1</li>
-        <li class="pagination__item">2</li>
-        <li class="pagination__item">3</li>
+    <section class="shop-banner">
+      <div class="shop-banner__inner">
+        <h3 class="shop-banner__title">December sale is on!<br/>with big <span>Discount...</span></h3>
+        <div class="shop-banner__box"><span>
+             Sale!<br/>Upto</span>50%<span>off</span></div><a class="shop-banner__button" href="#">Shop Now  </a>
+      </div>
+    </section>
+    <section class="team">
+      <div class="team-title__wrapper">
+        <h3 class="team__title">Our<span> Team</span></h3>
+        <p class="team__subtitle">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Aliquid, fuga quas itaque eveniet beatae optio.
+        </p>
+      </div>
+      <div class="teammates">
+        <ul class="teammates__row">
+          <li class="teammates__col">
+            <div class="teammates__background teammates__background_first">
+              <ul class="teammates__icon__wrapper">
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="teammates__data">
+              <h5 class="teammates__name">Jimmy Doe
+              </h5>
+              <p class="teammates__position">
+                 Farmer           </p>
+            </div>
+          </li>
+          <li class="teammates__col">
+            <div class="teammates__background teammates__background_second">
+              <ul class="teammates__icon__wrapper">
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="teammates__data">
+              <h5 class="teammates__name">Marry Doe
+              </h5>
+              <p class="teammates__position">
+                 Farmer           </p>
+            </div>
+          </li>
+          <li class="teammates__col">
+            <div class="teammates__background teammates__background_third">
+              <ul class="teammates__icon__wrapper">
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="teammates__icon"><a class="teammates__icon__link" href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="teammates__data">
+              <h5 class="teammates__name">Simon Joe
+              </h5>
+              <p class="teammates__position">
+                 Farmer           </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <ul class="local-shop-owner" id="local-shop-owner_slider">
+        <li class="local-shop-owner__container">
+          <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar1.png"/></div>
+          <div><span class="local-shop-owner__name">Saira Hakim</span>
+            <p class="local-shop-owner__title">Local shop owner</p>
+          </div>
+          <div class="local-shop-owner__inform"><span>
+              " Sed ut perspiciatis unde omnis iste natus error veritatis et
+              quasi architecto beatae vitae dict eaque ipsa quae ab illo
+              inventore Sed ut perspiciatis unde omnis iste natus error
+              sit voluptatem accusantium "</span>
+            <div class="local-shop-owner__icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+          </div>
+        </li>
+        <li class="local-shop-owner__container">
+          <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar2.png"/></div>
+          <div><span class="local-shop-owner__name">Jacob Sikim</span>
+            <p class="local-shop-owner__title">Local shop owner</p>
+          </div>
+          <div class="local-shop-owner__inform"><span>
+              " Sed ut perspiciatis unde omnis iste natus error veritatis et
+              quasi architecto beatae vitae dict eaque ipsa quae ab illo
+              inventore Sed ut perspiciatis unde omnis iste natus error
+              sit voluptatem accusantium "</span>
+            <div class="local-shop-owner__icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+          </div>
+        </li>
+        <li class="local-shop-owner__container">
+          <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar3.png"/></div>
+          <div><span class="local-shop-owner__name">David Niph</span>
+            <p class="local-shop-owner__title">Local shop owner</p>
+          </div>
+          <div class="local-shop-owner__inform"><span>
+              " Sed ut perspiciatis unde omnis iste natus error veritatis et
+              quasi architecto beatae vitae dict eaque ipsa quae ab illo
+              inventore Sed ut perspiciatis unde omnis iste natus error
+              sit voluptatem accusantium "</span>
+            <div class="local-shop-owner__icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+          </div>
+        </li>
       </ul>
     </section>
     <section class="carousel">
@@ -187,6 +312,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/pagination.js"> </script>
   </body>
 </html>
