@@ -1,8 +1,8 @@
 section.carousel
-    div.carousel__container
-        div.carousel__row
+    div.carousel__inner
+        div.carousel__row#carousel
             - arrlogoCarousel = [{src: "./img/company-logos/1.png", alt: "carousel-logo"}, {src: "./img/company-logos/2.png", alt: "carousel-logo"}, {src: "./img/company-logos/3.png", alt: "carousel-logo"}, {src: "./img/company-logos/4.png", alt: "carousel-logo"}, {src: "./img/company-logos/5.png", alt: "carousel-logo"}]
             each element in arrlogoCarousel
                 div.carousel__item
                     img.carousel__img(src=element.src, alt=element.alt)
-            
+                
