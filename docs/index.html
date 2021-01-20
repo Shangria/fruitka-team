@@ -7,12 +7,18 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="./js/slider.js"></script>
     <script src="./js/header-menu.js"></script>
     <script src="./js/timer.js"></script>
     <script src="./js/header-scroll.js"></script>
     <script src="./js/slider-owners.js"></script>
     <script src="./js/header-sub-menu.js"></script>
     <script src="./js/loader.js"></script>
+<<<<<<< HEAD
+    <script src="./js/carousel.js"></script>
+=======
+    <script src="./js/banner-slider.js"></script>
+>>>>>>> d3a12814f8f39c1e4954c58aee356957035537ab
   </head>
   <body>
     <div class="loader" id="loader__wrapper">
@@ -47,8 +53,6 @@
             <ul class="header__menu" id="header__menu-title">
               <li class="header__list-menu" data-sub-menu="Home"><a class="header__link" href="./index.html">Home</a>
                 <ul class="header__sub-menu">
-                  <li class="header__sub-list"><a class="header__sub-link" href="./index.html">Static Home</a></li>
-                  <li class="header__sub-list"><a class="header__sub-link" href="#">Slider Home</a></li>
                 </ul>
               </li>
               <li class="header__list-menu" data-sub-menu="About"><a class="header__link" href="./about-us.html">About</a>
@@ -101,12 +105,36 @@
           </div>
         </div>
       </section>
-      <section class="wrapper__banner-opacity wrapper__banner">
-        <div class="wrapper__banner-content">
-          <h3 class="wrapper__title-max">Fresh &amp; Organic</h3>
-          <h1 class="wrapper__title-min">Delicious Seasonal Fruits</h1>
-          <div class="wrapper__box-button"><a class="wrapper__btn-fruit-collection" href="#">Fruit Collection</a><a class="wrapper__btn-contact" href="#"> Contact Us</a></div>
+      <section class="wrapper__banner" id="wrapper-banner-slider">
+        <div class="wrapper__banner-arrow-left" id="data-slider-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <div class="wrapper__banner-sliders-box" data-sliders-box="data-sliders-box">
+          <div class="wrapper__banner_slide">
+            <div class="wrapper__banner-content">
+              <h3 class="wrapper__title-max">Fresh &amp; Organic</h3>
+              <h1 class="wrapper__title-min">Delicious Seasonal Fruits</h1>
+              <div class="wrapper__box-button"><a class="wrapper__btn-fruit-collection" href="./shop.html">Fruit Collection</a><a class="wrapper__btn-contact" href="./contact.html">Contact Us</a></div>
+            </div>
+          </div>
         </div>
+        <div class="wrapper__banner-sliders-box" data-sliders-box="data-sliders-box">
+          <div class="wrapper__banner_slide">
+            <div class="wrapper__banner-content">
+              <h3 class="wrapper__title-max">Fresh Everyday</h3>
+              <h1 class="wrapper__title-min">100% Organic Collection</h1>
+              <div class="wrapper__box-button"><a class="wrapper__btn-fruit-collection" href="./shop.html">Visit Shop</a><a class="wrapper__btn-contact" href="./contact.html">Contact Us</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__banner-sliders-box" data-sliders-box="data-sliders-box">
+          <div class="wrapper__banner_slide">
+            <div class="wrapper__banner-content">
+              <h3 class="wrapper__title-max">Mega Sale Going On!</h3>
+              <h1 class="wrapper__title-min">Get December Discount</h1>
+              <div class="wrapper__box-button"><a class="wrapper__btn-fruit-collection" href="./shop.html">Visit Shop</a><a class="wrapper__btn-contact" href="./contact.html">Contact Us</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__banner-arrow-right" id="data-slider-right"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
       </section>
       <section class="list-information-wrapper">
         <div class="list-information-wrapper__box">
@@ -196,47 +224,41 @@
         <ul class="local-shop-owner" id="local-shop-owner_slider">
           <li class="local-shop-owner__container">
             <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar1.png"/></div>
-            <div class="local-shop-owner__name"><span>Saira Hakim</span>
-              <p>Local shop owner</p>
+            <div><span class="local-shop-owner__name">Saira Hakim</span>
+              <p class="local-shop-owner__title">Local shop owner</p>
             </div>
-            <div class="local-shop-owner__inform">
-              <p>
+            <div class="local-shop-owner__inform"><span>
                 " Sed ut perspiciatis unde omnis iste natus error veritatis et
                 quasi architecto beatae vitae dict eaque ipsa quae ab illo
                 inventore Sed ut perspiciatis unde omnis iste natus error
-                sit voluptatem accusantium "
-              </p>
-              <p class="icon-quote-right"></p>
+                sit voluptatem accusantium "</span>
+              <div class="local-shop-owner__icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
             </div>
           </li>
           <li class="local-shop-owner__container">
             <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar2.png"/></div>
-            <div class="local-shop-owner__name"><span>Jacob Sikim</span>
-              <p>Local shop owner</p>
+            <div><span class="local-shop-owner__name">Jacob Sikim</span>
+              <p class="local-shop-owner__title">Local shop owner</p>
             </div>
-            <div class="local-shop-owner__inform">
-              <p>
+            <div class="local-shop-owner__inform"><span>
                 " Sed ut perspiciatis unde omnis iste natus error veritatis et
                 quasi architecto beatae vitae dict eaque ipsa quae ab illo
                 inventore Sed ut perspiciatis unde omnis iste natus error
-                sit voluptatem accusantium "
-              </p>
-              <p class="icon-quote-right"></p>
+                sit voluptatem accusantium "</span>
+              <div class="local-shop-owner__icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
             </div>
           </li>
           <li class="local-shop-owner__container">
             <div class="local-shop-owner__avatar"><img src="./img/avatar/avatar3.png"/></div>
-            <div class="local-shop-owner__name"><span>David Niph</span>
-              <p>Local shop owner</p>
+            <div><span class="local-shop-owner__name">David Niph</span>
+              <p class="local-shop-owner__title">Local shop owner</p>
             </div>
-            <div class="local-shop-owner__inform">
-              <p>
+            <div class="local-shop-owner__inform"><span>
                 " Sed ut perspiciatis unde omnis iste natus error veritatis et
                 quasi architecto beatae vitae dict eaque ipsa quae ab illo
                 inventore Sed ut perspiciatis unde omnis iste natus error
-                sit voluptatem accusantium "
-              </p>
-              <p class="icon-quote-right"></p>
+                sit voluptatem accusantium "</span>
+              <div class="local-shop-owner__icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
             </div>
           </li>
         </ul>
@@ -312,8 +334,8 @@
         <div class="latest-news__button-wrapper"><a class="latest-news__button" href="news.html">More News</a></div>
       </section>
       <section class="carousel">
-        <div class="carousel__container">
-          <div class="carousel__row">
+        <div class="carousel__inner">
+          <div class="carousel__row" id="carousel">
             <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/1.png" alt="carousel-logo"/></div>
             <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/2.png" alt="carousel-logo"/></div>
             <div class="carousel__item"><img class="carousel__img" src="./img/company-logos/3.png" alt="carousel-logo"/></div>
@@ -376,6 +398,6 @@
         </div>
       </footer>
     </main>
-    <script src="./js/video-opener.js">   </script>
+    <script src="./js/video-opener.js"></script>
   </body>
 </html>

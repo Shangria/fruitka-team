@@ -13,13 +13,22 @@
   &__container {
     position: absolute;
     top: 50%;
-    right: -100%;
+    left: 100%;
     transform: translate(50%, -50%);
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: right ease 1s;
+    transition: left ease 1s;
+
+
+    &.slider-hidden {
+      left: 100%;
+    }
+
+    &.slider-shown {
+      left: 0;
+    }
   }
 
   &_slider-parametrs {
@@ -39,17 +48,15 @@
   &__name {
     font-weight: bold;
     text-align: center;
-
-    span {
-      font-size: 19px;
-    }
-
-    p {
-      color: #828c91;
-      padding-top: 15px;
-      font-size: 13px;
-    }
+    font-size: 19px;
   }
+
+  &__title {
+    color: #828c91;
+    padding-top: 15px;
+    font-size: 13px;
+  }
+
 
   &__inform {
     padding-top: 15px;
@@ -58,10 +65,10 @@
     font-style: italic;
     text-align: center;
     font-size: 15px;
+  }
 
-    .icon-quote-right {
-      font-size: 60px;
-    }
+  &__icon {
+    font-size: 30px;
   }
 
   &_hidden {
@@ -71,6 +78,6 @@
 
 @include breakpoint(md-max) {
   .local-shop-owner__container {
-    width: 80%;
+    width: 50%;
   }
 }

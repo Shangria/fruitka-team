@@ -1,7 +1,43 @@
-section.wrapper__banner-opacity.wrapper__banner
-    .wrapper__banner-content
-        h3.wrapper__title-max Fresh &amp; Organic
-        h1.wrapper__title-min Delicious Seasonal Fruits
-        .wrapper__box-button
-            a.wrapper__btn-fruit-collection(href='#') Fruit Collection
-            a.wrapper__btn-contact(href='#')  Contact Us
+section.wrapper__banner#wrapper-banner-slider
+    .wrapper__banner-arrow-left#data-slider-left
+        i.fa.fa-arrow-left(aria-hidden = "true")
+    -
+        arr = [{
+            h3: 'Fresh & Organic',
+            h1: 'Delicious Seasonal Fruits',
+            a1href: './shop.html',
+            a1: 'Fruit Collection',
+            a2href: './contact.html',
+            a2: 'Contact Us',
+        },
+            {
+                h3: 'Fresh Everyday',
+                h1: '100% Organic Collection',
+                a1href: './shop.html',
+                a1: 'Visit Shop',
+                a2href: './contact.html',
+                a2: 'Contact Us',
+            },
+            {
+                h3: 'Mega Sale Going On!',
+                h1: 'Get December Discount',
+                a1href: './shop.html',
+                a1: 'Visit Shop',
+                a2href: './contact.html',
+                a2: 'Contact Us',
+            }]
+    each element in arr
+        .wrapper__banner-sliders-box(data-sliders-box)
+            .wrapper__banner_slide
+                .wrapper__banner-content
+                    h3.wrapper__title-max=element.h3
+                    h1.wrapper__title-min=element.h1
+                    .wrapper__box-button
+                        a.wrapper__btn-fruit-collection(href=element.a1href)=element.a1
+                        a.wrapper__btn-contact(href=element.a2href)=element.a2
+    .wrapper__banner-arrow-right#data-slider-right
+        i.fa.fa-arrow-right(aria-hidden="true")
+
+
+
+
