@@ -5,11 +5,11 @@ div.teammates
             li.teammates__col
                 div.teammates__background(class=element.backgroundImg)
                     ul.teammates__icon__wrapper
-                        - arrTeammatesIcon = ["fa fa-facebook", "fa fa-twitter", "fa fa-instagram"]
+                        - arrTeammatesIcon = [ "fa fa-facebook", "fa fa-twitter", "fa fa-instagram" ]
                         each element in arrTeammatesIcon
                             li.teammates__icon
                                 a.teammates__icon__link(href="#")
-                                    i=element.arrTeammatesIcon
+                                    i(class=element)
                 div.teammates__data
                     h5.teammates__name
                         =element.teammateName
