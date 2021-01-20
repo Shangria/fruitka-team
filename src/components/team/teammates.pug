@@ -1,0 +1,21 @@
+div.teammates
+    ul.teammates__row
+        - arrLatestNews = [{backgroundImg:"teammates__background_first", teammateName: "Jimmy Doe"}, {backgroundImg:"teammates__background_second", teammateName: "Marry Doe"}, {backgroundImg:"teammates__background_third", teammateName: "Simon Joe"}]
+        each element in arrLatestNews
+            li.teammates__col
+                div.teammates__background(class=element.backgroundImg)
+                    ul.teammates__icon__wrapper
+                        li.teammates__icon
+                            a.teammates__icon__link(href="#")
+                                i.fa.fa-facebook
+                        li.teammates__icon        
+                            a.teammates__icon__link(href="#")
+                                i.fa.fa-twitter
+                        li.teammates__icon        
+                            a.teammates__icon__link(href="#") 
+                                i.fa.fa-instagram
+                div.teammates__data
+                    h5.teammates__name
+                        =element.teammateName
+                    p.teammates__position 
+                        | Farmer           
