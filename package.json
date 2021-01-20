@@ -22,5 +22,8 @@
     "pug": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "recursive-copy-cli": "^1.0.14"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }

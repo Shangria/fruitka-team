@@ -1,33 +1,18 @@
 window.addEventListener('load', function () {
+    const slider = new Slider(document.querySelectorAll('#local-shop-owner_slider li'), 3000);
+    const sliderBox = document.getElementById('local-shop-owner_slider');
 
-    const ownersBlock = document.getElementById('local-shop-owner_slider');
-    const liArray = [...ownersBlock.querySelectorAll('li')];
-    let currentIndex;
+    let initialPoint;
 
+    sliderBox.addEventListener('touchstart', function (event) {
 
-    function toggleSlider() {
-        let nextIndex;
-        if (currentIndex == null) {
-            nextIndex = 0;
-        } else if (currentIndex === liArray.length - 1) {
-            nextIndex = 0;
-        } else {
-            nextIndex = currentIndex + 1;
-        }
+        initialPoint = slider.getInitialPoint();
 
-        liArray.forEach(function (element, index) {
-            if (index === nextIndex) {
-                element.classList.add('local-shop-owner_slider-parametrs');
+    }, false);
 
-            }
-            else {
-                element.classList.remove('local-shop-owner_slider-parametrs');
-            }
-        });
+    sliderBox.addEventListener('touchend', function (event) {
 
-        currentIndex = nextIndex;
-    }
+        slider.touchSlider(initialPoint,slider)
 
-    toggleSlider();
-    setInterval(toggleSlider, 5000);
+    }, false);
 });

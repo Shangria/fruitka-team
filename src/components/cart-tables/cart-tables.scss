@@ -1,6 +1,6 @@
 @import "src/scss/global-style/media";
 
-.cart-tables__container {
+.cart-tables__section {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
@@ -18,15 +18,20 @@
 
 .product-table {
     font-family: "Open-sans", sans-serif;
-    font-size: 14px;
-    margin: 0 10px; 
+    font-size: 14px; 
     margin-bottom: 30px;
 
-    @include breakpoint(sm-max) {
+    &__wrapper{
+        margin: 0 10px;
+    }
+
+    &__wrapper{ 
+        @include breakpoint(mobile500) {
         & {
         overflow-x: scroll; 
         }
-    }
+    }}
+   
     
     @include breakpoint(mobile300) {
         & {
@@ -76,7 +81,7 @@
             
             @include breakpoint(tablet) {
                 & {
-                    padding: 15px 10px;
+                    padding: 15px 12px;
                 }
             }
         }

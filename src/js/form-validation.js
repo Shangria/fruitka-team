@@ -38,38 +38,26 @@ window.addEventListener('load', function (event) {
         })
     }
 
-    /**
-     * returns true if value is an empty string
-     * returns false if value is not an empty string
-     * @returns {boolean}
-     */
+
     function isEmpty(value) {
         return value === '';
     }
 
-    /**
-     * returns true if phone is valid
-     * returns false if phone is not valid
-     * @returns {boolean}
-     */
+
     function isPhoneValid(value) {
-        return !isEmpty(value) && !isNaN(value);
+        debugger
+        const regPhone = /^\+380\d{3}\d{2}\d{2}\d{2}$/
+        return  !isEmpty(value) && value.match(regPhone);
+
     }
 
-    /**
-     * returns true if email is valid
-     * returns false if email is not valid
-     * @returns {boolean}
-     */
+
     function isEmailValid(value) {
-        return !isEmpty(value) && value.includes('@');
+        const regEmail=/^[\w.+\-]+@gmail\.com$/
+        return !isEmpty(value) &&  value.match(regEmail);
     }
 
-    /**
-     * returns true if value is valid
-     * returns false if value is not valid
-     * @returns {boolean}
-     */
+
     function isMinLengthValid(value, minLength) {
         debugger;
         return !isEmpty(value) && value.length >= minLength;

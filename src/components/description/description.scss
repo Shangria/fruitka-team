@@ -55,9 +55,9 @@
     z-index: 1;
     overflow: hidden;
     height: 450px;
-    @include breakpoint(sm-max) {
+    @include breakpoint(tablet) {
       & {
-        height: 350px;
+        display: none;
       }
     }
   }

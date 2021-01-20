@@ -1,0 +1,42 @@
+.video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 25, 34, 0.8);
+    z-index: 1000;
+
+    &__modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 25px;
+        color: #fff;   
+        transition: all 0.3s;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+
+        &:hover{
+            color: #f28123;
+        } 
+    }
+
+    &__item{
+        width: 749px;
+        height: 421px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 26px 3px rgba(255,255,255,0.81); 
+        box-shadow: 0px 0px 26px 3px rgba(255,255,255,0.81);
+    }
+}
