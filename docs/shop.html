@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script src="./js/header-menu.js"></script>
     <script src="./js/header-scroll.js"></script>
-    <script src="./js/product-filtering.js"></script>
     <script src="./js/header-sub-menu.js"></script>
     <script src="./js/loader.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="./js/search.js"></script>
   </head>
   <body>
     <div class="loader" id="loader__wrapper">
@@ -85,9 +85,19 @@
             </ul>
           </div>
         </nav>
-        <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
+        <div class="header__icon"><a class="header__link" id="search-link"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
       </div>
     </header>
+    <section class="search" id="search-window">
+      <div class="search__wrapper">
+        <div class="search__btn_close" id="search-close"><i class="fa fa-close"></i></div>
+        <div class="search__container">
+          <h3>search for:</h3>
+          <input class="search__line" id="search-input" type="text" placeholder="Keywords"/>
+          <button class="search__btn" id="search-btn-send" type="submit">Search<i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    </section>
     <section class="banner-shop"> 
       <div class="banner-shop__inner">
         <div class="banner-shop__text">

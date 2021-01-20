@@ -14,11 +14,9 @@
     <script src="./js/slider-owners.js"></script>
     <script src="./js/header-sub-menu.js"></script>
     <script src="./js/loader.js"></script>
-<<<<<<< HEAD
     <script src="./js/carousel.js"></script>
-=======
     <script src="./js/banner-slider.js"></script>
->>>>>>> d3a12814f8f39c1e4954c58aee356957035537ab
+    <script src="./js/search.js"></script>
   </head>
   <body>
     <div class="loader" id="loader__wrapper">
@@ -91,17 +89,17 @@
             </ul>
           </div>
         </nav>
-        <div class="header__icon"><a class="header__link" href="#"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
+        <div class="header__icon"><a class="header__link" id="search-link"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
       </div>
     </header>
     <main class="wrapper">
-      <section class="search">
+      <section class="search" id="search-window">
         <div class="search__wrapper">
-          <div class="search__btn_close"><i class="fa fa-close"></i></div>
+          <div class="search__btn_close" id="search-close"><i class="fa fa-close"></i></div>
           <div class="search__container">
             <h3>search for:</h3>
-            <input class="search__line" type="text" placeholder="Keywords"/>
-            <button class="search__btn" type="submit">Search<i class="fa fa-search"></i></button>
+            <input class="search__line" id="search-input" type="text" placeholder="Keywords"/>
+            <button class="search__btn" id="search-btn-send" type="submit">Search<i class="fa fa-search"></i></button>
           </div>
         </div>
       </section>
