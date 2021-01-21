@@ -1,0 +1,23 @@
+section.news
+    ul.news__row
+        - arrLatestNews = [{backgroundImg:"news__first__background", title:"You will vainly look for fruit on it in autumn.", href:"#"}, {backgroundImg:"news__second__background", title:"A man worth has its season, like tomato.", href:"#"}, {backgroundImg:"news__third__background", title:"Good thoughts bear good fresh juicy fruit.", href:"#"}, {backgroundImg:"news__first__background", title:"Fall in love with the fresh orange", href:"#"}, {backgroundImg:"news__second__background", title:"Why the berries always look delecious", href:"#"}, {backgroundImg:"news__third__background", title:"Love for fruits are genuine of John Doe", href:"#"}]
+        each element in arrLatestNews    
+            li.news__col
+                a(href=element.href)
+                    div.news__background(class=element.backgroundImg)
+                div.news__col__box
+                    h4.news__col__title=element.title
+                    p.news__col__meta
+                        span.news__col_item
+                            i.fa.fa-user.news__col_icon
+                            | Admin
+                        span.news__col_item
+                            i.fa.fa-calendar.news__col_icon
+                            | 27 December, 2019
+                    p.news__col__text
+                        | Vivamus lacus enim, pulvinar vel nulla sed, scelerisque rhoncus nisi.
+                        | Praesent vitae mattis nunc, egestas viverra eros.
+                    a.news__col__button(href=element.href)
+                        | read more 
+                        i.fa.fa-angle-right.news__col_icon
+                    
