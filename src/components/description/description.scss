@@ -26,10 +26,10 @@
     width: 50%;
     margin-right: 15px;
     margin-left: 15px;
-    h2{
+    h2 {
       @extend .main-titles;
     }
-    span{
+    span {
       @extend .color-word;
     }
     @include breakpoint(lg-max) {
@@ -55,6 +55,7 @@
     z-index: 1;
     overflow: hidden;
     height: 450px;
+    cursor: pointer;
     @include breakpoint(tablet) {
       & {
         display: none;

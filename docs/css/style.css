@@ -5861,7 +5861,6 @@ font-family: 'Poppins', sans-serif;
     line-height: 1.8; }
   .products__container:last-child {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 80px;
     list-style-type: none; }
     @media (max-width: 768px) {
@@ -5956,7 +5955,8 @@ font-family: 'Poppins', sans-serif;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    height: 450px; }
+    height: 450px;
+    cursor: pointer; }
     @media (max-width: 768px) {
       .description__video {
         display: none; } }

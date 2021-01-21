@@ -25,9 +25,6 @@ function render() {
 
 function getVideo(e) {
     e.preventDefault();
-    const event = e.target; 
-
-    if(!event.closest('.description__video')) return;
 
     body.classList.add('no-scroll');
 
