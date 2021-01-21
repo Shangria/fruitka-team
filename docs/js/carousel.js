@@ -6,17 +6,13 @@ window.addEventListener('load', () => {
 
     const item = carouselRow.querySelector('.carousel__item');
 
-    const itemWidth = item.offsetWidth;
-
     function carousel() {
-        carouselRow.style.transform = `translateX(-${itemWidth}px)`;
+        const itemWidth = item.offsetWidth;
         const firstElem = carouselRow.firstElementChild;
-        const clone = firstElem.cloneNode(true);
-        
-        
 
+        carouselRow.style.transform = `translateX(-${itemWidth}px)`;
+        
         carouselRow.addEventListener('transitionend', () => {
-            clone.remove();
             carouselRow.appendChild(firstElem);
             
 
@@ -27,10 +23,7 @@ window.addEventListener('load', () => {
             });
 
         })
-
     }
 
-
-    
     setInterval(carousel, 2000);
 })

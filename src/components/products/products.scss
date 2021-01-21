@@ -13,7 +13,7 @@
 
   &__title {
     position: relative;
-    span{
+    span {
       @extend .color-word;
     }
     @extend .main-titles;
@@ -41,7 +41,6 @@
 
   &__container:last-child {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 80px;
     list-style-type: none;
     @include breakpoint(tablet) {
@@ -81,7 +80,7 @@
   &__col:hover {
     box-shadow: none;
   }
-  &_col-hidden{
+  &_col-hidden {
     display: none;
   }
 
