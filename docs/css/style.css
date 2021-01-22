@@ -6207,9 +6207,12 @@ font-family: 'Poppins', sans-serif;
   .carousel__row {
     display: flex;
     justify-content: center;
-    transition: transform 1s; }
+    transition: transform 1s;
+    flex-shrink: 0;
+    width: 130%; }
   .carousel__item {
-    flex-basis: 20%; }
+    flex-basis: 20%;
+    flex-shrink: 0; }
   .carousel__img:hover {
     opacity: 0.7; }
 

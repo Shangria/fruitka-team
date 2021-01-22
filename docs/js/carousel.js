@@ -12,7 +12,9 @@ window.addEventListener('load', () => {
 
         carouselRow.style.transform = `translateX(-${itemWidth}px)`;
         
-        carouselRow.addEventListener('transitionend', () => {
+        carouselRow.addEventListener('transitionend', transitionEvent)
+
+        function transitionEvent() {
             carouselRow.appendChild(firstElem);
             
 
@@ -21,8 +23,9 @@ window.addEventListener('load', () => {
             setTimeout(() => {
                 carouselRow.style.transition = 'transform 1s';
             });
-
-        })
+            
+            carouselRow.removeEventListener('transitionend', transitionEvent)
+        }
     }
 
     setInterval(carousel, 2000);
