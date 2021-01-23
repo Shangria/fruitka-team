@@ -31,10 +31,9 @@ window.addEventListener('load', function () {
         });
 
         searchBtnSend.addEventListener('click', function (e) {
-
-            searchValue = searchInput.value;
-            window.localStorage.setItem('searchValue', searchValue);
-            window.location.href = `shop.html`;
+            let params = new URLSearchParams(window.location.search);
+            params.set('searchValue', searchInput.value);
+            window.location = 'shop.html?' + params.toString();
         });
     });
 })

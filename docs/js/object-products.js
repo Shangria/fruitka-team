@@ -18,5 +18,4 @@ const arrProducts = [
     {src: "./img/products/product-img-17.jpg", alt: "morinda", title: "Morinda citrus-leaf", cost: "35$", type: "citruses"},
     {src: "./img/products/product-img-18.jpg", alt: "watermelon-img", title: "Watermelon", cost: "85$", type: "berries"},
     {src: "./img/products/product-img-19.jpg", alt: "melon-img", title: "Melon", cost: "70$", type: "berries"},
-    {src: "./img/products/product-img-20.jpg", alt: "eggplant-img", title: "Eggplant", cost: "35$", type: ""},
 ];

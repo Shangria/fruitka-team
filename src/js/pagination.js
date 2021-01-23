@@ -4,8 +4,8 @@ window.addEventListener('load', function () {
     const productTypeFilters = document.querySelectorAll('[data-filter]');
     const elemOnPage = 6;
 
-
-    const initialFilterType = localStorage.getItem('searchValue') ?? 'all';
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialFilterType = (urlParams.get('searchValue') ?? 'all').toLowerCase();
     if (initialFilterType != null) {
         filterProducts(initialFilterType);
         // getPagination();
