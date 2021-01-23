@@ -16,7 +16,6 @@
     <script src="./js/loader.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/banner-slider.js"></script>
-    <script src="./js/search.js"></script>
   </head>
   <body>
     <div class="loader" id="loader__wrapper">
@@ -41,6 +40,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/search.js"></script>
     <header class="header" id="header-scroll">
       <div class="header__inner"><a class="header__img-logo" href="./index.html"><img class="header__img-logo" src="./img/logo.png"/></a>
         <nav class="header__navigation">
@@ -94,17 +94,7 @@
         <div class="header__icon"><a class="header__link" id="search-link"><i class="fa fa-search"></i></a><a class="header__link" href="./cart.html"><i class="fa fa-shopping-cart"></i></a></div>
       </div>
     </header>
-    <main class="wrapper">
-      <section class="search" id="search-window">
-        <div class="search__wrapper">
-          <div class="search__btn_close" id="search-close"><i class="fa fa-close"></i></div>
-          <div class="search__container">
-            <h3>search for:</h3>
-            <input class="search__line" id="search-input" type="text" placeholder="Keywords"/>
-            <button class="search__btn" id="search-btn-send" type="submit">Search<i class="fa fa-search"></i></button>
-          </div>
-        </div>
-      </section>
+    <main class="wrapper" id="wrapper">
       <section class="wrapper__banner" id="wrapper-banner-slider">
         <div class="wrapper__banner-arrow-left" id="data-slider-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
         <div class="wrapper__banner-sliders-box" data-sliders-box="data-sliders-box">
