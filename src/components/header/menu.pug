@@ -1,6 +1,6 @@
 div.header__menu-box
     .header__menu-click
-        -arrMenuClick = [{href:'./index.html',class:'fa fa-home'}, {href:'#',class:'fa fa-newspaper-o'}, {href:'./about-us.html',class:'fa fa-book'}, {href:'#',class:'fa fa-shopping-bag'}]
+        -arrMenuClick = [{href:'./index.html',class:'fa fa-home'}, {href:'./news.html',class:'fa fa-newspaper-o'}, {href:'./about-us.html',class:'fa fa-book'}, {href:'./cart.html',class:'fa fa-shopping-bag'}]
         each element in arrMenuClick
             a.header__link(href=element.href)
                 i(class=element.class)
@@ -13,8 +13,8 @@ div.header__menu-box
              arr = [
                  {href:'./index.html',name:'Home',items: [{href: './index.html', name: 'Static Home'}, {href: '#', name:  'Slider Home'}]},
                  {href:'./about-us.html',name:'About',items:[]},
-                 {href:'#', name:'Pages',items: [{href:'#', name:'404 page'},{href:'#', name:'About'},{href:'./cart.html', name:'Cart'},{href:'#', name:'Check Out'},{href:'./contact.html', name:'Contact'},{href:'#', name:'News'},{href:'./shop.html', name:'Shop'} ]},
-                 {href:'#',name:'News', items: [{href:'#', name:'News'},{href:'#', name:'Single News'}]},
+                 {href:'#', name:'Pages',items: [{href:'#', name:'404 page'},{href:'./about-us.html', name:'About'},{href:'./cart.html', name:'Cart'},{href:'#', name:'Check Out'},{href:'./contact.html', name:'Contact'},{href:'./news.html', name:'News'},{href:'./shop.html', name:'Shop'} ]},
+                 {href:'./news.html',name:'News', items: [{href:'#', name:'News'},{href:'#', name:'Single News'}]},
                  {href:'./contact.html',name:'Contact',items: []},
                  {href:'./shop.html',name:'Shop',items: [{href:'./shop.html', name:'Shop'},{href:'#', name:'Check Out'}, {href:'#', name:'Single Product'},{href:'./cart.html', name:'Cart'}]}
                  ]
