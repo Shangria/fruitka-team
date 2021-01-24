@@ -1,7 +1,6 @@
 window.addEventListener('load', function () {
 
     const searchLink = document.getElementById('search-link');
-    let searchValue;
 
     searchLink.addEventListener('click', function () {
 

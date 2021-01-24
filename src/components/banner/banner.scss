@@ -18,7 +18,7 @@
       order: 1;
 
       .wrapper__banner_slide {
-        animation: fadeInLeft 1s;
+        animation: banner-slider-show 1s;
       }
 
       .wrapper__title-min {
@@ -36,11 +36,6 @@
 
     &.slider-hidden {
       order: 2;
-
-      .wrapper__banner_slide {
-        animation: fadeInRight 1s;
-
-      }
     }
   }
 
@@ -80,8 +75,8 @@
     padding-right: 15px;
     z-index: 2;
     @include breakpoint(tablet) {
-       display: none;
-     }
+      display: none;
+    }
   }
 
   .fa-arrow-right {
@@ -170,5 +165,14 @@
     .wrapper__btn-contact {
       margin-top: 15px;
     }
+  }
+}
+
+@keyframes banner-slider-show {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

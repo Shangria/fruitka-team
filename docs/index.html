@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="./js/data-storage.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/header-menu.js"></script>
     <script src="./js/timer.js"></script>
@@ -51,8 +53,6 @@
             <ul class="header__menu" id="header__menu-title">
               <li class="header__list-menu" data-sub-menu="Home"><a class="header__link" href="./index.html">Home</a>
                 <ul class="header__sub-menu">
-                  <li class="header__sub-list"><a class="header__sub-link" href="./index.html">Static Home</a></li>
-                  <li class="header__sub-list"><a class="header__sub-link" href="#">Slider Home</a></li>
                 </ul>
               </li>
               <li class="header__list-menu" data-sub-menu="About"><a class="header__link" href="./about-us.html">About</a>
@@ -161,21 +161,21 @@
             <div class="products__box">
               <h3 class="products__box-title">Strawberry</h3>
               <div class="products__box-text"><span>Per Kg</span>85$
-              </div><a class="products__box-button" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+              </div><a class="products__box-button" data-add-to-cart="Strawberry"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
             </div>
           </li>
           <li class="products__col"><img class="products__img" src="./img/products/product-img-2.jpg" alt="berry-img"/>
             <div class="products__box">
               <h3 class="products__box-title">Berry</h3>
               <div class="products__box-text"><span>Per Kg</span>70$
-              </div><a class="products__box-button" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+              </div><a class="products__box-button" data-add-to-cart="Berry"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
             </div>
           </li>
           <li class="products__col"><img class="products__img" src="./img/products/product-img-3.jpg" alt="lemon-img"/>
             <div class="products__box">
               <h3 class="products__box-title">Lemon</h3>
               <div class="products__box-text"><span>Per Kg</span>35$
-              </div><a class="products__box-button" href="#"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
+              </div><a class="products__box-button" data-add-to-cart="Lemon"><i class="fa fa-shopping-cart products__icon"></i>Add to Cart</a>
             </div>
           </li>
         </ul>

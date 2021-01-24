@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
 
-    const sliderBox = new Slider(document.querySelectorAll('[data-sliders-box]'), 4000);
+    const sliderBox = new Slider(document.querySelectorAll('[data-sliders-box]'), 40000);
     const slider = document.getElementById('wrapper-banner-slider');
     const arrowLeft = document.getElementById('data-slider-left');
     const arrowRight = document.getElementById('data-slider-right');

@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="./js/data-storage.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="./js/header-menu.js"></script>
     <script src="./js/header-scroll.js"></script>
     <script src="./js/header-sub-menu.js"></script>
@@ -48,8 +50,6 @@
             <ul class="header__menu" id="header__menu-title">
               <li class="header__list-menu" data-sub-menu="Home"><a class="header__link" href="./index.html">Home</a>
                 <ul class="header__sub-menu">
-                  <li class="header__sub-list"><a class="header__sub-link" href="./index.html">Static Home</a></li>
-                  <li class="header__sub-list"><a class="header__sub-link" href="#">Slider Home</a></li>
                 </ul>
               </li>
               <li class="header__list-menu" data-sub-menu="About"><a class="header__link" href="./about-us.html">About</a>
@@ -101,58 +101,30 @@
       </div>
     </section>
     <section class="cart-tables__section">
-      <section class="product-table__wrapper">
-        <table class="product-table">
-          <thead class="product-table-head">
-            <tr class="product-table-head__row">
-              <th class="product-table-head__titles"></th>
-              <th class="product-table-head__titles">Product Image</th>
-              <th class="product-table-head__titles">Name</th>
-              <th class="product-table-head__titles">Price</th>
-              <th class="product-table-head__titles">Quantity</th>
-              <th class="product-table-head__titles">Total</th>
-            </tr>
-          </thead>
-          <tbody class="product-table-body" id="tbody">
-            <tr class="product-table-body__row">
-              <td class="product-table-body_data"> <a class="product-table-body_remove__link" href="#"><i class="product-table-body_remove fa fa-times-circle"></i></a></td>
-              <td class="product-table-body_data"><img class="product-table-body__image" src="./img/products/product-img-1.jpg"/></td>
-              <td class="product-table-body__name product-table-body_data">Strawberry
-              </td>
-              <td class="product-table-body__price product-table-body_data">$85
-              </td>
-              <td class="product-table-body__quantity product-table-body_data">
-                <input class="product-table-body__quantity__input" type="number" placeholder="0"/>
-              </td>
-              <td class="product-table-body__total product-table-body_data"></td>
-            </tr>
-            <tr class="product-table-body__row">
-              <td class="product-table-body_data"> <a class="product-table-body_remove__link" href="#"><i class="product-table-body_remove fa fa-times-circle"></i></a></td>
-              <td class="product-table-body_data"><img class="product-table-body__image" src="./img/products/product-img-2.jpg"/></td>
-              <td class="product-table-body__name product-table-body_data">Grapes
-              </td>
-              <td class="product-table-body__price product-table-body_data">$70
-              </td>
-              <td class="product-table-body__quantity product-table-body_data">
-                <input class="product-table-body__quantity__input" type="number" placeholder="0"/>
-              </td>
-              <td class="product-table-body__total product-table-body_data"></td>
-            </tr>
-            <tr class="product-table-body__row">
-              <td class="product-table-body_data"> <a class="product-table-body_remove__link" href="#"><i class="product-table-body_remove fa fa-times-circle"></i></a></td>
-              <td class="product-table-body_data"><img class="product-table-body__image" src="./img/products/product-img-3.jpg"/></td>
-              <td class="product-table-body__name product-table-body_data">Lemon
-              </td>
-              <td class="product-table-body__price product-table-body_data">$30
-              </td>
-              <td class="product-table-body__quantity product-table-body_data">
-                <input class="product-table-body__quantity__input" type="number" placeholder="0"/>
-              </td>
-              <td class="product-table-body__total product-table-body_data"></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      <!--section.product-table__wrapper-->
+      <!--    table.product-table-->
+      <!--        thead.product-table-head-->
+      <!--            tr.product-table-head__row-->
+      <!--                - arrProductTableHead = ["", "Product Image", "Name", "Price", "Quantity", "Total"]-->
+      <!--                each element in arrProductTableHead-->
+      <!--                    th.product-table-head__titles #{element}-->
+      <!--        tbody.product-table-body#tbody-->
+      <!--            - arrProductTableBody = [{href:"#", totalName: "Strawberry", inputClass: "product-table-body__quantity__input",  totalPrice: "$85", index: "fa fa-times-circle", dataClass: "product-table-body_data", src: "./img/products/product-img-1.jpg"}, {href:"#", totalName: "Grapes", inputClass: "product-table-body__quantity__input", totalPrice: "$70", index: "fa fa-times-circle", dataClass: "product-table-body_data", src: "./img/products/product-img-2.jpg"}, {href:"#", totalName: "Lemon",  inputClass: "product-table-body__quantity__input", totalPrice: "$30", index: "fa fa-times-circle", dataClass: "product-table-body_data", src: "./img/products/product-img-3.jpg"}]-->
+      <!--            each element in arrProductTableBody-->
+      <!--                tr.product-table-body__row-->
+      <!--                    td(class=element.dataClass)-->
+      <!--                        a.product-table-body_remove__link(href=element.href)-->
+      <!--                            i.product-table-body_remove(class=element.index)-->
+      <!--                    td(class=element.dataClass)-->
+      <!--                        img.product-table-body__image(src=element.src)-->
+      <!--                    td.product-table-body__name(class=element.dataClass)-->
+      <!--                        =element.totalName-->
+      <!--                    td.product-table-body__price(class=element.dataClass)-->
+      <!--                        =element.totalPrice-->
+      <!--                    td.product-table-body__quantity(class=element.dataClass)-->
+      <!--                        input(type='number', placeholder='0', class=element.inputClass)-->
+      <!--                    td.product-table-body__total(class=element.dataClass)-->
+      <section class="product-table__wrapper" id="cart-container"></section>
       <section class="total-table__wrapper">
         <table class="total-table">
           <thead class="total-table-head">
@@ -254,6 +226,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/drag'n'drop.js"></script>
+    <script src="./js/drag-n-drop.js"></script>
   </body>
 </html>
