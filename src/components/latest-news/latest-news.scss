@@ -7,7 +7,6 @@
   @include breakpoint(md-max) {
     & {
       padding: 60px 15px;
-
     }
   }
 
@@ -26,10 +25,9 @@
     @extend .main-titles;
     position: relative;
     padding-bottom: 15px;
-    span{
+    span {
       @extend .color-word;
     }
-
 
     &::after {
       content: "";
@@ -44,10 +42,10 @@
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     @include breakpoint(sm-max) {
       & {
-       font-size: 13px;
+        font-size: 13px;
       }
     }
   }
@@ -81,14 +79,14 @@
     -webkit-box-shadow: 0 0 20px #dddddd;
     box-shadow: 0 0 20px #dddddd;
     transition: 0.3s;
-    
-    @include breakpoint(md-max){
-      &{
+
+    @include breakpoint(md-max) {
+      & {
         width: 70%;
       }
     }
-    @include breakpoint(sm-max){
-      &{
+    @include breakpoint(sm-max) {
+      & {
         width: 90%;
       }
     }
@@ -113,8 +111,8 @@
 
     &__text {
       margin-bottom: 30px;
-      @include breakpoint(sm-max){
-        &{
+      @include breakpoint(sm-max) {
+        & {
           display: none;
         }
       }
@@ -131,8 +129,6 @@
 
       &:hover {
         color: #f28123;
-
-
       }
     }
 
@@ -149,8 +145,6 @@
       &:last-child {
         margin-right: 0;
       }
-
-
     }
   }
 

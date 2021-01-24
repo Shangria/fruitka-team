@@ -1,12 +1,13 @@
-@import "./reset";
-@import "global-style/animate";
+@import "reset";
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap");
 
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
+@import "global-style/animate";
+
+@import "global-style/btn-main";
+
+@import "global-style/common-styles";
+
 @import "../components/loader/loader";
 
 @import "../components/header/header";
@@ -54,9 +55,3 @@ font-family: 'Poppins', sans-serif;
 @import "../components/pagination/pagination";
 
 @import "../components/advantages/advantages";
-
-@import "global-style/btn-main";
-
-
-
-@import "./global-style/common-styles";
