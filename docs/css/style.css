@@ -6607,6 +6607,39 @@ font-family: 'Poppins', sans-serif;
     color: #fff;
     font-family: Poppins, sans-serif; }
 
+.check-out-banner {
+  position: relative;
+  background-image: url(../img/breadcrumb-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 450px; }
+  .check-out-banner__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(7, 33, 46, 0.6); }
+  .check-out-banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .check-out-banner__subtitle {
+    color: #f28123;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px; }
+  .check-out-banner__title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    font-family: Poppins, sans-serif; }
+
 .news {
   padding: 150px 15px;
   max-width: 1170px;
