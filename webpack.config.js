@@ -76,7 +76,7 @@ module.exports = (argv) => ({
                 test: /\.pug$/,
                 use: {
                     loader: 'pug-loader'
-                },
+                }, 
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
