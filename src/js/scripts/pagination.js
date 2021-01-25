@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+    const products = JSON.parse(window.localStorage.getItem('products'));
+
     const pagination = document.querySelector('.pagination');
     const container = pagination.querySelector('.pagination__container');
     const productTypeFilters = document.querySelectorAll('[data-filter]');
@@ -46,7 +48,7 @@ window.addEventListener('load', function () {
         const start = (pageNum - 1) * elemOnPage;
         const end = start + elemOnPage;
 
-        const viewElements = arrProducts.slice(start, end);
+        const viewElements = products.slice(start, end);
 
         createElem(viewElements);
     }
@@ -67,9 +69,9 @@ window.addEventListener('load', function () {
 
     function filterProducts(filterType) {
 
-        const filteredArr = arrProducts.filter((elem) => {
+        const filteredArr = products.filter((elem) => {
             if (filterType === 'all') {
-                return arrProducts;
+                return products;
             } else {
                 return elem.type === filterType;
             }
