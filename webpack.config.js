@@ -15,7 +15,9 @@ module.exports = (argv) => ({
         shop: './src/js/shop.js',
         cart: './src/js/cart.js',
         about: './src/js/about-us.js',
-        contact: './src/js/contact.js'
+        contact: './src/js/contact.js',
+        checkout: './src/js/checkout.js',
+        news: './src/js/news.js'
     },
     output: {
         publicPath : './',
@@ -24,7 +26,7 @@ module.exports = (argv) => ({
         workerChunkLoading: false
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         ...PAGES.map(page => new HtmlWebpackPlugin({
             inject: false,
             hash: true,
