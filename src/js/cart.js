@@ -10,6 +10,7 @@ import './scripts/loader.js'
 
 import './scripts/carousel.js'
 
-import './scripts/drag\'n\'drop.js'
-
 import './scripts/cart-function.js'
+
+// import './scripts/drag\'n\'drop.js'
+

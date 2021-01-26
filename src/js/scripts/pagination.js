@@ -3,19 +3,22 @@ window.addEventListener('load', function () {
 
     const pagination = document.querySelector('.pagination');
     const container = pagination.querySelector('.pagination__container');
+    const paginationBtn = pagination.querySelector('.pagination__btn')
     const productTypeFilters = document.querySelectorAll('[data-filter]');
     const elemOnPage = 6;
+    
 
     const urlParams = new URLSearchParams(window.location.search);
     const initialFilterType = (urlParams.get('searchValue') ?? 'all').toLowerCase();
     if (initialFilterType != null) {
         filterProducts(initialFilterType);
+        
         // getPagination();
         toggleActiveCssClassForFilterButton(initialFilterType);
     }
 
     pagination.addEventListener('click', getFiltration);
-    pagination.addEventListener('click', getPagination);
+    
     pagination.addEventListener('click', toggleActiveCssClassForFilterButtonByClickEvent);
 
 
@@ -40,18 +43,7 @@ window.addEventListener('load', function () {
         container.innerHTML = html;
     }
 
-    function getPagination(e) {
-        const pageNum = +e.target.innerHTML;
-
-        if (!e.target.closest('.pagination__btn') || isNaN(pageNum)) return;
-
-        const start = (pageNum - 1) * elemOnPage;
-        const end = start + elemOnPage;
-
-        const viewElements = products.slice(start, end);
-
-        createElem(viewElements);
-    }
+    
 
     function getFiltration(e) {
 
@@ -68,7 +60,6 @@ window.addEventListener('load', function () {
 
 
     function filterProducts(filterType) {
-
         const filteredArr = products.filter((elem) => {
             if (filterType === 'all') {
                 return products;
@@ -77,7 +68,41 @@ window.addEventListener('load', function () {
             }
         }).sort(alphabetSort);
 
-        createElem(filteredArr);
+        const showArr = filteredArr.slice(0, 6)
+        
+        const countOfItems = Math.ceil(filteredArr.length / elemOnPage);
+
+        pagination.addEventListener('click', getPagination);
+
+        function getPagination(e) {
+            const pageNum = +e.target.innerHTML;
+
+            if (!e.target.closest('.pagination__btn') || isNaN(pageNum)) return;
+
+            const start = (pageNum - 1) * elemOnPage;
+            const end = start + elemOnPage;
+
+            const viewElements = filteredArr.slice(start, end);
+
+            createElem(viewElements);
+        }
+
+        function renderBtn() {
+            for (let i = 1; i <= countOfItems; i++){
+                
+                let li = document.createElement('li');
+                li.classList.add('pagination__item');
+                li.innerHTML = i;
+                
+                paginationBtn.append(li)
+            }    
+        }
+
+        createElem(showArr);
+
+        paginationBtn.innerHTML = '';
+
+        renderBtn();
     }
 
     function toggleActiveCssClassForFilterButtonByClickEvent(e) {
