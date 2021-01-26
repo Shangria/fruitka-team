@@ -5,7 +5,8 @@
   margin: 0 auto;
   padding: 100px 15px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   @include breakpoint(sm-max) {
     padding: 5px;
@@ -44,7 +45,7 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 80px 0;
     list-style-type: none;
     transition: 0.3s;
@@ -58,7 +59,7 @@
 
   &__col {
     width: 30%;
-    margin: 15px 0px;
+    margin: 15px 15px;
     padding: 40px 20px;
     box-shadow: 0 0 20px #e4e4e4;
     border-radius: 5px;
