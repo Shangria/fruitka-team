@@ -84,10 +84,12 @@
     }
 
     function registerAddToCartElements(container) {
+
         container.querySelectorAll('[data-add-to-cart]').forEach(function (elem) {
             let product = elem.getAttribute('data-add-to-cart');
             if (product) {
                 elem.addEventListener('click', function () {
+                    debugger
                     let cart = getCartFromStorage();
                     if (!cart.includes(product)) {
                         cart.push(product);
@@ -95,8 +97,6 @@
                         document.dispatchEvent(new Event(RENDER_CARD_EVENT_NAME));
                     }
                 });
-            } else {
-                alert('проверь вёрстку дебил');
             }
         });
     }
@@ -113,8 +113,6 @@
                         document.dispatchEvent(new Event(RENDER_CARD_EVENT_NAME));
                     }
                 });
-            } else {
-                alert('проверь вёрстку дебил');
             }
         });
     }
