@@ -36,7 +36,7 @@
                             <th class="product-table-head__titles">Total</th>
                         </tr>
                     </thead>
-                    <tbody class="product-table-body"></tbody>
+                    <tbody class="product-table-body" id="body-container"></tbody>
                 </table>
             `;
 
