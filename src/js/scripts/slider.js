@@ -1,4 +1,4 @@
-function Slider(slides, autoscrollInterval) {
+export default function Slider(slides, autoscrollInterval) {
     const me = this;
     let sliderElements;
     let currentIndex = 0;

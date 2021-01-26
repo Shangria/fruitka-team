@@ -1,3 +1,7 @@
+import './scripts/data-storage.js';
+
+import './scripts/search.js';
+
 import './scripts/slider.js'
 
 import './scripts/header-menu.js'

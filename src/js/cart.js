@@ -1,3 +1,5 @@
+import './scripts/search.js';
+
 import './scripts/header-menu.js'
 
 import './scripts/header-scroll.js'

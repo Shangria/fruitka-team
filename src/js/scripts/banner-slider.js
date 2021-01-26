@@ -1,5 +1,6 @@
-window.addEventListener('load', function () {
+import Slider from './slider.js'
 
+window.addEventListener('load', function () {
     const sliderBox = new Slider(document.querySelectorAll('[data-sliders-box]'), 40000);
     const slider = document.getElementById('wrapper-banner-slider');
     const arrowLeft = document.getElementById('data-slider-left');
