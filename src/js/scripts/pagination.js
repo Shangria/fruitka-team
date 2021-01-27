@@ -30,9 +30,9 @@ window.addEventListener('load', function () {
                     <h3>${elem.title}</h3>
                     <div class="pagination__box-text">
                         <span>Per Kg</span>
-                        ${elem.cost}
+                        $${elem.cost}
                     </div>
-                    <a class="pagination__box-button btn-main">
+                    <a class="pagination__box-button btn-main" data-add-to-cart="${elem.title}">
                         <i class="fa fa-shopping-cart pagination__icon"></i>
                         Add to Cart
                     </a>          

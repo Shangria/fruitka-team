@@ -5,7 +5,7 @@ table.total-table
             each element in arrTotalTableHead
                 th.total-table-head__titles #{element} 
     tbody.total-table-body
-        - arrTotalTableBody = [{bodyName: "Subtotal:"}, {bodyName: "Shipping:"}, {bodyName: "Total:"}]
+        - arrTotalTableBody = [{bodyName: "Total:"}]
         each element in arrTotalTableBody
             tr.total-table-body__row
                 td.total-table-body_name=element.bodyName

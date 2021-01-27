@@ -2,6 +2,8 @@ import '../scss/style.scss'
 
 import './scripts/data-storage.js';
 
+import './scripts/cart-function.js'
+
 import './scripts/search-filter.js';
 
 import './scripts/search.js';

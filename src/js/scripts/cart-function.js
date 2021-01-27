@@ -7,9 +7,22 @@
 
 
     window.addEventListener('load', function () {
+
+        const clearBtn = document.getElementById('clear-cart');
+
+
         registerAddToCartElements(document);
         registerRemoveFromCartElements(document);
 
+        function clearCart() {
+            const bodyContainer = document.getElementById('body-container');
+            bodyContainer.remove();
+        }
+
+        clearBtn.addEventListener('click', function () {
+            clearCart();
+            localStorage.clear();
+        })
 
         let cartContainer = document.getElementById('cart-container');
         if (cartContainer != null) {
@@ -36,7 +49,7 @@
                             <th class="product-table-head__titles">Total</th>
                         </tr>
                     </thead>
-                    <tbody class="product-table-body"></tbody>
+                    <tbody class="product-table-body" id="body-container"></tbody>
                 </table>
             `;
 
@@ -65,6 +78,7 @@
                         event.target.value = 1;
                     } else {
                         const value = parseInt(event.target.value || '0');
+
                         tr.querySelector('.product-table-body__total').innerText = '$' + value * product.cost;
                     }
                 })
@@ -84,9 +98,11 @@
     }
 
     function registerAddToCartElements(container) {
+
         container.querySelectorAll('[data-add-to-cart]').forEach(function (elem) {
             let product = elem.getAttribute('data-add-to-cart');
             if (product) {
+                debugger
                 elem.addEventListener('click', function () {
                     let cart = getCartFromStorage();
                     if (!cart.includes(product)) {
@@ -95,8 +111,6 @@
                         document.dispatchEvent(new Event(RENDER_CARD_EVENT_NAME));
                     }
                 });
-            } else {
-                alert('проверь вёрстку дебил');
             }
         });
     }
@@ -113,10 +127,9 @@
                         document.dispatchEvent(new Event(RENDER_CARD_EVENT_NAME));
                     }
                 });
-            } else {
-                alert('проверь вёрстку дебил');
             }
         });
     }
+
 
 })();
