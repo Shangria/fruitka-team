@@ -12,14 +12,15 @@ window.addEventListener('load', function () {
     const initialFilterType = (urlParams.get('searchValue') ?? 'all').toLowerCase();
     if (initialFilterType != null) {
         filterProducts(initialFilterType);
-        
-        // getPagination();
         toggleActiveCssClassForFilterButton(initialFilterType);
+        container.dispatchEvent(new CustomEvent('registerAddToCartElements', {bubbles: true}));
     }
 
-    pagination.addEventListener('click', getFiltration);
-    
-    pagination.addEventListener('click', toggleActiveCssClassForFilterButtonByClickEvent);
+    pagination.addEventListener('click', function (event){
+        getFiltration(event);
+        toggleActiveCssClassForFilterButtonByClickEvent(event);
+        container.dispatchEvent(new CustomEvent('registerAddToCartElements', {bubbles: true}));
+    });
 
 
     function createElem(arr) {
