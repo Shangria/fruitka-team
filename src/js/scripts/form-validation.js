@@ -45,7 +45,6 @@ window.addEventListener('load', function (event) {
 
 
     function isPhoneValid(value) {
-        debugger
         const regPhone = /^\+380\d{3}\d{2}\d{2}\d{2}$/
         return  !isEmpty(value) && value.match(regPhone);
 
@@ -59,7 +58,6 @@ window.addEventListener('load', function (event) {
 
 
     function isMinLengthValid(value, minLength) {
-        debugger;
         return !isEmpty(value) && value.length >= minLength;
     }
 

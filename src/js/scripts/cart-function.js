@@ -5,24 +5,27 @@
         saveCartToStorage([]);
     }
 
+    document.addEventListener('registerAddToCartElements', function (event) {
+        registerAddToCartElements(event.target);
+    });
+
+    document.addEventListener('registerRemoveFromCartElements', function (event) {
+        registerRemoveFromCartElements(event.target);
+    });
+
 
     window.addEventListener('load', function () {
 
+        document.dispatchEvent(new CustomEvent('registerAddToCartElements'));
+        document.dispatchEvent(new CustomEvent('registerRemoveFromCartElements'));
+
         const clearBtn = document.getElementById('clear-cart');
-
-
-        registerAddToCartElements(document);
-        registerRemoveFromCartElements(document);
-
-        function clearCart() {
-            const bodyContainer = document.getElementById('body-container');
-            bodyContainer.remove();
+        if (clearBtn != null) {
+            clearBtn.addEventListener('click', function () {
+                document.getElementById('body-container').remove();
+                saveCartToStorage([]);
+            });
         }
-
-        clearBtn.addEventListener('click', function () {
-            clearCart();
-            localStorage.clear();
-        })
 
         let cartContainer = document.getElementById('cart-container');
         if (cartContainer != null) {
@@ -83,7 +86,7 @@
                     }
                 })
             });
-            registerRemoveFromCartElements(tbody);
+            tbody.dispatchEvent(new CustomEvent('registerRemoveFromCartElements', {bubbles: true}));
         }
 
     });
@@ -98,11 +101,9 @@
     }
 
     function registerAddToCartElements(container) {
-
         container.querySelectorAll('[data-add-to-cart]').forEach(function (elem) {
             let product = elem.getAttribute('data-add-to-cart');
             if (product) {
-                debugger
                 elem.addEventListener('click', function () {
                     let cart = getCartFromStorage();
                     if (!cart.includes(product)) {
