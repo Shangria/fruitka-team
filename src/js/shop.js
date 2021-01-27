@@ -2,9 +2,9 @@ import './scripts/data-storage.js';
 
 import './scripts/pagination.js'
 
-import './scripts/cart-function.js'
-
 import './scripts/search.js';
+
+import './scripts/cart-function.js'
 
 import './scripts/header-menu.js'
 
