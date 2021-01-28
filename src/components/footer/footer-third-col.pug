@@ -1,0 +1,10 @@
+div.footer__col
+    h2.footer__title Pages
+    ul
+    - arrFooterPagesCol = [{href:"./index.html", linkName: "Home"}, {href:"./about-us.html", linkName: "About"}, {href:"./shop.html", linkName: "Shop"}, {href:"./news.html", linkName: "News"}, {href:"contact.html", linkName: "Contact"}]
+    each element in arrFooterPagesCol
+        li.footer__list_item
+            a.footer__list_item_link(href=element.href) 
+                i.fa.fa-angle-right.footer__icon 
+                =element.linkName
+        

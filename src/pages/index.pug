@@ -4,33 +4,39 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Fruitzetked
-        link(rel='shortcut icon', href='../img/favicon.png', type="image/x-icon")
+        link(rel='shortcut icon', href='./img/favicon.png', type="image/x-icon")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
         link(rel='stylesheet', href='css/style.css')
+        
     body
+        include ../components/loader/loader.pug
 
-        include ./header-components/header.pug
+        include ../components/header/header.pug
 
-        main.wrapper
+        main.wrapper#wrapper
 
-            include ./homepage-components/banner.pug
 
-            include ./homepage-components/list-information.pug
+            include ../components/banner/banner.pug
 
-            include ./homepage-components/products.pug
+            include ../components/list-information/list-information.pug
 
-            include ./homepage-components/product-promotion.pug
+            include ../components/products/products.pug
 
-            include ./homepage-components/local-shop-owner.pug
+            include ../components/product-promotion/product-promotion.pug
 
-            include ./homepage-components/description.pug
+            include ../components/local-shop-owner/local-shop-owner.pug
 
-            include ./homepage-components/shop-banner.pug
+            include ../components/description/description.pug
 
-            include ./homepage-components/latest-news.pug
+            include ../components/shop-banner/shop-banner.pug
 
-            include ./homepage-components/carousel.pug
+            include ../components/latest-news/latest-news.pug
 
-            include ./footer-components/footer
+            include ../components/carousel/carousel.pug
+
+            include ../components/footer/footer.pug
+        
+        script(src='./js/index.js')
+
 
 

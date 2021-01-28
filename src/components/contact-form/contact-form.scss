@@ -1,0 +1,196 @@
+@import "src/scss/global-style/media";
+
+.contact-wrapper {
+  @include breakpoint(lg-max) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    @include breakpoint(lg-max) {
+      flex-direction: column;
+      width: 90%;
+      padding-top: 15px;
+    }
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 150px 10px 10px;
+  }
+
+  &__text-box {
+    width: 70%;
+    padding-right: 100px;
+    @include breakpoint(lg-max) {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    @include breakpoint(mobile500) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    padding: 30px 10px 40px 0;;
+    font-size: 15px;
+    color: #454545;
+  }
+
+  &__input-box {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    line-height: 1.8;
+    color: #051922;
+    margin: 0 0 30px 0;
+    display: flex;
+    @include breakpoint(mobile500) {
+      flex-direction: column;
+    }
+
+
+    #POST-name, #POST-email, #POST-phone, #POST-subject {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+
+    #POST-message {
+      border: 1px solid #ddd;
+      padding: 15px;
+      height: 200px;
+      border-radius: 3px;
+      width: 100%;
+      resize: none;
+    }
+  }
+
+  &__input-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 5px;
+    @include breakpoint(mobile500) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__error-message {
+    color: #ff0000;
+    background-color: #ff00000f;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    .fa-ban {
+      color: #ff0000;
+      font-size: 20px;
+
+    }
+  }
+
+  .contact-wrapper__btn {
+    border: none;
+    padding: 20px 30px;
+    color: #012738;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 30px;
+  }
+
+  &__btn {
+    @extend .btn-main;
+  }
+
+  &__contacts {
+    @include breakpoint(lg-max) {
+      width: 100%;
+      display: flex;
+    }
+    @include breakpoint(md-max) {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    width: 30%;
+    background-color: #FBFBFB;
+    padding: 45px 30px;
+    border-radius: 5px;
+    height: max-content;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    .fa {
+      color: #f49b49;
+      padding-right: 10px;
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    @extend .contact-wrapper__input-box;
+    line-height: 1.8;
+    opacity: 0.8;
+    padding-left: 40px;
+  }
+
+
+  &__title-contact {
+    font-size: 20px;
+  }
+
+  &__fined-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #162133;
+    width: 100%;
+    align-items: center;
+    height: 200px;
+  }
+
+  &__fined-container {
+    @include breakpoint(lg-max) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__fined-text {
+    @include breakpoint(mobile500) {
+      font-size: 25px;
+    }
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &__item-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__fineed-map {
+    width: 100%;
+  }
+
+  .fa-map-marker {
+    @include breakpoint(mobile500) {
+      font-size: 35px;
+    }
+    font-size: 60px;
+    padding-right: 10px;
+  }
+}

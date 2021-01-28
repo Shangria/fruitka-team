@@ -1,0 +1,19 @@
+section
+    ul.local-shop-owner#local-shop-owner_slider
+         - arrlocalShopOwner = [{img: './img/avatar/avatar1.png', span: 'Saira Hakim'}, {img: './img/avatar/avatar2.png', span: 'Jacob Sikim'}, {img: './img/avatar/avatar3.png', span:'David Niph'}]
+         each element,i in arrlocalShopOwner
+             if i<3
+                li(class='local-shop-owner__container')
+                    .local-shop-owner__avatar
+                        img(src=element.img)
+                    div
+                        span.local-shop-owner__name=element.span
+                        p.local-shop-owner__title Local shop owner
+                    .local-shop-owner__inform
+                        span
+                            | " Sed ut perspiciatis unde omnis iste natus error veritatis et
+                            | quasi architecto beatae vitae dict eaque ipsa quae ab illo
+                            | inventore Sed ut perspiciatis unde omnis iste natus error
+                            | sit voluptatem accusantium "
+                        div.local-shop-owner__icon
+                            i.fa.fa-quote-right(aria-hidden="true")

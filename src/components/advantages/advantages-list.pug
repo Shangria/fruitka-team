@@ -1,0 +1,11 @@
+div.advantages__list
+    - arrAdvantagesList = [{index: "fa fa-truck", listTitle: "Home Delivery"}, {index: "fa fa-money", listTitle: "Best Price"}, {index: "fa fa-briefcase", listTitle: "Custom Box"}, {index: "fa fa-refresh", listTitle: "Quick Refund"}]
+    each element in arrAdvantagesList
+        div.advantages__list__item
+            div.advantages__list__icon
+                i(class=element.index)
+            div.advantages__list__info
+                h6.advantages__list__title
+                    =element.listTitle
+                p.advantages__list__text
+                    | sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.                   

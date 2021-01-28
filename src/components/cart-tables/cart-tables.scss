@@ -1,0 +1,255 @@
+@import "src/scss/global-style/media";
+
+.cart-tables__section {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0;
+
+    @include breakpoint(lg-max) {
+        & {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 65px 0;
+        }
+    }
+}
+
+.product-table {
+    font-family: "Open-sans", sans-serif;
+    font-size: 14px; 
+    margin-bottom: 30px;
+
+    &__wrapper{
+        margin: 0 10px;
+    }
+
+    &__wrapper{ 
+        @include breakpoint(mobile500) {
+        & {
+        overflow-x: scroll; 
+        }
+    }}
+   
+    
+    @include breakpoint(mobile300) {
+        & {
+            margin-left: 7px;
+        }
+    }
+
+    &-head {
+        &__row {
+            background-color: #efefef;
+        }
+
+        &__titles {
+            padding: 15px 20px;
+            border-right: 1px solid #efefef;
+            font-weight: 500;
+            text-align: center;
+
+            @include breakpoint(tablet) {
+                & {
+                    font-size: 12px;
+                }
+            }
+
+            @include breakpoint(mobile500){
+                padding: 5px 15px;
+            }
+        }
+    }
+
+    &-body {
+        &__row{
+            cursor: move;
+
+            &.dragging{
+                opacity: 0.5;
+            }
+        }
+
+        &_data {
+            border: 1px solid #efefef;
+            padding: 20px 30px;
+            color: #051922;
+            text-align: center;
+            position: relative;
+
+            
+            @include breakpoint(tablet) {
+                & {
+                    padding: 15px 12px;
+                }
+            }
+        }
+
+        &_remove__link {
+            text-decoration: none;
+            color: #000;
+            transition: all 0.3s;
+            font-size: 22px;
+
+            &:hover {
+                color: #f28123;
+            }
+
+            &:active {
+                color: #ff0000;
+            }
+
+            @include breakpoint(tablet) {
+                & {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &__image {
+            max-width: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        &__quantity__input {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100px;
+
+            @include breakpoint(tablet) {
+                & {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+.total-table {
+    width: 350px;
+    font-family: "Open-sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+    @include breakpoint(lg-max) {
+        & {
+            width: 675px;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        & {
+            width: 496px;
+        }
+    }
+
+    @include breakpoint(tablet-600) {
+        & {
+            width: 270px;
+        }
+    }
+
+    &__section {
+        margin: 0 10px;
+    }
+
+    &-head {
+        &__row {
+            background-color: #efefef;
+        }
+
+        &__titles {
+            padding: 15px 20px;
+            border-right: 1px solid #efefef;
+            font-weight: 500;
+            text-align: inherit;
+            font-size: 14px;
+
+            @include breakpoint(mobile500){
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    &-body {
+
+        &_data,
+        &_name {
+            border: 1px solid #efefef;
+            padding: 15px 20px;
+            color: #051922;
+        }
+
+        &_name {
+            font-weight: 700;
+        }
+    }
+
+    &__button {
+        margin-bottom: 30px;
+
+        &__link {
+            background-color: #f28123;
+            display: inline-block;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            transition: all 0.3s;
+            margin-right: 25px;
+
+            &:hover {
+                background-color: #051922;
+                color: #f28123;
+            }
+        }
+    }
+}
+
+
+.cart-coupon {
+    &__title {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        &__input_text {
+            border: 1px solid #ddd;
+            color: #051922;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        &__input_submit {
+            background-color: #F28123;
+            color: #051922;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 15px;
+            border: none !important;
+            cursor: pointer;
+            padding: 15px 25px;
+            border-radius: 53px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #051922;
+                color: #f28123;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+@import "src/scss/global-style/media";
+
+.local-shop-owner {
+  position: relative;
+  font-family: sans-serif;
+  width: 100%;
+  height: 600px;
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(50%, -50%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left ease 1s;
+
+
+    &.slider-hidden {
+      left: 100%;
+    }
+
+    &.slider-shown {
+      left: 0;
+    }
+  }
+
+  &_slider-parametrs {
+    right: 50%;
+    transition: right ease 1s;
+  }
+
+  &__avatar {
+    width: 100px;
+    padding-bottom: 15px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+  }
+
+  &__title {
+    color: #828c91;
+    padding-top: 15px;
+    font-size: 13px;
+  }
+
+
+  &__inform {
+    padding-top: 15px;
+    color: #999999;
+    line-height: 1.8;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  &__icon {
+    font-size: 30px;
+  }
+
+  &_hidden {
+    display: none;
+  }
+}
+
+@include breakpoint(md-max) {
+  .local-shop-owner__container {
+    width: 50%;
+  }
+}

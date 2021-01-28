@@ -1,0 +1,10 @@
+div.footer__col
+    h2.footer__title Get in Touch
+    ul
+        - arrFooterSecondCol = ["34/8, East Hukupara, Gifirtok, Sadan.", "support@fruitkha.com","+00 111 222 3333"]
+        each element, i in arrFooterSecondCol
+            if i<2
+                li.footer__list_item #{element}
+            else
+                li.footer__list_item
+                    a.footer__list_item_link(href="#") #{element}

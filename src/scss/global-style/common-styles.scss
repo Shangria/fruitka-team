@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  /*font-weight: 400;
+  font-size: 14px;*/
+  letter-spacing: 0.1px;
+  line-height: 1.8em;
+}
+
+.main-titles {
+  font-size: 40px;
+  font-family: "Poppins";
+  line-height: 1.25em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #051922;
+}
+
+.color-word {
+  color: #f28123;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link-default {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}

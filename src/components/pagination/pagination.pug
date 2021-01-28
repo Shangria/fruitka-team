@@ -1,0 +1,11 @@
+section.pagination
+    ul.pagination__list
+        -arrList = ["All", "Berries", "Citruses", "Fruits"];
+        each element in arrList
+            li.pagination__item(data-filter='' + element.toLowerCase()) #{element}    
+    ul.pagination__container
+        
+    ul.pagination__btn
+        //- -arrBtn = [1,2,3];
+        //- each element in arrBtn
+        //-     li.pagination__item #{element}

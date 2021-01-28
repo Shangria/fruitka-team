@@ -1,0 +1,28 @@
+div.header__menu-box
+    .header__menu-click
+        -arrMenuClick = [{href:'./index.html',class:'fa fa-home'}, {href:'./news.html',class:'fa fa-newspaper-o'}, {href:'./about-us.html',class:'fa fa-book'}, {href:'./shop.html',class:'fa fa-shopping-bag'}]
+        each element in arrMenuClick
+            a.header__link(href=element.href)
+                i(class=element.class)
+    .header__menu-burger
+        span.header__menu-burger_item
+        span.header__menu-burger_item
+        span.header__menu-burger_item
+    ul.header__menu#header__menu-title
+        -
+             arr = [
+                 {href:'./index.html',name:'Home',items:[]},
+                 {href:'./about-us.html',name:'About',items:[]},
+                 {href:'#', name:'Pages',items: [{href:'./about-us.html', name:'About'},{href:'./cart.html', name:'Cart'},{href:'./contact.html', name:'Contact'},{href:'./news.html', name:'News'},{href:'./shop.html', name:'Shop'} ]},
+                 {href:'./news.html',name:'News', items: []},
+                 {href:'./contact.html',name:'Contact',items: []},
+                 {href:'./shop.html',name:'Shop',items: [{href:'./shop.html', name:'Shop'},{href:'./cart.html', name:'Cart'}]}
+                 ]
+        each element in arr
+            li(data-sub-menu=element.name).header__list-menu
+                a.header__link(href=element.href)=element.name
+                ul.header__sub-menu
+                    each item  in element.items
+                        li.header__sub-list
+                            a.header__sub-link(href=''+item.href)=''+ item.name
+
