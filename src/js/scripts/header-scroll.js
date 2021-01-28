@@ -11,3 +11,25 @@ window.addEventListener('scroll', function () {
         headerInner.classList.remove('header__inner_scroll');
     }
 });
+
+function mediaHeader() {
+    const headerInner = document.querySelector('.header__inner');
+    const nav = document.querySelector('.header__navigation');
+    const iconBox = document.querySelector('.header__icon');
+
+
+    const mediaQueries = window.matchMedia('(max-width: 600px)');
+
+    if (mediaQueries.matches) {
+        nav.append(iconBox);
+    } else {
+        headerInner.append(iconBox);
+    }
+}
+
+
+
+window.addEventListener('load', mediaHeader);
+window.addEventListener('resize', mediaHeader);
+
+

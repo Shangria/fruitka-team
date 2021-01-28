@@ -37,6 +37,9 @@
   &__navigation {
     display: flex;
     align-items: center;
+    @include breakpoint(tablet-600) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__img-logo {
@@ -49,9 +52,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include breakpoint(tablet) {
-      display: none;
-    }
   }
 
   &__icon-basket {

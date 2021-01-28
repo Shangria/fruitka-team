@@ -12,14 +12,15 @@ window.addEventListener('load', function () {
     const initialFilterType = (urlParams.get('searchValue') ?? 'all').toLowerCase();
     if (initialFilterType != null) {
         filterProducts(initialFilterType);
-        
-        // getPagination();
         toggleActiveCssClassForFilterButton(initialFilterType);
+        container.dispatchEvent(new CustomEvent('registerAddToCartElements', {bubbles: true}));
     }
 
-    pagination.addEventListener('click', getFiltration);
-    
-    pagination.addEventListener('click', toggleActiveCssClassForFilterButtonByClickEvent);
+    pagination.addEventListener('click', function (event){
+        getFiltration(event);
+        toggleActiveCssClassForFilterButtonByClickEvent(event);
+        container.dispatchEvent(new CustomEvent('registerAddToCartElements', {bubbles: true}));
+    });
 
 
     function createElem(arr) {
@@ -32,7 +33,7 @@ window.addEventListener('load', function () {
                         <span>Per Kg</span>
                         ${elem.cost}$
                     </div>
-                    <a class="pagination__box-button btn-main">
+                    <a class="pagination__box-button btn-main" data-add-to-cart="${elem.title}">
                         <i class="fa fa-shopping-cart pagination__icon"></i>
                         Add to Cart
                     </a>          

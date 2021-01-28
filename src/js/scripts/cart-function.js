@@ -5,11 +5,40 @@
         saveCartToStorage([]);
     }
 
+    document.addEventListener('registerAddToCartElements', function (event) {
+        registerAddToCartElements(event.target);
+    });
+
+    document.addEventListener('registerRemoveFromCartElements', function (event) {
+        registerRemoveFromCartElements(event.target);
+    });
+
 
     window.addEventListener('load', function () {
-        registerAddToCartElements(document);
-        registerRemoveFromCartElements(document);
 
+        document.dispatchEvent(new CustomEvent('registerAddToCartElements'));
+        document.dispatchEvent(new CustomEvent('registerRemoveFromCartElements'));
+
+
+        const clearBtn = document.getElementById('clear-cart');
+        if (clearBtn != null) {
+            clearBtn.addEventListener('click', function () {
+                document.getElementById('body-container').remove();
+                document.querySelector('.total-table-body_data').innerText='';
+                saveCartToStorage([]);
+            });
+        }
+        function calculateTheOrderAmount(){
+            const dataSum=document.querySelector('.total-table-body_data');
+            const dataPrice=document.querySelectorAll('.product-table-body__total');
+            let result;
+            let sum=0;
+            [...dataPrice].map(function (elem){
+                result=+elem.textContent.replace(/[^\d]/g, '');
+                 sum+=result;
+                dataSum.innerHTML='$'+sum;
+            })
+        }
 
         let cartContainer = document.getElementById('cart-container');
         if (cartContainer != null) {
@@ -36,7 +65,7 @@
                             <th class="product-table-head__titles">Total</th>
                         </tr>
                     </thead>
-                    <tbody class="product-table-body"></tbody>
+                    <tbody class="product-table-body" id="body-container"></tbody>
                 </table>
             `;
 
@@ -59,17 +88,20 @@
                         <td class="product-table-body__total product-table-body_data">$${product.cost}</td>
                 `;
                 tbody.append(tr);
+                calculateTheOrderAmount();
 
                 tr.querySelector('input').addEventListener('change', function (event) {
                     if (event.target.value < 1) {
                         event.target.value = 1;
                     } else {
                         const value = parseInt(event.target.value || '0');
+
                         tr.querySelector('.product-table-body__total').innerText = '$' + value * product.cost;
+                        calculateTheOrderAmount()
                     }
                 })
             });
-            registerRemoveFromCartElements(tbody);
+            tbody.dispatchEvent(new CustomEvent('registerRemoveFromCartElements', {bubbles: true}));
         }
 
     });
@@ -95,8 +127,6 @@
                         document.dispatchEvent(new Event(RENDER_CARD_EVENT_NAME));
                     }
                 });
-            } else {
-                alert('проверь вёрстку дебил');
             }
         });
     }
@@ -113,8 +143,6 @@
                         document.dispatchEvent(new Event(RENDER_CARD_EVENT_NAME));
                     }
                 });
-            } else {
-                alert('проверь вёрстку дебил');
             }
         });
     }
