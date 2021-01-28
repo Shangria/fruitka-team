@@ -1,35 +1,51 @@
+@import "src/scss/global-style/media";
+
 .search {
   position: fixed;
   z-index: 99999;
   background-color: #051922;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 
-
-
   &__wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 60%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
+    @include breakpoint(sm-max) {
+      width: 100%;
+      padding: 10px;
+    }
   }
 
   &__btn_close {
     position: absolute;
-    top: 55px;
-    right: 150px;
-    text-align: center;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
     padding: 1px 5px;
-    background-color: #fcf9f9;
+    &:hover {
+      color: #f28123;
+    }
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 80%;
+    width: 100%;
     align-items: center;
 
     h3 {
@@ -42,23 +58,26 @@
   }
 
   &__line {
-    width: 60%;
+    width: 100%;
     font-size: 50px;
     text-align: center;
     border: none;
+    outline: none;
     border-bottom: 2px #f49b49 solid;
     background-color: transparent;
-
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
     &::placeholder {
       color: white;
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 
-
   &__btn {
-   @extend .btn-main;
-
+    @extend .btn-main;
+    outline: none;
+    border: none;
   }
 }
-
