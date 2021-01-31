@@ -1,76 +1,32 @@
-export default function Slider(slides, autoscrollInterval) {
-    const me = this;
-    let sliderElements;
-    let currentIndex = 0;
-    let timeoutId;
-
-
-    me.prev = prev;
-    me.next = next;
-    me.setSlide = setSlide;
-    me.touchSlider = touchSlider;
-    me.getInitialPoint = getInitialPoint;
-
-    {
-        sliderElements = [];
+export class Slider {
+    constructor(slides) {
+        this.sliderElements = [];
+        this.currentIndex = 0;
         for (const slide of slides) {
-
-            sliderElements.push(slide);
-            slide.classList.add('slider-hidden');
-            slide.classList.remove('slider-shown');
+            this.sliderElements.push(slide);
         }
-        setSlide(0);
     }
 
-
-    function prev() {
-        changeSlide('back');
-    }
-
-    function next() {
-        changeSlide('forward');
-    }
-
-    function setSlide(index) {
-        currentIndex = index;
-        stopAutoSlide();
-
-        let direction;
-        if (index >= currentIndex) {
-            direction = 'forward';
+    prev() {
+        if (this.currentIndex === 0) {
+            this.setSlide(this.sliderElements.length - 1);
         } else {
-            direction = 'back';
+            this.setSlide(this.currentIndex - 1);
         }
-        toggleSlides();
-        startAutoSlide(direction);
     }
 
-
-    function changeSlide(direction) {
-        stopAutoSlide();
-
-        if (direction === 'back') {
-            if (currentIndex === 0) {
-                currentIndex = sliderElements.length - 1;
-            } else {
-                currentIndex = currentIndex - 1;
-            }
+    next() {
+        if (this.currentIndex === this.sliderElements.length - 1) {
+            this.setSlide(0);
         } else {
-            if (currentIndex === sliderElements.length - 1) {
-                currentIndex = 0;
-            } else {
-                currentIndex = currentIndex + 1;
-            }
+            this.setSlide(this.currentIndex + 1);
         }
-
-        toggleSlides();
-        startAutoSlide(direction);
     }
 
-    function toggleSlides() {
-
-        sliderElements.map(function (element, index) {
-                if (index === currentIndex) {
+    setSlide(index) {
+        this.currentIndex = index;
+        this.sliderElements.map((element, index) => {
+                if (index === this.currentIndex) {
                     element.classList.remove('slider-hidden');
                     element.classList.add('slider-shown');
                 } else {
@@ -81,36 +37,167 @@ export default function Slider(slides, autoscrollInterval) {
         );
     }
 
-    function startAutoSlide(direction) {
-        if (autoscrollInterval) {
-            timeoutId = setTimeout(function () {
-                changeSlide(direction);
-            }, autoscrollInterval);
-        }
+    init() {
+        this.setSlide(0);
     }
 
-    function stopAutoSlide() {
-        if (timeoutId) {
-            clearTimeout(timeoutId);
-        }
-    }
-    function getInitialPoint() {
-        return event.changedTouches[0];
-    }
-
-    function touchSlider(initialPoint, element) {
-        let finalPoint = event.changedTouches[0];
-        const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
-        const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
-        if (xAbs > 20 || yAbs > 20) {
-            if (xAbs > yAbs) {
-                if (finalPoint.pageX < initialPoint.pageX) {
-                    element.next();
-                } else {
-                    element.prev()
-                }
-            }
-        }
+    destroy() {
+        this.sliderElements.map((element, index) => {
+            element.classList.remove('slider-hidden');
+            element.classList.remove('slider-shown');
+        });
     }
 }
 
+export class AutoSlider extends Slider {
+    constructor(slides, autoscrollInterval) {
+        super(slides);
+        this.timeoutId = null;
+        this.autoscrollInterval = autoscrollInterval || 5000;
+    }
+
+    setSlide(index) {
+        this.stopAutoscroll();
+        this.startAutoscroll(this.currentIndex, index);
+        super.setSlide(index);
+    }
+
+    destroy() {
+        super.destroy();
+        this.stopAutoscroll();
+    }
+
+    stopAutoscroll() {
+        if (this.timeoutId) {
+            clearTimeout(this.timeoutId);
+        }
+    }
+
+    startAutoscroll(currentIndex, nextIndex) {
+        this.timeoutId = setTimeout(() => {
+            if (nextIndex >= currentIndex) {
+                this.next();
+            } else {
+                this.prev();
+            }
+        }, this.autoscrollInterval);
+    }
+}
+
+
+// export default function Slider(slides, autoscrollInterval) {
+//     const me = this;
+//     let sliderElements;
+//     let currentIndex = 0;
+//     let timeoutId;
+//
+//
+//     me.prev = prev;
+//     me.next = next;
+//     me.setSlide = setSlide;
+//     me.touchSlider = touchSlider;
+//     me.getInitialPoint = getInitialPoint;
+//
+//     {
+//         sliderElements = [];
+//         for (const slide of slides) {
+//
+//             sliderElements.push(slide);
+//             slide.classList.add('slider-hidden');
+//             slide.classList.remove('slider-shown');
+//         }
+//         setSlide(0);
+//     }
+//
+//
+//     function prev() {
+//         changeSlide('back');
+//     }
+//
+//     function next() {
+//         changeSlide('forward');
+//     }
+//
+//     function setSlide(index) {
+//         currentIndex = index;
+//         stopAutoSlide();
+//
+//         let direction;
+//         if (index >= currentIndex) {
+//             direction = 'forward';
+//         } else {
+//             direction = 'back';
+//         }
+//         toggleSlides();
+//         startAutoSlide(direction);
+//     }
+//
+//
+//     function changeSlide(direction) {
+//         stopAutoSlide();
+//
+//         if (direction === 'back') {
+//             if (currentIndex === 0) {
+//                 currentIndex = sliderElements.length - 1;
+//             } else {
+//                 currentIndex = currentIndex - 1;
+//             }
+//         } else {
+//             if (currentIndex === sliderElements.length - 1) {
+//                 currentIndex = 0;
+//             } else {
+//                 currentIndex = currentIndex + 1;
+//             }
+//         }
+//
+//         toggleSlides();
+//         startAutoSlide(direction);
+//     }
+//
+//     function toggleSlides() {
+//
+//         sliderElements.map(function (element, index) {
+//                 if (index === currentIndex) {
+//                     element.classList.remove('slider-hidden');
+//                     element.classList.add('slider-shown');
+//                 } else {
+//                     element.classList.add('slider-hidden');
+//                     element.classList.remove('slider-shown');
+//                 }
+//             }
+//         );
+//     }
+//
+//     function startAutoSlide(direction) {
+//         if (autoscrollInterval) {
+//             timeoutId = setTimeout(function () {
+//                 changeSlide(direction);
+//             }, autoscrollInterval);
+//         }
+//     }
+//
+//     function stopAutoSlide() {
+//         if (timeoutId) {
+//             clearTimeout(timeoutId);
+//         }
+//     }
+//     function getInitialPoint() {
+//         return event.changedTouches[0];
+//     }
+//
+//     function touchSlider(initialPoint, element) {
+//         let finalPoint = event.changedTouches[0];
+//         const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+//         const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+//         if (xAbs > 20 || yAbs > 20) {
+//             if (xAbs > yAbs) {
+//                 if (finalPoint.pageX < initialPoint.pageX) {
+//                     element.next();
+//                 } else {
+//                     element.prev()
+//                 }
+//             }
+//         }
+//     }
+// }
+//
