@@ -1,33 +1,19 @@
-import Slider from './slider.js'
+import {AutoSlider} from './slider.js'
 
 window.addEventListener('load', function () {
-    const sliderBox = new Slider(document.querySelectorAll('[data-sliders-box]'), 40000);
-    const slider = document.getElementById('wrapper-banner-slider');
+    const slider = new AutoSlider(document.querySelectorAll('[data-sliders-box]'), 3000);
+    slider.init();
+
     const arrowLeft = document.getElementById('data-slider-left');
     const arrowRight = document.getElementById('data-slider-right');
 
 
     arrowLeft.addEventListener('click', function () {
-        sliderBox.prev();
+        slider.prev();
     });
-
 
     arrowRight.addEventListener('click', function () {
-        sliderBox.next()
+        slider.next()
     });
-
-    let initialPoint;
-
-    slider.addEventListener('touchstart', function (event) {
-
-        initialPoint = sliderBox.getInitialPoint();
-
-    }, false);
-
-    slider.addEventListener('touchend', function (event) {
-
-        sliderBox.touchSlider(initialPoint,sliderBox)
-
-    }, false);
 });
 
